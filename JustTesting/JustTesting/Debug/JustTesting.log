@@ -1,0 +1,39 @@
+﻿Build started 04.08.2015 03:19:39.
+     1>Project "c:\Users\Adobert\documents\visual studio 2013\Projects\JustTesting\JustTesting\JustTesting.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(94): warning C4244: '=' : conversion from 'double' to 'short', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(137): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(138): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(139): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(141): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(142): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(143): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(145): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(146): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(147): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(149): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(150): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(151): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(153): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(154): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(155): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(157): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(158): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(159): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(161): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(162): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(163): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(165): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(166): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\adobert\documents\visual studio 2013\projects\justtesting\justtesting\main.cpp(167): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\adobert\documents\visual studio 2013\Projects\JustTesting\Debug\JustTesting.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\adobert\documents\visual studio 2013\Projects\JustTesting\Debug\JustTesting.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\adobert\documents\visual studio 2013\Projects\JustTesting\Debug\JustTesting.lib" /MACHINE:X86 Debug\fileHandler.obj
+         Debug\main.obj
+         JustTesting.vcxproj -> c:\users\adobert\documents\visual studio 2013\Projects\JustTesting\Debug\JustTesting.exe
+     1>Done Building Project "c:\Users\Adobert\documents\visual studio 2013\Projects\JustTesting\JustTesting\JustTesting.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.35

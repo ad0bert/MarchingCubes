@@ -4,10 +4,13 @@
 #include "glut.h"
 #include "marchingBase.h"
 
-
-class marchingCubes : marchingBase{
+class marchingCubes : public marchingBase{
 public:	
-	GLvoid MarchCube(GLfloat fX, GLfloat fY, GLfloat fZ, GLfloat fScale) override;
+	marchingCubes(helper *h){
+		this->h = h;
+	}
+	//vMarchCube1 performs the Marching Cubes algorithm on a single cube
+	GLvoid MarchCube(GLfloat fX, GLfloat fY, GLfloat fZ, GLfloat fScale);
 
 };
 

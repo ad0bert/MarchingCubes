@@ -1,0 +1,335 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Erkl\IeC {\"a}rung}{iii}{chapter*.1}
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Kurzfassung}{vii}{chapter*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abstract}{viii}{chapter*.4}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Zielsetzung}{1}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Warum {La\discretionary {-}{}{}TeX\xspace }?}{1}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Die Abschlussarbeit}{3}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Elemente der Abschlussarbeit}{3}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Arbeiten in Englisch}{4}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Zum Arbeiten mit La\discretionary {-}{}{}TeX\xspace }{5}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Einstieg}{6}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Software}{6}{subsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Windows}{6}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Mac~OS}{6}{section*.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Linux}{7}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}Literatur}{7}{subsection.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Schrift}{8}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Schriftarten}{8}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Texte hervorheben}{8}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Textstruktur}{9}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Absatztrennung}{9}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}\IeC {\"U}berschriften}{10}{subsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{H\IeC {\"a}ufiger Fehler:}{10}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Listen}{10}{subsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.4}Absatzformatierung und Zeilenabstand}{11}{subsection.3.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.5}Fu\IeC {\ss }noten}{11}{subsection.3.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Fu\IeC {\ss }noten in \IeC {\"U}berschriften}{11}{section*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.6}Querverweise}{12}{subsection.3.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Wortabstand und Interpunktion}{13}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}\emph {French Spacing}}{13}{subsection.3.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Gedanken- und Bindestriche}{13}{subsection.3.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.3}Kommentare}{13}{subsection.3.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.4}Anf\IeC {\"u}hrungszeichen}{14}{subsection.3.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Abteilen}{15}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Das {\tt hagenberg}-Paket}{15}{section.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.1}Einstellungen}{16}{subsection.3.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Angaben zur Arbeit}{16}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Titelseiten}{17}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.2}Definierte Abk\IeC {\"u}rzungen}{18}{subsection.3.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.3}Sprachumschaltung}{18}{subsection.3.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.4}Zus\IeC {\"a}tzliche {La\discretionary {-}{}{}TeX\xspace }-Pakete}{19}{subsection.3.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}La\discretionary {-}{}{}TeX\xspace -Fehlermeldungen und Warnungen}{19}{section.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Abbildungen, Tabellen, Quellcode}{21}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Allgemeines}{21}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}\emph {Let Them Float!}}{22}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Captions}{22}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Abbildungen}{23}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}Wo liegen die Grafikdateien?}{24}{subsection.4.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.2}Grafiken einrahmen}{24}{subsection.4.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.3}Rasterbilder (Pixelgrafiken)}{25}{subsection.4.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{JPEG-Problematik}{25}{section*.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.4}Vektorgrafiken}{25}{subsection.4.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Einbettung von Schriften}{26}{section*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Strichst\IeC {\"a}rken -- \emph {Hairlines} vermeiden!}{26}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.5}TeX\xspace -Schriften auch in Grafiken?}{27}{subsection.4.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\emph {BaKoMa}-Schriften (TrueType)}{27}{section*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\emph {Latin Modern Roman} Fonts (OpenType)}{27}{section*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.6}Abbildungen mit mehreren Elementen}{27}{subsection.4.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.7}Quellenangaben in Captions}{28}{subsection.4.4.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Tabellen}{29}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Programmtexte}{29}{section.4.6}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.1}Formatierung von Programmcode}{30}{subsection.4.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Nummerierung der Code-Zeilen}{31}{section*.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.2}Platzierung von Programmcode}{31}{subsection.4.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Programmtext im laufenden Text}{32}{section*.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Programmtexte als Float-Elemente}{32}{section*.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Programmtext im Anhang}{33}{section*.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Mathem.\ Formeln etc.}{35}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Mathematische Elemente im Flie\IeC {\ss }text}{35}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{H\IeC {\"a}ufiger Fehler:}{35}{section*.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Freigestellte Ausdr\IeC {\"u}cke}{36}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Einfache Gleichungen}{36}{subsection.5.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}Mehrzeilige Gleichungen}{36}{subsection.5.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}Fallunterscheidungen}{37}{subsection.5.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.4}Gleichungen mit Matrizen}{37}{subsection.5.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.5}Verweise auf Gleichungen}{38}{subsection.5.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Spezielle Symbole}{38}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Zahlenmengen}{38}{subsection.5.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}Operatoren}{39}{subsection.5.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.3}Variable (Symbole) mit mehreren Zeichen}{39}{subsection.5.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.4}Funktionen}{39}{subsection.5.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.5}Ma\IeC {\ss }einheiten und W\IeC {\"a}hrungen}{40}{subsection.5.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.6}Kommas in Dezimalzahlen (Mathematik-Modus)}{40}{subsection.5.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.7}Mathematische Werkzeuge}{40}{subsection.5.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Algorithmen}{41}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Umgang mit Literatur}{43}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Anmerkung:}{43}{section*.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Allgemeines}{43}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Quellenverweise}{44}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}Das {\tt {\textbackslash }cite} Makro}{44}{subsection.6.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.2}H\IeC {\"a}ufige Fehler}{44}{subsection.6.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Verweise au\IeC {\ss }erhalb des Satzes}{44}{section*.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Zitate}{44}{section*.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Quellenverzeichnis}{45}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}Literaturdaten in BibTeX}{45}{subsection.6.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}Kategorien von Quellenangaben}{46}{subsection.6.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.3}Gedruckte Quellen (\emph {literature})}{47}{subsection.6.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {@book}}{47}{section*.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {@incollection}}{48}{section*.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {@inproceedings}}{49}{section*.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {@article}}{49}{section*.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {@thesis}}{50}{section*.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Dissertation (Doktorarbeit):}{50}{section*.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Magister- oder Masterarbeit:}{50}{section*.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Diplomarbeit:}{50}{section*.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Bachelorarbeit:}{51}{section*.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {@techreport}}{51}{section*.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {@manual}}{52}{section*.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {@misc}}{53}{section*.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.4}Filme und audio-visuelle Medien (\emph {avmedia})}{53}{subsection.6.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {@audio}}{53}{section*.49}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {@video}}{54}{section*.50}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {@movie}}{54}{section*.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {@software}}{55}{section*.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Zeitangaben zu Musikaufnahmen und Filmen}{55}{section*.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.5}Online-Quellen (\emph {online})}{55}{subsection.6.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Beispiel: Wiki-Eintrag}{56}{section*.54}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Beispiel: online Video}{56}{section*.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Beispiel: Bildquelle}{56}{section*.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.6}Elektronische Datentr\IeC {\"a}ger als Erg\IeC {\"a}nzung zur Arbeit}{57}{subsection.6.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.7}Tipps zur Erstellung von BibTeX-Dateien}{57}{subsection.6.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {month}-Attribut}{57}{section*.57}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {language}/\texttt {hyphenation}-Attribut}{57}{section*.58}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\texttt {edition}-Attribut}{57}{section*.59}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\IeC {\"U}bernahme von fertigen BibTeX-Eintr\IeC {\"a}gen}{57}{section*.60}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Listing aller Quellen}{58}{section*.61}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Erg\IeC {\"a}nzungen zu \texttt {biblatex}}{58}{section*.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Plagiarismus}{58}{section.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Drucken der Diplomarbeit}{60}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}PDF-Workflow}{60}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Drucken}{60}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.1}Drucker und Papier}{60}{subsection.7.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.2}Druckgr\IeC {\"o}\IeC {\ss }e}{60}{subsection.7.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Binden}{61}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Elektronische Datentr\IeC {\"a}ger (CD-R, DVD)}{61}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Schlussbemerkungen}{63}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Lesen und lesen lassen}{63}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Checkliste}{63}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Technische Informationen}{65}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Aktuelle Dateiversionen}{65}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Details zur aktuellen Version}{65}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.1}Allgemeine technische Voraussetzungen}{65}{subsection.A.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.2}Verwendung unter Windows}{65}{subsection.A.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.3}Verwendung unter Mac~OS}{66}{subsection.A.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Inhalt der CD-ROM/DVD}{67}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Format:}{67}{section*.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}PDF-Dateien}{67}{section.B.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Pfad:}{67}{section*.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}La\discretionary {-}{}{}TeX\xspace -Dateien}{67}{section.B.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Pfad:}{67}{section*.66}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.3}Style/Class-Dateien}{68}{section.B.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Pfad:}{68}{section*.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.4}Sonstiges}{68}{section.B.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Pfad:}{68}{section*.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}Chronologische Liste der \IeC {\"A}nderungen}{69}{appendix.C}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {D}La\discretionary {-}{}{}TeX\xspace -Quellkode}{75}{appendix.D}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Anmerkung:}{76}{section*.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Quellenverzeichnis}{77}{appendix*.71}

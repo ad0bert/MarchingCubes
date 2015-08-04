@@ -68,10 +68,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="marchingBase.cpp" />
     <ClCompile Include="marchingCubes.cpp" />
     <ClCompile Include="marchingTetrahedron.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="helper.h" />
     <ClInclude Include="marchingBase.h" />
     <ClInclude Include="marchingCubes.h" />
     <ClInclude Include="marchingTetrahedron.h" />

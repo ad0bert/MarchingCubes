@@ -1,0 +1,48 @@
+﻿Build started 04.08.2015 05:08:28.
+     1>Project "c:\Users\Adobert\documents\visual studio 2013\Projects\JustTesting\JustTesting\JustTesting.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Ot /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>main.cpp(79): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(80): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(81): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(82): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(83): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(84): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(85): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(86): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(87): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(88): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(89): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(90): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(91): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(92): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(93): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(94): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(95): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(96): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(97): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(98): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(99): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(100): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(101): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(102): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(103): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(104): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(105): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(106): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(107): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(108): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(109): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>main.cpp(110): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\adobert\documents\visual studio 2013\Projects\JustTesting\Release\JustTesting.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\adobert\documents\visual studio 2013\Projects\JustTesting\Release\JustTesting.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\adobert\documents\visual studio 2013\Projects\JustTesting\Release\JustTesting.lib" /MACHINE:X86 /SAFESEH Release\fileHandler.obj
+         Release\main.obj
+         Generating code
+         Finished generating code
+         JustTesting.vcxproj -> c:\users\adobert\documents\visual studio 2013\Projects\JustTesting\Release\JustTesting.exe
+     1>Done Building Project "c:\Users\Adobert\documents\visual studio 2013\Projects\JustTesting\JustTesting\JustTesting.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.19
