@@ -1,0 +1,27 @@
+﻿Build started 06.08.2015 01:06:18.
+     1>Project "C:\Users\Adobert\Documents\QTTest - Copy\QTTest.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Moc'ing mainwindow.h...
+         Moc'ing tetrahedron.h...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_mainwindow.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_mainwindow.cpp, Release\moc_mainwindow.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_tetrahedron.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_tetrahedron.cpp, Release\moc_tetrahedron.cpp.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I. /I..\..\..\..\qt\5.5\msvc2013_64\include /I..\..\..\..\qt\5.5\msvc2013_64\include\QtOpenGL /I..\..\..\..\qt\5.5\msvc2013_64\include\QtWidgets /I..\..\..\..\qt\5.5\msvc2013_64\include\QtGui /I..\..\..\..\qt\5.5\msvc2013_64\include\QtANGLE /I..\..\..\..\qt\5.5\msvc2013_64\include\QtCore /Idebug /I. /I"..\..\..\..\qt\5.5\msvc2013_64\mkspecs\win32-msvc2013" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /Od /D _WINDOWS /D UNICODE /D WIN32 /D WIN64 /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt -w34100 -w34189 -w44996 Debug\moc_mainwindow.cpp Debug\moc_tetrahedron.cpp mainwindow.cpp
+         moc_mainwindow.cpp
+         moc_tetrahedron.cpp
+         mainwindow.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\QTTest.exe" /NOLOGO /LIBPATH:C:\Qt\5.5\msvc2013_64\lib /LIBPATH:C:/qt/5.5/msvc2013_64/lib /LIBPATH:C:\Qt\5.5\msvc2013_64\lib C:\Qt\5.5\msvc2013_64\lib\qtmaind.lib shell32.lib C:/qt/5.5/msvc2013_64/lib\Qt5Cored.lib opengl32.lib glu32.lib C:\Qt\5.5\msvc2013_64\lib\Qt5OpenGLd.lib C:\Qt\5.5\msvc2013_64\lib\Qt5Widgetsd.lib C:\Qt\5.5\msvc2013_64\lib\Qt5Guid.lib C:\Qt\5.5\msvc2013_64\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\QTTest.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" x64\Debug\moc_mainwindow.obj
+         x64\Debug\moc_tetrahedron.obj
+         x64\Debug\fileHandler.obj
+         x64\Debug\main.obj
+         x64\Debug\mainwindow.obj
+         x64\Debug\marchingcubes.obj
+         x64\Debug\tetrahedron.obj
+         QTTest.vcxproj -> C:\Users\Adobert\Documents\QTTest - Copy\debug\QTTest.exe
+     1>Done Building Project "C:\Users\Adobert\Documents\QTTest - Copy\QTTest.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.96
