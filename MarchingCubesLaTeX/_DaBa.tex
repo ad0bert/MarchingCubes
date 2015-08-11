@@ -1,0 +1,70 @@
+\documentclass[bachelor,german]{hgbthesis}
+% Zulässige Class Options: 
+%   Typ der Arbeit: diplom, master (default), bachelor, praktikum 
+%   Hauptsprache: german (default), english
+%%------------------------------------------------------------
+
+\graphicspath{{images/}}    % name of directory containing the images
+\logofile{FHOOeIntl2014}			% name of PDF, remove or use \logofile{} for no logo
+%\bibliography{literatur}  	% name of the BibTeX (.bib) file
+
+
+%%%----------------------------------------------------------
+\begin{document}
+%%%----------------------------------------------------------
+
+% Einträge für ALLE Arbeiten: --------------------------------
+\title{3D Modellierung von Oberflächen mittels Marching Cubes
+	Algorithmus und generische Darstellung mittels OpenGL}
+\author{Peter P.\ Ortner}
+\studiengang{Software Engineering}
+\studienort{Hagenberg}
+\abgabedatum{2015}{08}{01}	% {YYYY}{MM}{DD}
+
+%%% zusätzlich für eine Bachelorarbeit: ---------------------
+\nummer{S1210307080-A}   % XX...X = Stud-ID, z.B. 0310238045-A  
+                        % (A = 1. Bachelorarbeit)
+\semester{Sommersemester 2015} 
+\gegenstand{Digitale Bildverarbeitung und Graphik} 
+\betreuer{Werner ~Backfrieder, FH-Prof. DI Dr.} % oder \betreuerin{..}
+
+%\strictlicense  % erzeugt restriktive Lizenzformel
+
+%%%----------------------------------------------------------
+\frontmatter
+\maketitle
+\tableofcontents
+%%%----------------------------------------------------------
+
+%\include{vorwort}		% ggfs. weglassen
+\include{kurzfassung}		
+\include{abstract}			
+
+%%%----------------------------------------------------------
+\mainmatter         % Hauptteil (ab hier arab. Seitenzahlen)
+%%%----------------------------------------------------------
+
+\include{einleitung}
+\include{einfuehrung}
+\include{umsetzung}
+\include{zusammenfassung}
+\include{Quellenverzeichniss}
+\bibliography{literatur}
+
+%%%----------------------------------------------------------
+%%%Anhang
+%\appendix
+%\include{anhang_a}	% Technische Ergänzungen
+%\include{anhang_b}	% Inhalt der CD-ROM/DVD
+%\include{anhang_c}	% Chronologische Liste der Änderungen
+%\include{anhang_d}	% Quelltext dieses Dokuments
+
+%%%----------------------------------------------------------
+
+%\MakeBibliography
+%%%----------------------------------------------------------
+
+%%%Messbox zur Druckkontrolle
+\include{messbox}
+
+\end{document}

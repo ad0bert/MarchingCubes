@@ -1,0 +1,40 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Chua et~al.]{Chua, Gan \harvardand\ Tong}{1997}{STereoLithography}
+Chua, Chee, K., Gan, G., K.~J. \harvardand\ Tong, M.  \harvardyearleft
+  1997\harvardyearright , {\em Interface between CAD and Rapid Prototyping
+  systems. Part 2: LMI — An improved interface}, 13 edn, Springer-Verlag.
+
+\harvarditem{Fabbers}{2015}{STLFormat}
+Fabbers  \harvardyearleft 2015\harvardyearright , `The stl format',
+  \url{http://www.fabbers.com/tech/STL_Format}.
+\newblock Besucht: 2015-09.08.
+
+\harvarditem{Hadels}{2000}{MedBildVerarbeitung}
+Hadels, H.  \harvardyearleft 2000\harvardyearright , {\em Medizinische
+  Bildverarbeitung}, 2 edn, Springer-Verlag.
+
+\harvarditem{Lorensen \harvardand\ Cline}{1988}{MCAlgo}
+Lorensen, W.~E. \harvardand\ Cline, H.~E.  \harvardyearleft
+  1988\harvardyearright , `Marching cubes: A high resolution 3d surface
+  construction algorithm', {\em IEEE Conference Publications} .
+
+\harvarditem{Mayo}{2015}{AnalyzeFormat}
+Mayo  \harvardyearleft 2015\harvardyearright , `Analyze 7.5 file format',
+  \url{https://rportal.mayo.edu/bir/ANALYZE75.pdf}.
+\newblock Besucht: 2015-09.08.
+
+\harvarditem{Segal \harvardand\ Akeley}{2009}{OpenGLDoku}
+Segal, M. \harvardand\ Akeley, K.  \harvardyearleft 2009\harvardyearright ,
+  {\em The OpenGL Graphics System: A Specification}, 3.1 edn,
+  https://www.opengl.org/registry/doc/glspec31.20090324.pdf.
+
+\harvarditem{Seibt}{2014}{SeibtBak}
+Seibt, G.  \harvardyearleft 2014\harvardyearright , `Oberflächenextraktion
+  mittels des marching cubes algorithmus'.
+
+\harvarditem{Shirley \harvardand\ Marschner}{2009}{ComputerGraphics}
+Shirley, P. \harvardand\ Marschner, S.  \harvardyearleft 2009\harvardyearright
+  , {\em Fundamentals of Computer Graphics}, 3 edn, Taylor \& Francis Ltd.
+
+\end{thebibliography}

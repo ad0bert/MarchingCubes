@@ -1,0 +1,14 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdftex 2015.8.8)  8 AUG 2015 21:37
+entering extended mode
+**C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/hgbbib.sty
+(C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/hgbbib.sty
+! Undefined control sequence.
+l.4 \usepackage
+               [babel,german=quotes]{csquotes}	% utf8-change ??
+? 
+! Emergency stop.
+l.4 \usepackage
+               [babel,german=quotes]{csquotes}	% utf8-change ??
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -1,0 +1,61 @@
+\chapter{Umsetzung}
+
+\section{Marching Cubes}
+
+\subsection{Ansatz}
+
+\subsection{Implementierung}
+
+\section{File Formate}
+
+\subsection{STereoLithography (.stl)}
+\ref{prog:generateSTL}
+
+
+\begin{program}
+	\caption{Generierung einer STL-Datei}
+	\label{prog:generateSTL}
+	\begin{CCode}
+	bool marchingCubes::GenerateStlFile(std::string path){
+		FILE *fptr = NULL;
+		fprintf(stderr, "Writing triangles ...\n");
+		if ((fptr = fopen(path.c_str(), "a+b")) == NULL) {
+			fprintf(stderr, "Failed to open output file\n");
+			return false;
+		}
+		char fileHeader[81] = "solid Test Head";
+		char bytes[3] = { 0x00, 0x00 };
+		fwrite(&fileHeader, sizeof(fileHeader)-1, 1, fptr);
+		fwrite(&ntri, sizeof(int), 1, fptr);
+		for (int i = 0; i < ntri; i++) {
+			fwrite(&tri[i].n[0], sizeof(float), 3, fptr);
+			for (int k = 0; k < 3; k++)  {
+				fwrite(&tri[i].p[k], sizeof(float), 3, fptr);
+			}
+			fwrite(bytes, 2, 1, fptr);
+		}
+		fclose(fptr);
+		return true;
+	}
+	\end{CCode}
+\end{program}
+
+\section{OpenGL}
+
+\begin{CCode}
+	void marchingCubes::CalcNormal(TRIANGLE &tri){
+		XYZ U;
+		XYZ V;
+		U.x = tri.p[1].x - tri.p[0].x;
+		U.y = tri.p[1].y - tri.p[0].y;
+		U.z = tri.p[1].z - tri.p[0].z;
+		
+		V.x = tri.p[2].x - tri.p[0].x;
+		V.y = tri.p[2].y - tri.p[0].y;
+		V.z = tri.p[2].z - tri.p[0].z;
+		
+		tri.n[0].x = (U.y * V.z) - (U.z * V.y);
+		tri.n[0].y = (U.z * V.x) - (U.x * V.z);
+		tri.n[0].z = (U.x * V.y) - (U.y * V.x);
+	}
+\end{CCode}
