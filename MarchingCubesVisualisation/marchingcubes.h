@@ -15,7 +15,7 @@ typedef struct {
 typedef struct {
     XYZ p[3];         /* Vertices */
     XYZ c;            /* Centroid */
-    XYZ n[3];         /* Normal   */
+    XYZ n;         /* Normal   */
 } TRIANGLE;
 
 #define ABS(x) (x < 0 ? -(x) : (x))
@@ -24,16 +24,17 @@ class marchingCubes{
 
 public:
     void setAllData(d3Buffer data, int themax, int themin, short int isolevel, int NX, int NY, int NZ);
-    void perform(int offset);
+    void perform(int offset, int slice = -1);
     std::vector<TRIANGLE> getResult();
     bool GenerateStlFile(std::string path);
     void setIsolevel(short int isolevel);
-
+    void setSlice(int sliceNumber);
+    void setSlicing(bool enable);
 private:
-    int PolygoniseCube(GRIDCELL g, TRIANGLE *tri);
-    XYZ VertexInterp(float isolevel, XYZ p1, XYZ p2, float valp1, float valp2);
+    int PolygoniseCube();
+    XYZ VertexInterp(XYZ p1, XYZ p2, float valp1, float valp2);
 	void CalcNormal(TRIANGLE &tri);
-
+	void generateSlice(int offset, int slice);
     int NX;
     int NY;
     int NZ;

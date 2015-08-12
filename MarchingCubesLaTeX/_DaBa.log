@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.6)  11 AUG 2015 03:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.6)  12 AUG 2015 02:17
 entering extended mode
 **_DaBa.tex
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.tex
@@ -1013,9 +1013,7 @@ LaTeX Info: Redefining \cite on input line 694.
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\einfuehrung.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.aux)
-
-(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\Quellenverzeichniss.
-aux) (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.aux))
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
@@ -1106,7 +1104,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 35.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/FHOOeIntl2014.pdf, id=120, 269.93045pt x 269.93045pt>
+<images/FHOOeIntl2014.pdf, id=124, 269.93045pt x 269.93045pt>
 File: images/FHOOeIntl2014.pdf Graphic file (type pdf)
 
 <use images/FHOOeIntl2014.pdf>
@@ -1186,59 +1184,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
 
-<images/Voxelgitter.png, id=206, 466.74374pt x 466.74374pt>
+<images/Voxelgitter.png, id=211, 466.74374pt x 466.74374pt>
 File: images/Voxelgitter.png Graphic file (type png)
 
 <use images/Voxelgitter.png>
 Package pdftex.def Info: images/Voxelgitter.png used on input line 22.
 (pdftex.def)             Requested size: 306.0022pt x 306.01495pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--32
-
- []
-
-[3
+ [3
 
 
 
-] [4 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/Voxelgit
-ter.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 46--48
+]
+Underfull \hbox (badness 10000) in paragraph at lines 30--34
 
  []
 
+[4 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/Voxelgitte
+r.png>] <images/Wuerfel.png, id=242, 298.86656pt x 298.86656pt>
+File: images/Wuerfel.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--56
+<use images/Wuerfel.png>
+Package pdftex.def Info: images/Wuerfel.png used on input line 45.
+(pdftex.def)             Requested size: 180.0pt x 180.0008pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--51
 
  []
 
-<images/StL-ASCII.jpg, id=247, 212.29312pt x 161.10187pt>
-File: images/StL-ASCII.jpg Graphic file (type jpg)
+<images/WuerfelIndizierung.png, id=248, 286.06876pt x 286.06876pt>
+File: images/WuerfelIndizierung.png Graphic file (type png)
 
-<use images/StL-ASCII.jpg>
-Package pdftex.def Info: images/StL-ASCII.jpg used on input line 59.
-(pdftex.def)             Requested size: 233.9978pt x 177.58133pt.
+<use images/WuerfelIndizierung.png>
+Package pdftex.def Info: images/WuerfelIndizierung.png used on input line 54.
+(pdftex.def)             Requested size: 180.0pt x 180.00165pt.
+ [5 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/Wuerfel.p
+ng>]
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
-<images/StL-binary.jpg, id=252, 374.14781pt x 330.48468pt>
-File: images/StL-binary.jpg Graphic file (type jpg)
+ []
 
-<use images/StL-binary.jpg>
-Package pdftex.def Info: images/StL-binary.jpg used on input line 66.
-(pdftex.def)             Requested size: 233.9978pt x 206.6936pt.
- [5]) [6 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/StL-
-ASCII.jpg> <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/St
-L-binary.jpg>] [7]
-(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.tex
-Kapitel 3.
 Package hyperref Info: bookmark level for unknown program defaults to 0 on inpu
-t line 16.
+t line 72.
 (C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 18.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 74.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1248,22 +1241,46 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-)) [8
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+Underfull \hbox (badness 10000) in paragraph at lines 156--159
+
+ []
+
+[6 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/WuerfelInd
+izierung.png>] <images/StL-ASCII.jpg, id=300, 212.29312pt x 161.10187pt>
+File: images/StL-ASCII.jpg Graphic file (type jpg)
+
+<use images/StL-ASCII.jpg>
+Package pdftex.def Info: images/StL-ASCII.jpg used on input line 162.
+(pdftex.def)             Requested size: 233.9978pt x 177.58133pt.
+
+<images/StL-binary.jpg, id=305, 374.14781pt x 330.48468pt>
+File: images/StL-binary.jpg Graphic file (type jpg)
+
+<use images/StL-binary.jpg>
+Package pdftex.def Info: images/StL-binary.jpg used on input line 169.
+(pdftex.def)             Requested size: 233.9978pt x 206.6936pt.
+ [7]) [8] [9 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/
+StL-ASCII.jpg> <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/image
+s/StL-binary.jpg>]
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.tex
+Kapitel 3.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)) [10
 
 
 
-] [9]
+] [11]
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.tex
 Kapitel 4.
-) [10
-
-
-
-]
-(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\Quellenverzeichniss.
-tex
-Kapitel 5.
-) [11
+) [12
 
 
 
@@ -1291,7 +1308,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--31
 dn, htt-
  []
 
-) [12
+) [13
 
 
 ] (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.tex)
@@ -1305,27 +1322,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\einfuehrung.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.aux)
-
-(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\Quellenverzeichniss.
-aux) (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.aux))
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `_DaBa.out' has not changed.
-(rerunfilecheck)             Checksum: 23A0F7ED94A628254B7577B035EB2212;3476.
+(rerunfilecheck)             Checksum: 6174C82F277EFA3C8D2B17803AED57C0;3723.
  ) 
 Here is how much of TeX's memory you used:
- 17315 strings out of 493921
- 250018 string characters out of 3144871
- 487626 words of memory out of 3000000
- 20051 multiletter control sequences out of 15000+200000
- 90475 words of font info for 70 fonts, out of 3000000 for 9000
+ 17511 strings out of 493921
+ 252656 string characters out of 3144871
+ 550171 words of memory out of 3000000
+ 20169 multiletter control sequences out of 15000+200000
+ 95157 words of font info for 72 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 67i,12n,96p,1024b,1766s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 67i,11n,96p,1024b,1802s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/
-MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/
-fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-ts1.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.
+MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvip
+s/lm/lm-rm.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKT
@@ -1335,14 +1350,15 @@ c/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pf
 b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/lm/lmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/public/lm/lmss12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/
-lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pf
-b>
-Output written on _DaBa.pdf (19 pages, 541668 bytes).
+fonts/type1/public/lm/lmri9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/lm/lmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/l
+mss12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on _DaBa.pdf (20 pages, 775615 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 103 named destinations out of 1000 (max. 500000)
- 265 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 567 PDF objects out of 1000 (max. 8388607)
+ 177 named destinations out of 1000 (max. 500000)
+ 283 words of extra memory for PDF output out of 10000 (max. 10000000)
 

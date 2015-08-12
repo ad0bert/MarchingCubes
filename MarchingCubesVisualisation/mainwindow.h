@@ -30,6 +30,12 @@ private slots:
 
     void on_actionSaveAsStl_triggered();
 
+    void on_enableWiring_toggled(bool checked);
+
+    void on_enableSlicing_toggled(bool checked);
+
+    void on_slicerSlider_valueChanged(int value);
+
 private:
     void readFiles();
     Ui::MainWindow *ui;

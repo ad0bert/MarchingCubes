@@ -38,7 +38,6 @@ void MainWindow::readFiles(){
     hdrFile->readFile();
     imgFile->setHdr(hdrFile->getHdr());
     imgFile->readFile();
-    //ui->isolevelSlider->setRange(hdrFile->getHdr().dime.cal_min, hdrFile->getHdr().dime.cal_min);
 }
 
 void MainWindow::on_generateObjectBtn_clicked()
@@ -53,23 +52,43 @@ void MainWindow::on_generateObjectBtn_clicked()
                        hdrFile->getHdr().dime.dim[2],
                        hdrFile->getHdr().dime.dim[3]
                        );
-        mc->perform(ui->thresholdSlider->value());
-        ui->widget->setObject(&mc->getResult());
-        ui->widget->updateUI();
+		ui->slicerSlider->setRange(0, hdrFile->getHdr().dime.dim[3] - 2);
+
+		if (ui->enableSlicing->isChecked()){
+			mc->perform(ui->thresholdSlider->value(), ui->slicerSlider->value());
+		}
+		else{
+			mc->perform(ui->thresholdSlider->value());
+		}
+		
+		ui->widget->setObject(&mc->getResult());
+        
+		ui->widget->updateUI(); 
+        
     }
 }
 
 void MainWindow::on_isolevelSlider_valueChanged(int value)
 {
     mc->setIsolevel(value);
-    mc->perform(ui->thresholdSlider->value());
+	if (ui->enableSlicing->isChecked()){
+		mc->perform(ui->thresholdSlider->value(), ui->slicerSlider->value());
+	}
+	else{
+		mc->perform(ui->thresholdSlider->value());
+	}
     ui->widget->setObject(&mc->getResult());
     ui->widget->updateUI();
 }
 
 void MainWindow::on_thresholdSlider_valueChanged(int value)
 {
-    mc->perform(value);
+	if (ui->enableSlicing->isChecked()){
+		mc->perform(ui->thresholdSlider->value(), ui->slicerSlider->value());
+	}
+	else{
+		mc->perform(ui->thresholdSlider->value());
+	}
     ui->widget->setObject(&mc->getResult());
     ui->widget->updateUI();
 }
@@ -77,4 +96,30 @@ void MainWindow::on_thresholdSlider_valueChanged(int value)
 void MainWindow::on_actionSaveAsStl_triggered()
 {
     mc->GenerateStlFile(QFileDialog::getSaveFileName(0, "Save file", "C://Users//Adobert//Desktop//", "STL files (*.stl)").toStdString());
+}
+
+void MainWindow::on_enableWiring_toggled(bool checked)
+{
+    ui->widget->setWiring(checked);
+}
+
+void MainWindow::on_enableSlicing_toggled(bool checked)
+{
+    ui->slicerSlider->setEnabled(checked);
+	if (ui->enableSlicing->isChecked()){
+		mc->perform(ui->thresholdSlider->value(), ui->slicerSlider->value());
+	}
+	else{
+		mc->perform(ui->thresholdSlider->value());
+	}
+	ui->widget->setObject(&mc->getResult());
+	ui->widget->updateUI();
+
+}
+
+void MainWindow::on_slicerSlider_valueChanged(int value)
+{
+	mc->perform(ui->thresholdSlider->value(), value);
+	ui->widget->setObject(&mc->getResult());
+	ui->widget->updateUI();
 }

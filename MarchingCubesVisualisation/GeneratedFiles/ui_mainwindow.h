@@ -13,8 +13,9 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QFormLayout>
 #include <QtWidgets/QGridLayout>
-#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
@@ -39,21 +40,23 @@ public:
     QAction *actionSaveAsStl;
     QWidget *centralWidget;
     QGridLayout *gridLayout;
+    QSlider *isolevelSlider;
     QSplitter *splitter;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_2;
-    QHBoxLayout *horizontalLayout;
+    QFormLayout *formLayout_2;
     QLineEdit *headerPath;
     QPushButton *selectHeaderBtn;
-    QHBoxLayout *horizontalLayout_2;
     QLineEdit *imagePath;
     QPushButton *selectImageBtn;
     QPushButton *generateObjectBtn;
+    QCheckBox *enableWiring;
+    QCheckBox *enableSlicing;
+    QSlider *slicerSlider;
     QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout;
     Tetrahedron *widget;
     QSlider *thresholdSlider;
-    QSlider *isolevelSlider;
     QMenuBar *menuBar;
     QMenu *menuMarchingCubes;
     QToolBar *mainToolBar;
@@ -63,7 +66,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(891, 605);
+        MainWindow->resize(1170, 598);
         actionOpen_File = new QAction(MainWindow);
         actionOpen_File->setObjectName(QStringLiteral("actionOpen_File"));
         actionSave_STL = new QAction(MainWindow);
@@ -76,8 +79,22 @@ public:
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        isolevelSlider = new QSlider(centralWidget);
+        isolevelSlider->setObjectName(QStringLiteral("isolevelSlider"));
+        isolevelSlider->setMaximum(255);
+        isolevelSlider->setValue(200);
+        isolevelSlider->setOrientation(Qt::Vertical);
+
+        gridLayout->addWidget(isolevelSlider, 0, 1, 1, 1);
+
         splitter = new QSplitter(centralWidget);
         splitter->setObjectName(QStringLiteral("splitter"));
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(splitter->sizePolicy().hasHeightForWidth());
+        splitter->setSizePolicy(sizePolicy);
+        splitter->setLayoutDirection(Qt::LeftToRight);
         splitter->setOrientation(Qt::Horizontal);
         layoutWidget = new QWidget(splitter);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
@@ -86,42 +103,65 @@ public:
         verticalLayout_2->setContentsMargins(11, 11, 11, 11);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setSpacing(6);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        formLayout_2 = new QFormLayout();
+        formLayout_2->setSpacing(6);
+        formLayout_2->setObjectName(QStringLiteral("formLayout_2"));
         headerPath = new QLineEdit(layoutWidget);
         headerPath->setObjectName(QStringLiteral("headerPath"));
+        headerPath->setMinimumSize(QSize(420, 0));
+        headerPath->setMaximumSize(QSize(16777215, 16777215));
 
-        horizontalLayout->addWidget(headerPath);
+        formLayout_2->setWidget(0, QFormLayout::LabelRole, headerPath);
 
         selectHeaderBtn = new QPushButton(layoutWidget);
         selectHeaderBtn->setObjectName(QStringLiteral("selectHeaderBtn"));
+        selectHeaderBtn->setMinimumSize(QSize(100, 0));
+        selectHeaderBtn->setMaximumSize(QSize(100, 16777215));
 
-        horizontalLayout->addWidget(selectHeaderBtn);
+        formLayout_2->setWidget(0, QFormLayout::FieldRole, selectHeaderBtn);
 
-
-        verticalLayout_2->addLayout(horizontalLayout);
-
-        horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setSpacing(6);
-        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         imagePath = new QLineEdit(layoutWidget);
         imagePath->setObjectName(QStringLiteral("imagePath"));
+        imagePath->setMinimumSize(QSize(420, 0));
+        imagePath->setMaximumSize(QSize(16777215, 16777215));
 
-        horizontalLayout_2->addWidget(imagePath);
+        formLayout_2->setWidget(1, QFormLayout::LabelRole, imagePath);
 
         selectImageBtn = new QPushButton(layoutWidget);
         selectImageBtn->setObjectName(QStringLiteral("selectImageBtn"));
+        selectImageBtn->setMinimumSize(QSize(100, 0));
+        selectImageBtn->setMaximumSize(QSize(100, 16777215));
 
-        horizontalLayout_2->addWidget(selectImageBtn);
-
-
-        verticalLayout_2->addLayout(horizontalLayout_2);
+        formLayout_2->setWidget(1, QFormLayout::FieldRole, selectImageBtn);
 
         generateObjectBtn = new QPushButton(layoutWidget);
         generateObjectBtn->setObjectName(QStringLiteral("generateObjectBtn"));
+        generateObjectBtn->setMaximumSize(QSize(100, 16777215));
 
-        verticalLayout_2->addWidget(generateObjectBtn);
+        formLayout_2->setWidget(2, QFormLayout::LabelRole, generateObjectBtn);
+
+        enableWiring = new QCheckBox(layoutWidget);
+        enableWiring->setObjectName(QStringLiteral("enableWiring"));
+        enableWiring->setEnabled(true);
+
+        formLayout_2->setWidget(2, QFormLayout::FieldRole, enableWiring);
+
+        enableSlicing = new QCheckBox(layoutWidget);
+        enableSlicing->setObjectName(QStringLiteral("enableSlicing"));
+
+        formLayout_2->setWidget(3, QFormLayout::FieldRole, enableSlicing);
+
+        slicerSlider = new QSlider(layoutWidget);
+        slicerSlider->setObjectName(QStringLiteral("slicerSlider"));
+        slicerSlider->setEnabled(false);
+        slicerSlider->setMinimumSize(QSize(420, 0));
+        slicerSlider->setMaximum(1);
+        slicerSlider->setOrientation(Qt::Horizontal);
+
+        formLayout_2->setWidget(3, QFormLayout::LabelRole, slicerSlider);
+
+
+        verticalLayout_2->addLayout(formLayout_2);
 
         splitter->addWidget(layoutWidget);
         layoutWidget1 = new QWidget(splitter);
@@ -133,18 +173,19 @@ public:
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         widget = new Tetrahedron(layoutWidget1);
         widget->setObjectName(QStringLiteral("widget"));
-        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
         widget->setSizePolicy(sizePolicy);
+        widget->setMinimumSize(QSize(500, 500));
+        isolevelSlider->raise();
 
         verticalLayout->addWidget(widget);
 
         thresholdSlider = new QSlider(layoutWidget1);
         thresholdSlider->setObjectName(QStringLiteral("thresholdSlider"));
-        thresholdSlider->setMinimum(2);
-        thresholdSlider->setMaximum(50);
+        thresholdSlider->setMinimum(1);
+        thresholdSlider->setMaximum(10);
+        thresholdSlider->setPageStep(2);
+        thresholdSlider->setValue(3);
         thresholdSlider->setOrientation(Qt::Horizontal);
 
         verticalLayout->addWidget(thresholdSlider);
@@ -153,17 +194,10 @@ public:
 
         gridLayout->addWidget(splitter, 0, 0, 1, 1);
 
-        isolevelSlider = new QSlider(centralWidget);
-        isolevelSlider->setObjectName(QStringLiteral("isolevelSlider"));
-        isolevelSlider->setMaximum(255);
-        isolevelSlider->setOrientation(Qt::Vertical);
-
-        gridLayout->addWidget(isolevelSlider, 0, 1, 1, 1);
-
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 891, 21));
+        menuBar->setGeometry(QRect(0, 0, 1170, 21));
         menuMarchingCubes = new QMenu(menuBar);
         menuMarchingCubes->setObjectName(QStringLiteral("menuMarchingCubes"));
         MainWindow->setMenuBar(menuBar);
@@ -191,6 +225,8 @@ public:
         selectHeaderBtn->setText(QApplication::translate("MainWindow", "Select Header", 0));
         selectImageBtn->setText(QApplication::translate("MainWindow", "Select Image", 0));
         generateObjectBtn->setText(QApplication::translate("MainWindow", "Generate View", 0));
+        enableWiring->setText(QApplication::translate("MainWindow", "Enable Wiring", 0));
+        enableSlicing->setText(QApplication::translate("MainWindow", "Enable Slicing", 0));
         menuMarchingCubes->setTitle(QApplication::translate("MainWindow", "Menu", 0));
     } // retranslateUi
 

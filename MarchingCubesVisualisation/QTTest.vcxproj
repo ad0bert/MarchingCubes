@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DC417C52-1933-3F18-A2EF-880177205943}</ProjectGuid>
+    <ProjectGuid>{F4388A97-8E22-3EEF-A984-4BCBD38CFF8E}</ProjectGuid>
     <RootNamespace>QTTest</RootNamespace>
     <Keyword>Qt4VSv1.0</Keyword>
   </PropertyGroup>
@@ -56,7 +56,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..\..\..\..\qt\5.5\msvc2013_64\include;..\..\..\..\qt\5.5\msvc2013_64\include\QtOpenGL;..\..\..\..\qt\5.5\msvc2013_64\include\QtWidgets;..\..\..\..\qt\5.5\msvc2013_64\include\QtGui;..\..\..\..\qt\5.5\msvc2013_64\include\QtANGLE;..\..\..\..\qt\5.5\msvc2013_64\include\QtCore;release;.;..\..\..\..\qt\5.5\msvc2013_64\mkspecs\win32-msvc2013;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(QTDIR)\include;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;release;.;$(QTDIR)\mkspecs\win32-msvc2013;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>release\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
@@ -97,7 +97,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..\..\..\..\qt\5.5\msvc2013_64\include;..\..\..\..\qt\5.5\msvc2013_64\include\QtOpenGL;..\..\..\..\qt\5.5\msvc2013_64\include\QtWidgets;..\..\..\..\qt\5.5\msvc2013_64\include\QtGui;..\..\..\..\qt\5.5\msvc2013_64\include\QtANGLE;..\..\..\..\qt\5.5\msvc2013_64\include\QtCore;debug;.;..\..\..\..\qt\5.5\msvc2013_64\mkspecs\win32-msvc2013;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(QTDIR)\include;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;debug;.;$(QTDIR)\mkspecs\win32-msvc2013;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>debug\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
@@ -163,14 +163,14 @@ if errorlevel 1 goto VCEnd
 
 if errorlevel 1 goto VCEnd
 endlocal
-"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I.\..\..\..\..\qt\5.5\msvc2013_64\include" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtOpenGL" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtWidgets" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtGui" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtANGLE" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtCore" "-I.\release" "-I.\..\..\..\..\qt\5.5\msvc2013_64\mkspecs\win32-msvc2013"</Command>
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing mainwindow.h...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 if errorlevel 1 goto VCEnd
 
 if errorlevel 1 goto VCEnd
 endlocal
-"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I.\..\..\..\..\qt\5.5\msvc2013_64\include" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtOpenGL" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtWidgets" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtGui" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtANGLE" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtCore" "-I.\debug" "-I.\..\..\..\..\qt\5.5\msvc2013_64\mkspecs\win32-msvc2013"</Command>
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\debug" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing mainwindow.h...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
@@ -186,14 +186,14 @@ if errorlevel 1 goto VCEnd
 
 if errorlevel 1 goto VCEnd
 endlocal
-"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I.\..\..\..\..\qt\5.5\msvc2013_64\include" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtOpenGL" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtWidgets" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtGui" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtANGLE" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtCore" "-I.\release" "-I.\..\..\..\..\qt\5.5\msvc2013_64\mkspecs\win32-msvc2013"</Command>
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing tetrahedron.h...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 if errorlevel 1 goto VCEnd
 
 if errorlevel 1 goto VCEnd
 endlocal
-"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I.\..\..\..\..\qt\5.5\msvc2013_64\include" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtOpenGL" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtWidgets" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtGui" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtANGLE" "-I.\..\..\..\..\qt\5.5\msvc2013_64\include\QtCore" "-I.\debug" "-I.\..\..\..\..\qt\5.5\msvc2013_64\mkspecs\win32-msvc2013"</Command>
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\debug" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing tetrahedron.h...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>

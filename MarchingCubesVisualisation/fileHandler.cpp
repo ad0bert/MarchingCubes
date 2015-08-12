@@ -72,7 +72,7 @@ void fileHandler::readHdr(FILE *fp){
 	if (mHdr.dime.dim[0] < 0 || mHdr.dime.dim[0] > 15)
 		swapHdr();
 
-	showHdr();
+    //showHdr();
 }
 
 d3Buffer fileHandler::getData(){

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>891</width>
-    <height>605</height>
+    <width>1170</width>
+    <height>598</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,47 +15,157 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QSlider" name="isolevelSlider">
+      <property name="maximum">
+       <number>255</number>
+      </property>
+      <property name="value">
+       <number>200</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
     <item row="0" column="0">
      <widget class="QSplitter" name="splitter">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
       <widget class="QWidget" name="layoutWidget">
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <widget class="QLineEdit" name="headerPath"/>
+         <layout class="QFormLayout" name="formLayout_2">
+          <item row="0" column="0">
+           <widget class="QLineEdit" name="headerPath">
+            <property name="minimumSize">
+             <size>
+              <width>420</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
           </item>
-          <item>
+          <item row="0" column="1">
            <widget class="QPushButton" name="selectHeaderBtn">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
             <property name="text">
              <string>Select Header</string>
             </property>
            </widget>
           </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
-          <item>
-           <widget class="QLineEdit" name="imagePath"/>
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="imagePath">
+            <property name="minimumSize">
+             <size>
+              <width>420</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
           </item>
-          <item>
+          <item row="1" column="1">
            <widget class="QPushButton" name="selectImageBtn">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
             <property name="text">
              <string>Select Image</string>
             </property>
            </widget>
           </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="generateObjectBtn">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Generate View</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QCheckBox" name="enableWiring">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>Enable Wiring</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QCheckBox" name="enableSlicing">
+            <property name="text">
+             <string>Enable Slicing</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QSlider" name="slicerSlider">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>420</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximum">
+             <number>1</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
          </layout>
-        </item>
-        <item>
-         <widget class="QPushButton" name="generateObjectBtn">
-          <property name="text">
-           <string>Generate View</string>
-          </property>
-         </widget>
         </item>
        </layout>
       </widget>
@@ -69,15 +179,28 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
+          <property name="minimumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+          <zorder>isolevelSlider</zorder>
          </widget>
         </item>
         <item>
          <widget class="QSlider" name="thresholdSlider">
           <property name="minimum">
-           <number>2</number>
+           <number>1</number>
           </property>
           <property name="maximum">
-           <number>50</number>
+           <number>10</number>
+          </property>
+          <property name="pageStep">
+           <number>2</number>
+          </property>
+          <property name="value">
+           <number>3</number>
           </property>
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
@@ -88,16 +211,6 @@
       </widget>
      </widget>
     </item>
-    <item row="0" column="1">
-     <widget class="QSlider" name="isolevelSlider">
-      <property name="maximum">
-       <number>255</number>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-     </widget>
-    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -105,7 +218,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>891</width>
+     <width>1170</width>
      <height>21</height>
     </rect>
    </property>

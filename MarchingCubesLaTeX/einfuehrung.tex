@@ -1,4 +1,4 @@
-\chapter{Einführung}
+\chapter{Allgemeine Einführung}
 
 \section{Bildgebende Verfahren}
 \begin{quote}
@@ -15,7 +15,7 @@ Da das Hauptaugenmerk dieser Arbeit liegt auf der aus den tomographischen Verfah
 \section{Volumengrafik}
 Unter Volumengrafik versteht man in der Computergrafik die Darstellung von Objekten durch eine Menge von Voxeln. 
 \\\\
-Ein solches Voxel ist als ein einzelner Punkt in einem dreidimensionalen Objekt zu verstehen, welcher einen gewissen Dichtewert aufweist. Dieser Wert ist essentiell um z.B. bei den tomographischen Verfahren in der Medizin die festeren von den weicheren teilen des Körpers zu unterscheiden (z.B. Knochen und Gewebe). In Abbildung \ref{fig:Voxelgitter} ist eine solche Voxel-Menge zusehen die verschiedenen Grauwerte der einzelnen Bildpunkte stellen dabei die werte der Dichte dar.
+Ein solches Voxel ist als ein einzelner Punkt in einem dreidimensionalen Objekt zu verstehen, welcher einen gewissen Dichtewert aufweist. Dieser Wert ist essentiell um z.B. bei den tomographischen Verfahren in der Medizin die festeren von den weicheren teilen des Körpers zu unterscheiden (z.B. Knochen und Gewebe). In Abbildung \ref{fig:Voxelgitter} ist eine solche Voxel-Menge zusehen die verschiedenen Grauwerte der einzelnen Bildpunkte stellen dabei die Dichtewerte dar.
 
 \begin{figure}
 	\centering
@@ -25,7 +25,9 @@ Ein solches Voxel ist als ein einzelner Punkt in einem dreidimensionalen Objekt 
 \end{figure}
 
 \section{Marching Cubes}
-Der Marching Cubes Algorithmus wurde erstmals 1988 vorgestellt (\cite{MCAlgo}). Ziel dieses Algorithmus ist die Extraktion von Isoflächen aus Volumendaten. Formal ist die Extraktion wie folgt definiert: 
+Der Marching Cubes Algorithmus wurde erstmals 1988 vorgestellt (\cite{MCAlgo}). Ziel dieses Algorithmus ist die Extraktion von Isoflächen aus Volumendaten. 
+\subsection{Formale Definition}
+Die Extraktion von Isoflächen ist wie folgt definiert: 
 \\\\
 Aus einer Funktion $\varphi : \mathbb{R}^{n} \rightarrow \mathbb{R }$ wird, gegeben ein Schwellwert   c $\epsilon$ $ \mathbb{ R} $, eine
 Isofläche $S_{c}$ extrahiert, für die gilt:
@@ -35,6 +37,26 @@ S_{c} := \{ \vartheta \text{ } \epsilon \text{ } \mathbb{R}^{n} \text{ | } \varp
 (vgl. \cite{SeibtBak})
 
 \subsection{Funktionsweise}
+Wie der Name des Algorithmus bereits sagt wird durch die Voxel-Menge marschiert. Die Input-Menge des Algorithmus umfasst 8 aneinander grenzende Voxeln welche zusammen einen Würfel bilden. Nach erfolgreicher Verarbeitung wird der nächste Würfel in angriff genommen bis die gesamte Datenmenge abgearbeitet wurde. 
+\subsubsection{Der Würfel}
+Wie bereits erwähnt wird der Algorithmus für jeden einzelnen Würfel angewendet. Für ein besseres Verständnis ist in Abbildung \ref{fig:Wuerfel} ein Würfel in einem Voxelgitter rot gekennzeichnet. 
+\begin{figure}
+	\centering
+	\includegraphics[width=.50\textwidth]{Wuerfel}
+	\caption{Ein Wüfel im Voxelgitter \cite{SeibtBak}.}
+	\label{fig:Wuerfel}
+\end{figure}
+\\\\
+Als ersten Schritt werden nun die Ecken und Kanten des Würfels für die spätere Verarbeitung indiziert (s. Abbildung \ref{fig:WuerfelIndizierung}).
+
+\begin{figure}
+	\centering
+	\includegraphics[width=.50\textwidth]{WuerfelIndizierung}
+	\caption{Indizierung eines Würfels \cite{SeibtBak}.}
+	\label{fig:WuerfelIndizierung}
+\end{figure}
+
+
 
 \section{Dateiformate}
 Die zu dieser Arbeit herangezogenen Dateiformate sind einerseits die von dem Softwarepaket Analyze\footnote{https://rportal.mayo.edu/bir/} verwendeten Image und Header Files sowie die sogenannte STereoLithography-Schnittstelle. 
@@ -44,7 +66,88 @@ Diese Datei ist vergleichsweise einfach aufgebaut und enthält ein Objekt besteh
 
 \subsection{Header File (.hdr)}
 Diese Datei beschreibt die Ausmaße der Pixel-Datei sowie ihre Historie. (vgl. \cite{AnalyzeFormat}). \\\\
-Die genaue Struktur nach \cite{AnalyzeFormat} ist in drei Teilbereiche aufgeteilt. Der erste Teil ist der sogenannte 
+Die genaue Struktur nach \cite{AnalyzeFormat} ist in drei Teilbereiche aufgeteilt. Der erste Teil ist der sogenannte ''header key'' und beinhaltet allgemeine Informationen bezüglich der Datei (s. \ref{prog:headerKey}). Der zweite Teil beinhaltet Informationen bezüglich der Dimension der Image-Datei(s. \ref{prog:imageDim}. Der dritte und letzte abschnitt hält Informationen bezüglich der Historie (s. \ref{prog:dataHist}).
+
+\begin{program}
+	\caption{Header key als C-Struktur \cite{AnalyzeFormat}}
+	\label{prog:headerKey}
+	\begin{CCode}
+struct header_key /* header key */
+{ /* off + size */
+	int sizeof_hdr /* 0 + 4 */
+	char data_type[10]; /* 4 + 10 */
+	char db_name[18]; /* 14 + 18 */
+	int extents; /* 32 + 4 */
+	short int session_error; /* 36 + 2 */
+	char regular; /* 38 + 1 */
+	char hkey_un0; /* 39 + 1 */
+}; /* total=40 bytes */ 
+	\end{CCode}
+\end{program}
+
+\begin{program}
+	\caption{Data history als C-Struktur \cite{AnalyzeFormat}}
+	\label{prog:dataHist}
+	\begin{CCode}
+struct data_history
+{ /* off + size */
+	char descrip[80]; /* 0 + 80 */
+	char aux_file[24]; /* 80 + 24 */
+	char orient; /* 104 + 1 */
+	char originator[10]; /* 105 + 10 */
+	char generated[10]; /* 115 + 10 */
+	char scannum[10]; /* 125 + 10 */
+	char patient_id[10]; /* 135 + 10 */
+	char exp_date[10]; /* 145 + 10 */
+	char exp_time[10]; /* 155 + 10 */
+	char hist_un0[3]; /* 165 + 3 */
+	int views /* 168 + 4 */
+	int vols_added; /* 172 + 4 */
+	int start_field; /* 176 + 4 */
+	int field_skip; /* 180 + 4 */
+	int omax, omin; /* 184 + 8 */
+	int smax, smin; /* 192 + 8 */
+}; 
+	\end{CCode}
+\end{program}
+
+\begin{program}
+	\caption{Image Dimension als C-Struktur \cite{AnalyzeFormat}}
+	\label{prog:imageDim}
+	\begin{CCode}
+struct image_dimension
+{ /* off + size */
+	short int dim[8]; /* 0 + 16 */
+	short int unused8; /* 16 + 2 */
+	short int unused9; /* 18 + 2 */
+	short int unused10; /* 20 + 2 */
+	short int unused11; /* 22 + 2 */
+	short int unused12; /* 24 + 2 */
+	short int unused13; /* 26 + 2 */
+	short int unused14; /* 28 + 2 */
+	short int datatype; /* 30 + 2 */
+	short int bitpix; /* 32 + 2 */
+	short int dim_un0; /* 34 + 2 */
+	float pixdim[8]; /* 36 + 32 */
+	/*
+	pixdim[] specifies the voxel dimensitons:
+	pixdim[1] - voxel width
+	pixdim[2] - voxel height
+	pixdim[3] - interslice distance
+	...etc
+	*/
+	float vox_offset; /* 68 + 4 */
+	float funused1; /* 72 + 4 */
+	float funused2; /* 76 + 4 */
+	float funused3; /* 80 + 4 */
+	float cal_max; /* 84 + 4 */
+	float cal_min; /* 88 + 4 */
+	float compressed; /* 92 + 4 */
+	float verified; /* 96 + 4 */
+	int glmax,glmin; /* 100 + 8 */
+}; /* total=108 bytes */ 
+	\end{CCode}
+\end{program}
 
 \subsection{STereoLithography (.stl)}
 \begin{quote}
@@ -78,4 +181,3 @@ Computergrafik beschreibt das computergestützte Erstellen und Verarbeiten von G
 	high-quality graphical images, specifically color images of three-dimensional
 	objects.'' - \cite{OpenGLDoku}
 \end{quote}
-\subsection{QT (Bibliothek)}

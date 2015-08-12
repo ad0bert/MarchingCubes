@@ -16,6 +16,7 @@ class Tetrahedron : public QGLWidget
 public:
     Tetrahedron(QWidget *parent = 0);
     void setObject(std::vector<TRIANGLE> *object);
+    void setWiring(bool enable);
     void updateUI();
 protected:
     void initializeGL();
@@ -23,20 +24,22 @@ protected:
     void paintGL();
     void mousePressEvent(QMouseEvent *event);
     void mouseMoveEvent(QMouseEvent *event);
-    void mouseDoubleClickEvent(QMouseEvent *event);
+	void wheelEvent(QWheelEvent *event);
 	void setXRotation(int angle);
 	void setYRotation(int angle);
 	void setZRotation(int angle);
 private:
     void draw();
-    int faceAtPosition(const QPoint &pos);
 	void qNormalizeAngle(int &angle);
+    void drawSlice();
+    void drawAll();
     GLfloat rotationX;
     GLfloat rotationY;
     GLfloat rotationZ;
     QColor faceColors[4];
     QPoint lastPos;
     std::vector<TRIANGLE> mObject;
+	int mSize;
 };
 
 #endif
