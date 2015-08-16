@@ -2,20 +2,19 @@
 #define _MARCHING_CUBES_H
 
 #include "fileHandler.h"
+
 typedef struct {
     float x, y, z;
 } XYZ;
 
 typedef struct {
-    XYZ p[8];
-    XYZ n[8];
-    float val[8];
+    XYZ p[8];		// corners
+    float val[8];	// isolevel of one corner
 } GRIDCELL;
 
 typedef struct {
-    XYZ p[3];         /* Vertices */
-    XYZ c;            /* Centroid */
-    XYZ n;         /* Normal   */
+    XYZ p[3];		// Vertices
+    XYZ n;			// Normal
 } TRIANGLE;
 
 #define ABS(x) (x < 0 ? -(x) : (x))
@@ -23,29 +22,28 @@ typedef struct {
 class marchingCubes{
 
 public:
-    void setAllData(d3Buffer data, int themax, int themin, short int isolevel, int NX, int NY, int NZ);
+    void setAllData(d3Buffer data, short int isolevel, int x, int y, int z);
     void perform(int offset, int slice = -1);
     std::vector<TRIANGLE> getResult();
-    bool GenerateStlFile(std::string path);
+    bool generateStlFile(std::string path);
     void setIsolevel(short int isolevel);
     void setSlice(int sliceNumber);
     void setSlicing(bool enable);
 private:
-    int PolygoniseCube();
-    XYZ VertexInterp(XYZ p1, XYZ p2, float valp1, float valp2);
-	void CalcNormal(TRIANGLE &tri);
+	// performing the mc for one slice of the input
 	void generateSlice(int offset, int slice);
-    int NX;
-    int NY;
-    int NZ;
-    int themax;
-    int themin;
-    d3Buffer mData;
-    short int isolevel; // , themax = 0, themin = 255;
-    GRIDCELL grid;
-    TRIANGLE triangles[10];
-    std::vector<TRIANGLE> tri;
-    int ntri = 0;
+	// performs the mc-algo for one cube
+	void PolygoniseCube(GRIDCELL grid, std::vector<TRIANGLE> &triangles);
+    
+	// math. helper functions
+	XYZ VertexInterp(XYZ p1, XYZ p2, float valp1, float valp2);
+	void CalcNormal(TRIANGLE &tri);
+
+	XYZ mDimension;					// Dimension of the input data
+    d3Buffer mData;					// RAW input data
+    short int mIsolevel;			// Treshhold value
+    
+	std::vector<TRIANGLE> mResult;	// list of resulting triangles after the mc-algo
 };
 
 #endif // _MARCHING_CUBES_H

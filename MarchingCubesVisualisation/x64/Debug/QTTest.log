@@ -1,57 +1,40 @@
-﻿Build started 12.08.2015 08:41:01.
-     1>Project "C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesVisualisation\QTTest.vcxproj" on node 2 (Build target(s)).
+﻿Build started 16.08.2015 06:46:26.
+     1>Project "C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesVisualisation\QTTest.vcxproj" on node 2 (Rebuild target(s)).
      1>CustomBuild:
          Moc'ing mainwindow.h...
-         Moc'ing tetrahedron.h...
+         Moc'ing visualisation.h...
+         Uic'ing mainwindow.ui...
+     1>C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesVisualisation\mainwindow.ui : warning : The name 'layoutWidget' (QWidget) is already in use, defaulting to 'layoutWidget1'.
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_mainwindow.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_mainwindow.cpp, Release\moc_mainwindow.cpp.
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_tetrahedron.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_tetrahedron.cpp, Release\moc_tetrahedron.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_visualisation.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_visualisation.cpp, Release\moc_visualisation.cpp.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I. /IC:\Qt\5.5\msvc2013_64\include /IC:\Qt\5.5\msvc2013_64\include\QtOpenGL /IC:\Qt\5.5\msvc2013_64\include\QtWidgets /IC:\Qt\5.5\msvc2013_64\include\QtGui /IC:\Qt\5.5\msvc2013_64\include\QtANGLE /IC:\Qt\5.5\msvc2013_64\include\QtCore /Idebug /I. /I"C:\Qt\5.5\msvc2013_64\mkspecs\win32-msvc2013" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /Od /D _WINDOWS /D UNICODE /D WIN32 /D WIN64 /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt -w34100 -w34189 -w44996 Debug\moc_mainwindow.cpp Debug\moc_tetrahedron.cpp fileHandler.cpp main.cpp mainwindow.cpp marchingcubes.cpp tetrahedron.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I. /IC:\Qt\5.5\msvc2013_64\include /IC:\Qt\5.5\msvc2013_64\include\QtOpenGL /IC:\Qt\5.5\msvc2013_64\include\QtWidgets /IC:\Qt\5.5\msvc2013_64\include\QtGui /IC:\Qt\5.5\msvc2013_64\include\QtANGLE /IC:\Qt\5.5\msvc2013_64\include\QtCore /Idebug /I. /I"C:\Qt\5.5\msvc2013_64\mkspecs\win32-msvc2013" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /Od /D _WINDOWS /D UNICODE /D WIN32 /D WIN64 /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /FR"x64\Debug\\" /Gd /TP /errorReport:prompt -w34100 -w34189 -w44996 Debug\moc_mainwindow.cpp Debug\moc_visualisation.cpp fileHandler.cpp main.cpp mainwindow.cpp marchingcubes.cpp visualisation.cpp
          moc_mainwindow.cpp
-         moc_tetrahedron.cpp
+         moc_visualisation.cpp
          fileHandler.cpp
      1>fileHandler.cpp(91): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
          main.cpp
          mainwindow.cpp
-     1>mainwindow.cpp(84): warning C4100: 'value' : unreferenced formal parameter
          marchingcubes.cpp
-     1>marchingcubes.cpp(29): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(30): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(31): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(33): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(34): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(35): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(37): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(38): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(39): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(41): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(42): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(43): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(45): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(46): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(47): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(49): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(50): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(51): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(53): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(54): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(55): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(57): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(58): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>marchingcubes.cpp(59): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-         tetrahedron.cpp
+     1>marchingcubes.cpp(91): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         visualisation.cpp
+     1>visualisation.cpp(9): warning C4305: '=' : truncation from 'double' to 'GLfloat'
+     1>visualisation.cpp(147): warning C4305: '-=' : truncation from 'double' to 'GLfloat'
+     1>visualisation.cpp(150): warning C4305: '+=' : truncation from 'double' to 'GLfloat'
          Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\QTTest.exe" /NOLOGO /LIBPATH:C:\Qt\5.5\msvc2013_64\lib /LIBPATH:C:/qt/5.5/msvc2013_64/lib /LIBPATH:C:\Qt\5.5\msvc2013_64\lib C:\Qt\5.5\msvc2013_64\lib\qtmaind.lib shell32.lib C:/qt/5.5/msvc2013_64/lib\Qt5Cored.lib opengl32.lib glu32.lib C:\Qt\5.5\msvc2013_64\lib\Qt5OpenGLd.lib C:\Qt\5.5\msvc2013_64\lib\Qt5Widgetsd.lib C:\Qt\5.5\msvc2013_64\lib\Qt5Guid.lib C:\Qt\5.5\msvc2013_64\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\QTTest.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" x64\Debug\moc_mainwindow.obj
-         x64\Debug\moc_tetrahedron.obj
+         x64\Debug\moc_visualisation.obj
          x64\Debug\fileHandler.obj
          x64\Debug\main.obj
          x64\Debug\mainwindow.obj
          x64\Debug\marchingcubes.obj
-         x64\Debug\tetrahedron.obj
+         x64\Debug\visualisation.obj
          QTTest.vcxproj -> C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesVisualisation\debug\QTTest.exe
-     1>Done Building Project "C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesVisualisation\QTTest.vcxproj" (Build target(s)).
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"debug\QTTest.bsc" /n x64\Debug\moc_mainwindow.sbr x64\Debug\moc_visualisation.sbr x64\Debug\fileHandler.sbr x64\Debug\main.sbr x64\Debug\mainwindow.sbr x64\Debug\marchingcubes.sbr x64\Debug\visualisation.sbr
+     1>Done Building Project "C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesVisualisation\QTTest.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:07.96
+Time Elapsed 00:00:13.88

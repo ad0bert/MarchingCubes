@@ -28,7 +28,7 @@
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
-#include "tetrahedron.h"
+#include "Visualisation.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -55,7 +55,7 @@ public:
     QSlider *slicerSlider;
     QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout;
-    Tetrahedron *widget;
+    Visualisation *widget;
     QSlider *thresholdSlider;
     QMenuBar *menuBar;
     QMenu *menuMarchingCubes;
@@ -171,7 +171,7 @@ public:
         verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        widget = new Tetrahedron(layoutWidget1);
+        widget = new Visualisation(layoutWidget1);
         widget->setObjectName(QStringLiteral("widget"));
         sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
         widget->setSizePolicy(sizePolicy);

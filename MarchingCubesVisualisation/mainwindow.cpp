@@ -45,9 +45,7 @@ void MainWindow::on_generateObjectBtn_clicked()
     if (ui->headerPath->text() != "" && ui->imagePath->text() != ""){
         readFiles();
         mc->setAllData(imgFile->getData(),
-                       hdrFile->getHdr().dime.glmax,
-                       hdrFile->getHdr().dime.glmin,
-                       200,
+                       ui->isolevelSlider->value(),
                        hdrFile->getHdr().dime.dim[1],
                        hdrFile->getHdr().dime.dim[2],
                        hdrFile->getHdr().dime.dim[3]
@@ -84,10 +82,10 @@ void MainWindow::on_isolevelSlider_valueChanged(int value)
 void MainWindow::on_thresholdSlider_valueChanged(int value)
 {
 	if (ui->enableSlicing->isChecked()){
-		mc->perform(ui->thresholdSlider->value(), ui->slicerSlider->value());
+		mc->perform(value, ui->slicerSlider->value());
 	}
 	else{
-		mc->perform(ui->thresholdSlider->value());
+		mc->perform(value);
 	}
     ui->widget->setObject(&mc->getResult());
     ui->widget->updateUI();
@@ -95,7 +93,7 @@ void MainWindow::on_thresholdSlider_valueChanged(int value)
 
 void MainWindow::on_actionSaveAsStl_triggered()
 {
-    mc->GenerateStlFile(QFileDialog::getSaveFileName(0, "Save file", "C://Users//Adobert//Desktop//", "STL files (*.stl)").toStdString());
+    mc->generateStlFile(QFileDialog::getSaveFileName(0, "Save file", "C://Users//Adobert//Desktop//", "STL files (*.stl)").toStdString());
 }
 
 void MainWindow::on_enableWiring_toggled(bool checked)

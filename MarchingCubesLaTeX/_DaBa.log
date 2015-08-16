@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.6)  12 AUG 2015 02:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.6)  16 AUG 2015 03:01
 entering extended mode
 **_DaBa.tex
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.tex
@@ -1014,30 +1014,30 @@ LaTeX Info: Redefining \cite on input line 694.
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 14.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 13.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 14.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1063,7 +1063,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count173
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 13.
+Package hyperref Info: Link coloring OFF on input line 14.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1072,43 +1072,43 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count174
 )
-LaTeX Info: Redefining \ref on input line 13.
-LaTeX Info: Redefining \pageref on input line 13.
-LaTeX Info: Redefining \nameref on input line 13.
+LaTeX Info: Redefining \ref on input line 14.
+LaTeX Info: Redefining \pageref on input line 14.
+LaTeX Info: Redefining \nameref on input line 14.
 
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.out)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.out)
 \@outlinefile=\write3
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 35.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 36.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<ot1.cmap>>
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 35.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 36.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oml.cmap>>
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 35.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 36.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 35.
+LaTeX Font Info:    Try loading font information for U+msa on input line 36.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 35.
+LaTeX Font Info:    Try loading font information for U+msb on input line 36.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/FHOOeIntl2014.pdf, id=124, 269.93045pt x 269.93045pt>
+<images/FHOOeIntl2014.pdf, id=152, 269.93045pt x 269.93045pt>
 File: images/FHOOeIntl2014.pdf Graphic file (type pdf)
 
 <use images/FHOOeIntl2014.pdf>
-Package pdftex.def Info: images/FHOOeIntl2014.pdf used on input line 35.
+Package pdftex.def Info: images/FHOOeIntl2014.pdf used on input line 36.
 (pdftex.def)             Requested size: 85.35805pt x 85.35826pt.
  [1
 
@@ -1116,7 +1116,7 @@ Package pdftex.def Info: images/FHOOeIntl2014.pdf used on input line 35.
 
 {C:/Users/Adobert/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/
 Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/FHOOeIntl2014.pdf>]
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 35.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 36.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1130,17 +1130,17 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 [5] (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\kurzfassung.tex)
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--40
+Underfull \hbox (badness 10000) in paragraph at lines 4--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--40
+Underfull \hbox (badness 10000) in paragraph at lines 4--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--40
+Underfull \hbox (badness 10000) in paragraph at lines 4--41
 
  []
 
@@ -1148,17 +1148,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--40
 
 
 ] (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\abstract.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 3--41
+Underfull \hbox (badness 10000) in paragraph at lines 3--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--41
+Underfull \hbox (badness 10000) in paragraph at lines 3--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--41
+Underfull \hbox (badness 10000) in paragraph at lines 3--42
 
  []
 
@@ -1168,6 +1168,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--41
 
 ] (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\einleitung.tex
 Kapitel 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+
+ []
+
 ) [1
 
 
@@ -1184,7 +1189,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
 
-<images/Voxelgitter.png, id=211, 466.74374pt x 466.74374pt>
+<images/Voxelgitter.png, id=251, 466.74374pt x 466.74374pt>
 File: images/Voxelgitter.png Graphic file (type png)
 
 <use images/Voxelgitter.png>
@@ -1200,22 +1205,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--34
  []
 
 [4 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/Voxelgitte
-r.png>] <images/Wuerfel.png, id=242, 298.86656pt x 298.86656pt>
+r.png>] <images/Wuerfel.png, id=282, 298.86656pt x 298.86656pt>
 File: images/Wuerfel.png Graphic file (type png)
 
 <use images/Wuerfel.png>
 Package pdftex.def Info: images/Wuerfel.png used on input line 45.
 (pdftex.def)             Requested size: 180.0pt x 180.0008pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--51
-
- []
-
-<images/WuerfelIndizierung.png, id=248, 286.06876pt x 286.06876pt>
+<images/WuerfelIndizierung.png, id=288, 286.06876pt x 286.06876pt>
 File: images/WuerfelIndizierung.png Graphic file (type png)
 
 <use images/WuerfelIndizierung.png>
-Package pdftex.def Info: images/WuerfelIndizierung.png used on input line 54.
+Package pdftex.def Info: images/WuerfelIndizierung.png used on input line 52.
 (pdftex.def)             Requested size: 180.0pt x 180.00165pt.
  [5 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/Wuerfel.p
 ng>]
@@ -1223,8 +1224,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
+[6 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/WuerfelInd
+izierung.png>]
 Package hyperref Info: bookmark level for unknown program defaults to 0 on inpu
 t line 72.
+
 (C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -1244,43 +1248,54 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-)
+) [7]
 Underfull \hbox (badness 10000) in paragraph at lines 156--159
 
  []
 
-[6 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/WuerfelInd
-izierung.png>] <images/StL-ASCII.jpg, id=300, 212.29312pt x 161.10187pt>
+[8] <images/StL-ASCII.jpg, id=419, 212.29312pt x 161.10187pt>
 File: images/StL-ASCII.jpg Graphic file (type jpg)
 
 <use images/StL-ASCII.jpg>
 Package pdftex.def Info: images/StL-ASCII.jpg used on input line 162.
 (pdftex.def)             Requested size: 233.9978pt x 177.58133pt.
 
-<images/StL-binary.jpg, id=305, 374.14781pt x 330.48468pt>
+<images/StL-binary.jpg, id=424, 374.14781pt x 330.48468pt>
 File: images/StL-binary.jpg Graphic file (type jpg)
 
 <use images/StL-binary.jpg>
 Package pdftex.def Info: images/StL-binary.jpg used on input line 169.
 (pdftex.def)             Requested size: 233.9978pt x 206.6936pt.
- [7]) [8] [9 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/
-StL-ASCII.jpg> <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/image
-s/StL-binary.jpg>]
+
+Overfull \hbox (4.7758pt too wide) in paragraph at lines 175--175
+[][][]\T1/lmr/m/n/9 https://msdn.microsoft.com/en-us/library/windows/desktop/bb
+153256(v=vs.85).aspx| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[][][]\T1/lmr/m/n/9 http://www.amd.com/de-de/innovations/software-technologies/
+technologies-
+ []
+
+[9 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/StL-ASCII.
+jpg> <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/StL-bina
+ry.jpg>]) [10]
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.tex
 Kapitel 3.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+[11
+
+
+
+] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-)) [10
-
-
-
-] [11]
+) [12]) [13]
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.tex
 Kapitel 4.
-) [12
+) [14
 
 
 
@@ -1308,12 +1323,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--31
 dn, htt-
  []
 
-) [13
+) [15
 
 
 ] (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
 
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.aux
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\kurzfassung.aux)
@@ -1323,24 +1338,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
 Package rerunfilecheck Info: File `_DaBa.out' has not changed.
-(rerunfilecheck)             Checksum: 6174C82F277EFA3C8D2B17803AED57C0;3723.
+(rerunfilecheck)             Checksum: 482A59D14B484F088E614FFD38250C63;4696.
  ) 
 Here is how much of TeX's memory you used:
- 17511 strings out of 493921
- 252656 string characters out of 3144871
- 550171 words of memory out of 3000000
- 20169 multiletter control sequences out of 15000+200000
+ 17535 strings out of 493921
+ 252991 string characters out of 3144871
+ 548159 words of memory out of 3000000
+ 20178 multiletter control sequences out of 15000+200000
  95157 words of font info for 72 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 67i,11n,96p,1024b,1802s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/
-MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvip
-s/lm/lm-rm.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.
+ 67i,12n,96p,1024b,1802s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files (x86)
+/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm
+/lm-mathit.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKT
@@ -1356,9 +1371,9 @@ mss12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on _DaBa.pdf (20 pages, 775615 bytes).
+Output written on _DaBa.pdf (22 pages, 793058 bytes).
 PDF statistics:
- 567 PDF objects out of 1000 (max. 8388607)
- 177 named destinations out of 1000 (max. 500000)
- 283 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 625 PDF objects out of 1000 (max. 8388607)
+ 192 named destinations out of 1000 (max. 500000)
+ 339 words of extra memory for PDF output out of 10000 (max. 10000000)
 

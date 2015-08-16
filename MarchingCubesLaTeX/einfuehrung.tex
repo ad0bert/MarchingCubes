@@ -4,18 +4,18 @@
 \begin{quote}
 	''Die Medizinische Bildverarbeitung hat das Ziel, medizinische Bilder und Bildfolgen zur Unterstützung der medizinischen Diagnostik und Therapie aufzubereiten, zu analysieren und zu visualisieren.'' - \cite{MedBildVerarbeitung}
 \end{quote}
-Die verschiedenen Verfahren können in die Art der erzeugten Bilddaten eingeteilt werden:
+Die verschiedenen medizinischen Verfahren können in die Art der erzeugten Bilddaten eingeteilt werden:
 \begin{itemize}
 	\item \textbf{Schnittbilder} z.B. mittels Computertomografie, Magnetresonanztomografie oder Röntgentomografie.
 	\item \textbf{Projektionsbilder} z.B. durch ''klassisches'' Röntgen.
 	\item \textbf{Oberflächenabbildungen} z.B. durch Rastertunnelmikroskop.
 \end{itemize}
-Da das Hauptaugenmerk dieser Arbeit liegt auf der aus den tomographischen Verfahren erhaltenden Schnittbildern welche als sogenannte Voxel-Daten gespeichert werden. Ein vollständiges dreidimensionales Bild besteht aus mehreren solcher übereinandergelegten Schnittbildern.
+Da das Hauptaugenmerk dieser Arbeit liegt auf der aus den tomographischen Verfahren erhaltenden Schnittbildern, welche als sogenannte Voxel-Daten gespeichert werden. Ein vollständiges dreidimensionales Bild besteht aus mehreren solcher übereinandergelegten Schnittbildern.
 
 \section{Volumengrafik}
 Unter Volumengrafik versteht man in der Computergrafik die Darstellung von Objekten durch eine Menge von Voxeln. 
 \\\\
-Ein solches Voxel ist als ein einzelner Punkt in einem dreidimensionalen Objekt zu verstehen, welcher einen gewissen Dichtewert aufweist. Dieser Wert ist essentiell um z.B. bei den tomographischen Verfahren in der Medizin die festeren von den weicheren teilen des Körpers zu unterscheiden (z.B. Knochen und Gewebe). In Abbildung \ref{fig:Voxelgitter} ist eine solche Voxel-Menge zusehen die verschiedenen Grauwerte der einzelnen Bildpunkte stellen dabei die Dichtewerte dar.
+Ein solches Voxel ist als ein einzelner Punkt in einem dreidimensionalen Objekt zu verstehen, welcher einen gewissen Dichtewert aufweist. Dieser Wert ist essentiell um z.B. bei den tomographischen Verfahren in der Medizin die festeren von den weicheren teilen eines Körpers zu unterscheiden (z.B. Knochen und Gewebe). In Abbildung \ref{fig:Voxelgitter} ist eine solche Voxel-Menge zusehen die verschiedenen Grauwerte der einzelnen Bildpunkte stellen dabei die unterschiedlichen Dichtewert dar.
 
 \begin{figure}
 	\centering
@@ -29,7 +29,7 @@ Der Marching Cubes Algorithmus wurde erstmals 1988 vorgestellt (\cite{MCAlgo}). 
 \subsection{Formale Definition}
 Die Extraktion von Isoflächen ist wie folgt definiert: 
 \\\\
-Aus einer Funktion $\varphi : \mathbb{R}^{n} \rightarrow \mathbb{R }$ wird, gegeben ein Schwellwert   c $\epsilon$ $ \mathbb{ R} $, eine
+Aus einer Funktion $\varphi : \mathbb{R}^{n} \rightarrow \mathbb{R }$ wird, gegeben ein Dichtewert   c $\epsilon$ $ \mathbb{ R} $, eine
 Isofläche $S_{c}$ extrahiert, für die gilt:
 \begin{equation}
 S_{c} := \{ \vartheta \text{ } \epsilon \text{ } \mathbb{R}^{n} \text{ | } \varphi(\vartheta) = c\}
@@ -37,36 +37,36 @@ S_{c} := \{ \vartheta \text{ } \epsilon \text{ } \mathbb{R}^{n} \text{ | } \varp
 (vgl. \cite{SeibtBak})
 
 \subsection{Funktionsweise}
-Wie der Name des Algorithmus bereits sagt wird durch die Voxel-Menge marschiert. Die Input-Menge des Algorithmus umfasst 8 aneinander grenzende Voxeln welche zusammen einen Würfel bilden. Nach erfolgreicher Verarbeitung wird der nächste Würfel in angriff genommen bis die gesamte Datenmenge abgearbeitet wurde. 
-\subsubsection{Der Würfel}
-Wie bereits erwähnt wird der Algorithmus für jeden einzelnen Würfel angewendet. Für ein besseres Verständnis ist in Abbildung \ref{fig:Wuerfel} ein Würfel in einem Voxelgitter rot gekennzeichnet. 
-\begin{figure}
+Wie der Name des Algorithmus bereits sagt wird durch die Voxel-Menge ''marschiert''. Die Input-Menge des Algorithmus umfasst 8 aneinander grenzende Punkte der Voxel-Menge welche zusammen einen Würfel bilden sowie eines Schwellwert für die Dichte. Nach erfolgreicher Verarbeitung wird zum nächste Würfel gewandert (''marschiert'') bis die gesamte Datenmenge abgearbeitet wurde. 
+\subsubsection{Vorbereitung}
+Wie bereits erwähnt wird der Algorithmus für jeden einzelnen Würfel der gesamten Menge angewendet. Für ein besseres Verständnis zeigt Abbildung \ref{fig:Wuerfel} einen solchen Würfel (rot) in einem Voxelgitter.
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=.50\textwidth]{Wuerfel}
 	\caption{Ein Wüfel im Voxelgitter \cite{SeibtBak}.}
 	\label{fig:Wuerfel}
 \end{figure}
-\\\\
-Als ersten Schritt werden nun die Ecken und Kanten des Würfels für die spätere Verarbeitung indiziert (s. Abbildung \ref{fig:WuerfelIndizierung}).
-
-\begin{figure}
+Als erster Schritt im Algorithmus werden nun die Ecken und Kanten des Würfels für die spätere Verarbeitung indiziert (s. Abbildung \ref{fig:WuerfelIndizierung}).
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=.50\textwidth]{WuerfelIndizierung}
 	\caption{Indizierung eines Würfels \cite{SeibtBak}.}
 	\label{fig:WuerfelIndizierung}
 \end{figure}
 
+Jede Ecke des Würfels kann aufgrund seines Dichtewertes als Solide bzw. Transparent klassifiziert werden. Folglich sind aufgrund der Zwei möglichen Werte jeder Ecke $2^{8} = 256$ unterschiedliche Konfigurationen der Eingabemenge möglich. Jede dieser Konfigurationen kann als ein 8 Bit Muster dargestellt werden wobei gilt, dass jedes Bit \textit{i} bei welchem der Dichtewert \textit{$d_{i}$} des dazugehörigen Voxel einen gewissen Schwellwert \textit{c} überschreitet als binäre 0 interpretiert wird. Betrachtet man nun dieses Bitmuster als natürliche Zahl erhält man einen sogenannten Würfelindex zwischen 0  und 255 welcher für die weitere Verarbeitung essentiell ist.
 
+\subsubsection{Verarbeitung}
 
 \section{Dateiformate}
 Die zu dieser Arbeit herangezogenen Dateiformate sind einerseits die von dem Softwarepaket Analyze\footnote{https://rportal.mayo.edu/bir/} verwendeten Image und Header Files sowie die sogenannte STereoLithography-Schnittstelle. 
 
 \subsection{Image File (.img)}
-Diese Datei ist vergleichsweise einfach aufgebaut und enthält ein Objekt bestehend aus (normalerweise) unkomprimierten Pixel Daten (vgl. \cite{AnalyzeFormat}). Jedes Pixel repräsentiert eine Voxel mit dem dazugehörigen Dichtewert. Das Gesamte Objekt kann somit in eine 3x3 Matrix eingelesen und verarbeitet werde.
+Diese Datei ist vergleichsweise einfach aufgebaut und enthält ein Objekt bestehend aus (normalerweise) unkomprimierten Pixel Daten (vgl. \cite{AnalyzeFormat}). Jedes Pixel repräsentiert eine Voxel mit dem dazugehörigen Dichtewert. Das gesamte Objekt kann somit in eine 3x3 Matrix eingelesen und verarbeitet werde.
 
 \subsection{Header File (.hdr)}
 Diese Datei beschreibt die Ausmaße der Pixel-Datei sowie ihre Historie. (vgl. \cite{AnalyzeFormat}). \\\\
-Die genaue Struktur nach \cite{AnalyzeFormat} ist in drei Teilbereiche aufgeteilt. Der erste Teil ist der sogenannte ''header key'' und beinhaltet allgemeine Informationen bezüglich der Datei (s. \ref{prog:headerKey}). Der zweite Teil beinhaltet Informationen bezüglich der Dimension der Image-Datei(s. \ref{prog:imageDim}. Der dritte und letzte abschnitt hält Informationen bezüglich der Historie (s. \ref{prog:dataHist}).
+Die genaue Struktur nach \cite{AnalyzeFormat} ist in drei Teilbereiche aufgeteilt. Der erste Teil ist der sogenannte ''header key'' und beinhaltet allgemeine Informationen bezüglich der Datei (s. \ref{prog:headerKey}). Der zweite Teil beinhaltet Informationen bezüglich der Dimension der Image-Datei(s. \ref{prog:imageDim}. Der dritte und letzte Abschnitt hält Informationen bezüglich der Historie (s. \ref{prog:dataHist}).
 
 \begin{program}
 	\caption{Header key als C-Struktur \cite{AnalyzeFormat}}
@@ -153,9 +153,9 @@ struct image_dimension
 \begin{quote}
 	''The STL (STereoLithography) file format, as developed by 3D Systems, has been widely used by most Rapid Prototyping (RP) systems and is supported by all major computer-aided design (CAD) systems.'' - \cite{STereoLithography}
 \end{quote}
-Eine STL-Datei besteht aus einer liste von Dreiecken. Jedes Dreieck wird durch seine drei Eckpunkte im Raum sowie durch seinen Normalvektor beschrieben. Dies führt folglich zu einer Summe von 12 Werten pro Dreieck.\\
+Eine STL-Datei besteht im Prinzip aus einer liste von Dreiecken. Jedes Dreieck wird durch seine drei Eckpunkte im Raum (jeweils x, y und z Position) sowie durch seinen Normalvektor beschrieben. Dies führt folglich zu einer Summe von 12 Werten pro Dreieck.\\
 \\
-Zum besseren Verständnis kann in Abbildung \ref{fig:ASCIISTL} der Aufbau einer solchen Datei als ASCII Darstellung betrachtet werden. Für ein besseres Verständnis hinsichtlich der Implementierung ist in Abbildung \ref{fig:BINARYSTL} der Binäre Aufbau des STL-Formates zu finden. 
+Zum besseren Verständnis kann in Abbildung \ref{fig:ASCIISTL} der Aufbau einer solchen Datei als ASCII Darstellung betrachtet werden. Für ein besseres Verständnis hinsichtlich der Implementierung ist in Abbildung \ref{fig:BINARYSTL} der Binäre Aufbau des STL-Formates zu dargestellt. 
 
 \begin{figure}
 	\centering
@@ -172,7 +172,7 @@ Zum besseren Verständnis kann in Abbildung \ref{fig:ASCIISTL} der Aufbau einer 
 \end{figure}
 
 \section{Computergrafik}
-Computergrafik beschreibt das computergestützte Erstellen und Verarbeiten von Grafiken (vgl. \cite{ComputerGraphics}). 
+Computergrafik beschreibt das computergestützte Erstellen und Verarbeiten von Grafiken (vgl. \cite{ComputerGraphics}). In dieser Arbeit wird auf die Verarbeitung und insbesondere auf die Darstellung von dreidimensionalen Objekten als Polygon-Menge zurückgegriffen. Zu diesem Zweck bieten sich diverse Programmierschnittstellen wie OpenGL\footnote{https://www.opengl.org/}, Direct3D\footnote{https://msdn.microsoft.com/en-us/library/windows/desktop/bb153256(v=vs.85).aspx} oder AMD Mantle\footnote{http://www.amd.com/de-de/innovations/software-technologies/technologies-gaming/mantle} an, welche für Grafikausgaben genutzt werden können. Aufgrund der Aufgabenstellung wird in dieser Arbeit OpenGL verwendet.
 \subsection{OpenGL}
 \begin{quote}
 	''OpenGL (for “Open Graphics Library”) is a software interface to graphics hardware.

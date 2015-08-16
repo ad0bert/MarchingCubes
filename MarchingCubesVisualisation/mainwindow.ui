@@ -172,7 +172,7 @@
       <widget class="QWidget" name="layoutWidget">
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <widget class="Tetrahedron" name="widget" native="true">
+         <widget class="Visualisation" name="widget" native="true">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
             <horstretch>0</horstretch>
@@ -258,9 +258,9 @@
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
-   <class>Tetrahedron</class>
+   <class>Visualisation</class>
    <extends>QWidget</extends>
-   <header>tetrahedron.h</header>
+   <header>Visualisation.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

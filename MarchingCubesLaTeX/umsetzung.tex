@@ -1,20 +1,23 @@
 \chapter{Umsetzung}
-
+Im Rahmen dieser Arbeit entstand ein in C++ geschriebenes Programm welches den Marching Cubes Algorithmus auf eine Voxelmenge anwendet und das Resultat via OpgenGL visualisiert. Des Weiteren ist es möglich das verarbeitete Model als STereoLithography (.stl) Datei zu exportieren.
 \section{Marching Cubes}
+Der Marching Cubes Algorithmus ist das Herzstück der entstandenen Applikation er ermöglicht die Umrechnung der gegebenen Voxel Datenmenge in eine polygonale Darstellung welche sich im später vergleichsweise einfach darstellen lässt.
+\subsection{Allgemein}
+Die Implementierung ist eine angepasst Version der von [ref] bereitgestellten Umsetzung. Die wesentlichen Änderungen sind die Auslagerung der Funktionen in eine eigenen Klasse und das verwenden anderer Datenstrukturen. Durch die Umstellung auf STL-Behälter und der daraus folgende Verzicht auf C-Strukturen welche zur Laufzeit immer neuen Speicher anfordern konnte die Geschwindigkeit enorm erhöht werde.
+\subsection{Klasse}
 
-\subsection{Ansatz}
-
-\subsection{Implementierung}
+\subsection{Auszüge Implementierung}
 
 \section{File Formate}
 
+\subsection{Allgemein}
 \subsection{Image File (.img)}
 
 \subsection{Header File (.hdr)}
 
 \subsection{STereoLithography (.stl)}
 \ref{prog:generateSTL}
-
+\subsection{Klasse}
 
 \begin{program}
 	\caption{Generierung einer STL-Datei}
@@ -45,7 +48,12 @@
 \end{program}
 
 \section{OpenGL}
-
+\subsection{Allgmein}
+\subsection{Schnittstelle (Klasse)}
+\subsection{Auszüge Implementierung}
+\begin{program}
+	\caption{Berechnung der Normalen eines Dreiecks}
+	\label{prog:calcNormal}
 \begin{CCode}
 	void marchingCubes::CalcNormal(TRIANGLE &tri){
 		XYZ U;
@@ -63,3 +71,6 @@
 		tri.n[0].z = (U.x * V.y) - (U.y * V.x);
 	}
 \end{CCode}
+\end{program}
+
+\section{Benutzeroberfläche}
