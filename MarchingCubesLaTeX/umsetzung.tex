@@ -5,7 +5,12 @@ Der Marching Cubes Algorithmus ist das Herzstück der entstandenen Applikation e
 \subsection{Allgemein}
 Die Implementierung ist eine angepasst Version der von [ref] bereitgestellten Umsetzung. Die wesentlichen Änderungen sind die Auslagerung der Funktionen in eine eigenen Klasse und das verwenden anderer Datenstrukturen. Durch die Umstellung auf STL-Behälter und der daraus folgende Verzicht auf C-Strukturen welche zur Laufzeit immer neuen Speicher anfordern konnte die Geschwindigkeit enorm erhöht werde.
 \subsection{Klasse}
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.90\textwidth]{marchingCubes}
+	\caption{UML-Diagramm der marchingCubes Klasse}
+	\label{fig:marchingCubes}
+\end{figure}
 \subsection{Auszüge Implementierung}
 
 \section{File Formate}
@@ -18,7 +23,12 @@ Die Implementierung ist eine angepasst Version der von [ref] bereitgestellten Um
 \subsection{STereoLithography (.stl)}
 \ref{prog:generateSTL}
 \subsection{Klasse}
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.60\textwidth]{fileHandler}
+	\caption{UML-Diagramm der fileHandler Klasse}
+	\label{fig:fileHandler}
+\end{figure}
 \begin{program}
 	\caption{Generierung einer STL-Datei}
 	\label{prog:generateSTL}
@@ -50,6 +60,14 @@ Die Implementierung ist eine angepasst Version der von [ref] bereitgestellten Um
 \section{OpenGL}
 \subsection{Allgmein}
 \subsection{Schnittstelle (Klasse)}
+\subsection{Klasse}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.70\textwidth]{visualisation}
+	\caption{UML-Diagramm der Visualisation Klasse}
+	\label{fig:visualisation}
+\end{figure}
+
 \subsection{Auszüge Implementierung}
 \begin{program}
 	\caption{Berechnung der Normalen eines Dreiecks}

@@ -33,11 +33,11 @@ private:
 	// performing the mc for one slice of the input
 	void generateSlice(int offset, int slice);
 	// performs the mc-algo for one cube
-	void PolygoniseCube(GRIDCELL grid, std::vector<TRIANGLE> &triangles);
+	void polygoniseCube(GRIDCELL grid, std::vector<TRIANGLE> &triangles);
     
 	// math. helper functions
-	XYZ VertexInterp(XYZ p1, XYZ p2, float valp1, float valp2);
-	void CalcNormal(TRIANGLE &tri);
+	XYZ vertexInterp(XYZ p1, XYZ p2, float valp1, float valp2);
+	void calcNormal(TRIANGLE &tri);
 
 	XYZ mDimension;					// Dimension of the input data
     d3Buffer mData;					// RAW input data

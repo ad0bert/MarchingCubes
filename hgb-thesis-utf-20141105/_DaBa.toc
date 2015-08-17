@@ -102,234 +102,234 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Allgemeines}{21}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}\emph {Let Them Float!}}{21}{section.4.2}
+\contentsline {section}{\numberline {4.2}\emph {Let Them Float!}}{22}{section.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Captions}{22}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Abbildungen}{22}{section.4.4}
+\contentsline {section}{\numberline {4.4}Abbildungen}{23}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Wo liegen die Grafikdateien?}{23}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.1}Wo liegen die Grafikdateien?}{24}{subsection.4.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.2}Grafiken einrahmen}{24}{subsection.4.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.3}Rasterbilder (Pixelgrafiken)}{24}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.3}Rasterbilder (Pixelgrafiken)}{25}{subsection.4.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{JPEG-Problematik}{24}{section*.17}
+\contentsline {subsubsection}{JPEG-Problematik}{25}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.4}Vektorgrafiken}{24}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.4}Vektorgrafiken}{25}{subsection.4.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Einbettung von Schriften}{25}{section*.19}
+\contentsline {subsubsection}{Einbettung von Schriften}{26}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Strichst\IeC {\"a}rken -- \emph {Hairlines} vermeiden!}{25}{section*.20}
+\contentsline {subsubsection}{Strichst\IeC {\"a}rken -- \emph {Hairlines} vermeiden!}{26}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.5}TeX\xspace -Schriften auch in Grafiken?}{26}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.5}TeX\xspace -Schriften auch in Grafiken?}{27}{subsection.4.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\emph {BaKoMa}-Schriften (TrueType)}{26}{section*.21}
+\contentsline {subsubsection}{\emph {BaKoMa}-Schriften (TrueType)}{27}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\emph {Latin Modern Roman} Fonts (OpenType)}{26}{section*.22}
+\contentsline {subsubsection}{\emph {Latin Modern Roman} Fonts (OpenType)}{27}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.6}Abbildungen mit mehreren Elementen}{26}{subsection.4.4.6}
+\contentsline {subsection}{\numberline {4.4.6}Abbildungen mit mehreren Elementen}{27}{subsection.4.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.7}Quellenangaben in Captions}{26}{subsection.4.4.7}
+\contentsline {subsection}{\numberline {4.4.7}Quellenangaben in Captions}{28}{subsection.4.4.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Tabellen}{27}{section.4.5}
+\contentsline {section}{\numberline {4.5}Tabellen}{29}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Programmtexte}{27}{section.4.6}
+\contentsline {section}{\numberline {4.6}Programmtexte}{29}{section.4.6}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {ngerman}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}Formatierung von Programmcode}{28}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.1}Formatierung von Programmcode}{30}{subsection.4.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Nummerierung der Code-Zeilen}{29}{section*.27}
+\contentsline {subsubsection}{Nummerierung der Code-Zeilen}{31}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.2}Platzierung von Programmcode}{30}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.2}Platzierung von Programmcode}{31}{subsection.4.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Programmtext im laufenden Text}{30}{section*.28}
+\contentsline {subsubsection}{Programmtext im laufenden Text}{32}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Programmtexte als Float-Elemente}{31}{section*.29}
+\contentsline {subsubsection}{Programmtexte als Float-Elemente}{32}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Programmtext im Anhang}{31}{section*.30}
+\contentsline {subsubsection}{Programmtext im Anhang}{33}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Mathem.\ Formeln etc.}{33}{chapter.5}
+\contentsline {chapter}{\numberline {5}Mathem.\ Formeln etc.}{35}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Mathematische Elemente im Flie\IeC {\ss }text}{33}{section.5.1}
+\contentsline {section}{\numberline {5.1}Mathematische Elemente im Flie\IeC {\ss }text}{35}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{H\IeC {\"a}ufiger Fehler:}{33}{section*.31}
+\contentsline {paragraph}{H\IeC {\"a}ufiger Fehler:}{35}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Freigestellte Ausdr\IeC {\"u}cke}{34}{section.5.2}
+\contentsline {section}{\numberline {5.2}Freigestellte Ausdr\IeC {\"u}cke}{36}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Einfache Gleichungen}{34}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}Einfache Gleichungen}{36}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Mehrzeilige Gleichungen}{34}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Mehrzeilige Gleichungen}{36}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Fallunterscheidungen}{35}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}Fallunterscheidungen}{37}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.4}Gleichungen mit Matrizen}{35}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.4}Gleichungen mit Matrizen}{37}{subsection.5.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.5}Verweise auf Gleichungen}{36}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.5}Verweise auf Gleichungen}{38}{subsection.5.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Spezielle Symbole}{36}{section.5.3}
+\contentsline {section}{\numberline {5.3}Spezielle Symbole}{38}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Zahlenmengen}{36}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}Zahlenmengen}{38}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Operatoren}{37}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}Operatoren}{39}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Variable (Symbole) mit mehreren Zeichen}{37}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.3}Variable (Symbole) mit mehreren Zeichen}{39}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}Funktionen}{37}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.4}Funktionen}{39}{subsection.5.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.5}Ma\IeC {\ss }einheiten und W\IeC {\"a}hrungen}{38}{subsection.5.3.5}
+\contentsline {subsection}{\numberline {5.3.5}Ma\IeC {\ss }einheiten und W\IeC {\"a}hrungen}{40}{subsection.5.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.6}Kommas in Dezimalzahlen (Mathematik-Modus)}{38}{subsection.5.3.6}
+\contentsline {subsection}{\numberline {5.3.6}Kommas in Dezimalzahlen (Mathematik-Modus)}{40}{subsection.5.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.7}Mathematische Werkzeuge}{38}{subsection.5.3.7}
+\contentsline {subsection}{\numberline {5.3.7}Mathematische Werkzeuge}{40}{subsection.5.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Algorithmen}{39}{section.5.4}
+\contentsline {section}{\numberline {5.4}Algorithmen}{41}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Umgang mit Literatur}{41}{chapter.6}
+\contentsline {chapter}{\numberline {6}Umgang mit Literatur}{43}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Anmerkung:}{41}{section*.32}
+\contentsline {paragraph}{Anmerkung:}{43}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Allgemeines}{41}{section.6.1}
+\contentsline {section}{\numberline {6.1}Allgemeines}{43}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Quellenverweise}{42}{section.6.2}
+\contentsline {section}{\numberline {6.2}Quellenverweise}{44}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Das {\tt {\textbackslash }cite} Makro}{42}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.1}Das {\tt {\textbackslash }cite} Makro}{44}{subsection.6.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}H\IeC {\"a}ufige Fehler}{42}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.2}H\IeC {\"a}ufige Fehler}{44}{subsection.6.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Verweise au\IeC {\ss }erhalb des Satzes}{42}{section*.33}
+\contentsline {subsubsection}{Verweise au\IeC {\ss }erhalb des Satzes}{44}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Zitate}{42}{section*.34}
+\contentsline {subsubsection}{Zitate}{44}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Quellenverzeichnis}{43}{section.6.3}
+\contentsline {section}{\numberline {6.3}Quellenverzeichnis}{45}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}Literaturdaten in BibTeX}{43}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.1}Literaturdaten in BibTeX}{45}{subsection.6.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.2}Kategorien von Quellenangaben}{44}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.2}Kategorien von Quellenangaben}{46}{subsection.6.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.3}Gedruckte Quellen (\emph {literature})}{45}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.3}Gedruckte Quellen (\emph {literature})}{47}{subsection.6.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {@book}}{45}{section*.37}
+\contentsline {subsubsection}{\texttt {@book}}{47}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {@incollection}}{46}{section*.38}
+\contentsline {subsubsection}{\texttt {@incollection}}{48}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {@inproceedings}}{47}{section*.39}
+\contentsline {subsubsection}{\texttt {@inproceedings}}{49}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {@article}}{47}{section*.40}
+\contentsline {subsubsection}{\texttt {@article}}{49}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {@thesis}}{48}{section*.41}
+\contentsline {subsubsection}{\texttt {@thesis}}{50}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Dissertation (Doktorarbeit):}{48}{section*.42}
+\contentsline {paragraph}{Dissertation (Doktorarbeit):}{50}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Magister- oder Masterarbeit:}{48}{section*.43}
+\contentsline {paragraph}{Magister- oder Masterarbeit:}{50}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Diplomarbeit:}{48}{section*.44}
+\contentsline {paragraph}{Diplomarbeit:}{50}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Bachelorarbeit:}{49}{section*.45}
+\contentsline {paragraph}{Bachelorarbeit:}{51}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {@techreport}}{49}{section*.46}
+\contentsline {subsubsection}{\texttt {@techreport}}{51}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {@manual}}{50}{section*.47}
+\contentsline {subsubsection}{\texttt {@manual}}{52}{section*.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {@misc}}{51}{section*.48}
+\contentsline {subsubsection}{\texttt {@misc}}{53}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.4}Filme und audio-visuelle Medien (\emph {avmedia})}{51}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.4}Filme und audio-visuelle Medien (\emph {avmedia})}{53}{subsection.6.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {@audio}}{51}{section*.49}
+\contentsline {subsubsection}{\texttt {@audio}}{53}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {@video}}{52}{section*.50}
+\contentsline {subsubsection}{\texttt {@video}}{54}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {@movie}}{52}{section*.51}
+\contentsline {subsubsection}{\texttt {@movie}}{54}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {@software}}{53}{section*.52}
+\contentsline {subsubsection}{\texttt {@software}}{55}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Zeitangaben zu Musikaufnahmen und Filmen}{53}{section*.53}
+\contentsline {subsubsection}{Zeitangaben zu Musikaufnahmen und Filmen}{55}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.5}Online-Quellen (\emph {online})}{53}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {6.3.5}Online-Quellen (\emph {online})}{55}{subsection.6.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Beispiel: Wiki-Eintrag}{54}{section*.54}
+\contentsline {subsubsection}{Beispiel: Wiki-Eintrag}{56}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Beispiel: online Video}{54}{section*.55}
+\contentsline {subsubsection}{Beispiel: online Video}{56}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Beispiel: Bildquelle}{54}{section*.56}
+\contentsline {subsubsection}{Beispiel: Bildquelle}{56}{section*.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.6}Elektronische Datentr\IeC {\"a}ger als Erg\IeC {\"a}nzung zur Arbeit}{55}{subsection.6.3.6}
+\contentsline {subsection}{\numberline {6.3.6}Elektronische Datentr\IeC {\"a}ger als Erg\IeC {\"a}nzung zur Arbeit}{57}{subsection.6.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.7}Tipps zur Erstellung von BibTeX-Dateien}{55}{subsection.6.3.7}
+\contentsline {subsection}{\numberline {6.3.7}Tipps zur Erstellung von BibTeX-Dateien}{57}{subsection.6.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {month}-Attribut}{55}{section*.57}
+\contentsline {subsubsection}{\texttt {month}-Attribut}{57}{section*.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {language}/\texttt {hyphenation}-Attribut}{55}{section*.58}
+\contentsline {subsubsection}{\texttt {language}/\texttt {hyphenation}-Attribut}{57}{section*.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\texttt {edition}-Attribut}{55}{section*.59}
+\contentsline {subsubsection}{\texttt {edition}-Attribut}{57}{section*.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\IeC {\"U}bernahme von fertigen BibTeX-Eintr\IeC {\"a}gen}{55}{section*.60}
+\contentsline {subsubsection}{\IeC {\"U}bernahme von fertigen BibTeX-Eintr\IeC {\"a}gen}{57}{section*.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Listing aller Quellen}{56}{section*.61}
+\contentsline {subsubsection}{Listing aller Quellen}{58}{section*.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Erg\IeC {\"a}nzungen zu \texttt {biblatex}}{56}{section*.62}
+\contentsline {subsubsection}{Erg\IeC {\"a}nzungen zu \texttt {biblatex}}{58}{section*.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Plagiarismus}{56}{section.6.4}
+\contentsline {section}{\numberline {6.4}Plagiarismus}{58}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Drucken der Diplomarbeit}{58}{chapter.7}
+\contentsline {chapter}{\numberline {7}Drucken der Diplomarbeit}{60}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}PDF-Workflow}{58}{section.7.1}
+\contentsline {section}{\numberline {7.1}PDF-Workflow}{60}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Drucken}{58}{section.7.2}
+\contentsline {section}{\numberline {7.2}Drucken}{60}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}Drucker und Papier}{58}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.1}Drucker und Papier}{60}{subsection.7.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.2}Druckgr\IeC {\"o}\IeC {\ss }e}{58}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.2}Druckgr\IeC {\"o}\IeC {\ss }e}{60}{subsection.7.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Binden}{59}{section.7.3}
+\contentsline {section}{\numberline {7.3}Binden}{61}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Elektronische Datentr\IeC {\"a}ger (CD-R, DVD)}{59}{section.7.4}
+\contentsline {section}{\numberline {7.4}Elektronische Datentr\IeC {\"a}ger (CD-R, DVD)}{61}{section.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Schlussbemerkungen}{61}{chapter.8}
+\contentsline {chapter}{\numberline {8}Schlussbemerkungen}{63}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Lesen und lesen lassen}{61}{section.8.1}
+\contentsline {section}{\numberline {8.1}Lesen und lesen lassen}{63}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Checkliste}{61}{section.8.2}
+\contentsline {section}{\numberline {8.2}Checkliste}{63}{section.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Technische Informationen}{63}{appendix.A}
+\contentsline {chapter}{\numberline {A}Technische Informationen}{65}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Aktuelle Dateiversionen}{63}{section.A.1}
+\contentsline {section}{\numberline {A.1}Aktuelle Dateiversionen}{65}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Details zur aktuellen Version}{63}{section.A.2}
+\contentsline {section}{\numberline {A.2}Details zur aktuellen Version}{65}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Allgemeine technische Voraussetzungen}{63}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.1}Allgemeine technische Voraussetzungen}{65}{subsection.A.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Verwendung unter Windows}{63}{subsection.A.2.2}
+\contentsline {subsection}{\numberline {A.2.2}Verwendung unter Windows}{65}{subsection.A.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.3}Verwendung unter Mac~OS}{64}{subsection.A.2.3}
+\contentsline {subsection}{\numberline {A.2.3}Verwendung unter Mac~OS}{66}{subsection.A.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Inhalt der CD-ROM/DVD}{65}{appendix.B}
+\contentsline {chapter}{\numberline {B}Inhalt der CD-ROM/DVD}{67}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Format:}{65}{section*.64}
+\contentsline {paragraph}{Format:}{67}{section*.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}PDF-Dateien}{65}{section.B.1}
+\contentsline {section}{\numberline {B.1}PDF-Dateien}{67}{section.B.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Pfad:}{65}{section*.65}
+\contentsline {paragraph}{Pfad:}{67}{section*.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.2}La\discretionary {-}{}{}TeX\xspace -Dateien}{65}{section.B.2}
+\contentsline {section}{\numberline {B.2}La\discretionary {-}{}{}TeX\xspace -Dateien}{67}{section.B.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Pfad:}{65}{section*.66}
+\contentsline {paragraph}{Pfad:}{67}{section*.66}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.3}Style/Class-Dateien}{66}{section.B.3}
+\contentsline {section}{\numberline {B.3}Style/Class-Dateien}{68}{section.B.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Pfad:}{66}{section*.67}
+\contentsline {paragraph}{Pfad:}{68}{section*.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.4}Sonstiges}{66}{section.B.4}
+\contentsline {section}{\numberline {B.4}Sonstiges}{68}{section.B.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Pfad:}{66}{section*.68}
+\contentsline {paragraph}{Pfad:}{68}{section*.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Chronologische Liste der \IeC {\"A}nderungen}{67}{appendix.C}
+\contentsline {chapter}{\numberline {C}Chronologische Liste der \IeC {\"A}nderungen}{69}{appendix.C}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}La\discretionary {-}{}{}TeX\xspace -Quellkode}{73}{appendix.D}
+\contentsline {chapter}{\numberline {D}La\discretionary {-}{}{}TeX\xspace -Quellkode}{75}{appendix.D}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Anmerkung:}{74}{section*.70}
+\contentsline {paragraph}{Anmerkung:}{76}{section*.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Quellenverzeichnis}{75}{appendix*.71}
+\contentsline {chapter}{Quellenverzeichnis}{77}{appendix*.71}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>90</y>
+      <w>340</w>
+      <h>470</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;class&gt;&gt;
+Visualisation : QGLWidget
+--
+- rotationX : GLfloat 
+- rotationY : GLfloat 
+- rotationZ : GLfloat 
+- faceColors : QColor[4];
+- lastPos : QPoint
+- mObject : vector&lt;TRIANGLE&gt;
+- mScale : GLfloat
+
+- draw();
+- qNormalizeAngle(ref angle : int) : void
+- drawSlice() : void
+- drawAll() : void
+- scaleObject() : void
+--
+# initializeGL() : void
+# resizeGL(width : int, height : int) : void
+# paintGL() : void
+# mousePressEvent(*event : QMouseEvent) : void
+# mouseMoveEvent(*event : QMouseEvent) : void
+# wheelEvent(*event : QWheelEvent) : void
+# setXRotation(angle : int) : void
+# setYRotation(angle : int) : void
+# setZRotation(angle : int) : void
+--
++ Visualisation(*parent = 0 : QWidget) : void
++ setObject(*object : vector&lt;TRIANGLE&gt; ) : void
++ setWiring(enable : bool) : void
++ updateUI() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

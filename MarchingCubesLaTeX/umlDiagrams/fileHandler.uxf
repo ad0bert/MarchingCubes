@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>210</y>
+      <w>210</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+fileHandler
+--
+- mPath : string
+- mType : fileType
+- mHdr  : dsr
+- mData : d3Buffer
+
+- readImg(fp : *FILE) : bool
+- readHdr(fb : *FILE) : void
+- swapHdr() : void
+- showHdr() : void
+--
++ fileHandler()
++ setpath(path : string) : void
++ setType(type : fileType) : void
++ setHdr(hdr : dsr) : void
++ getHdr() : dsr
++ readFile() : bool
++ createStl() : bool
++ getData() : d3Buffer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>100</y>
+      <w>210</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>_enum: fileType_
+--
+- img
+- hdr</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>150</y>
+      <w>70</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+&lt;&lt;uses&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+</diagram>

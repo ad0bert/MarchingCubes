@@ -467,7 +467,7 @@ acknowledged. I further declare that this or similar work has not been submitted
 %%-------------------------------------------------------------
 
 \usepackage{hgbheadings}
-\usepackage{hgbbib}
+%\usepackage{hgbbib}
 
 %%-------------------------------------------------------------
 

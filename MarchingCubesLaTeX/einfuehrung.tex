@@ -2,7 +2,7 @@
 
 \section{Bildgebende Verfahren}
 \begin{quote}
-	''Die Medizinische Bildverarbeitung hat das Ziel, medizinische Bilder und Bildfolgen zur Unterstützung der medizinischen Diagnostik und Therapie aufzubereiten, zu analysieren und zu visualisieren.'' - \cite{MedBildVerarbeitung}
+	''Die Medizinische Bildverarbeitung hat das Ziel, medizinische Bilder und Bildfolgen zur Unterstützung der medizinischen Diagnostik und Therapie aufzubereiten, zu analysieren und zu visualisieren.'' - \citep{MedBildVerarbeitung}
 \end{quote}
 Die verschiedenen medizinischen Verfahren können in die Art der erzeugten Bilddaten eingeteilt werden:
 \begin{itemize}
@@ -20,12 +20,12 @@ Ein solches Voxel ist als ein einzelner Punkt in einem dreidimensionalen Objekt 
 \begin{figure}
 	\centering
 	\includegraphics[width=.85\textwidth]{Voxelgitter}
-	\caption{Ein Voxelgitter \cite{SeibtBak}.}
+	\caption{Ein Voxelgitter \citep{SeibtBak}.}
 	\label{fig:Voxelgitter}
 \end{figure}
 
 \section{Marching Cubes}
-Der Marching Cubes Algorithmus wurde erstmals 1988 vorgestellt (\cite{MCAlgo}). Ziel dieses Algorithmus ist die Extraktion von Isoflächen aus Volumendaten. 
+Der Marching Cubes Algorithmus wurde erstmals 1988 vorgestellt (\citep{MCAlgo}). Ziel dieses Algorithmus ist die Extraktion von Isoflächen aus Volumendaten. 
 \subsection{Formale Definition}
 Die Extraktion von Isoflächen ist wie folgt definiert: 
 \\\\
@@ -34,7 +34,7 @@ Isofläche $S_{c}$ extrahiert, für die gilt:
 \begin{equation}
 S_{c} := \{ \vartheta \text{ } \epsilon \text{ } \mathbb{R}^{n} \text{ | } \varphi(\vartheta) = c\}
 \end{equation} 
-(vgl. \cite{SeibtBak})
+(vgl. \citep{SeibtBak})
 
 \subsection{Funktionsweise}
 Wie der Name des Algorithmus bereits sagt wird durch die Voxel-Menge ''marschiert''. Die Input-Menge des Algorithmus umfasst 8 aneinander grenzende Punkte der Voxel-Menge welche zusammen einen Würfel bilden sowie eines Schwellwert für die Dichte. Nach erfolgreicher Verarbeitung wird zum nächste Würfel gewandert (''marschiert'') bis die gesamte Datenmenge abgearbeitet wurde. 
@@ -43,14 +43,14 @@ Wie bereits erwähnt wird der Algorithmus für jeden einzelnen Würfel der gesam
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.50\textwidth]{Wuerfel}
-	\caption{Ein Wüfel im Voxelgitter \cite{SeibtBak}.}
+	\caption{Ein Wüfel im Voxelgitter \citep{SeibtBak}.}
 	\label{fig:Wuerfel}
 \end{figure}
 Als erster Schritt im Algorithmus werden nun die Ecken und Kanten des Würfels für die spätere Verarbeitung indiziert (s. Abbildung \ref{fig:WuerfelIndizierung}).
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.50\textwidth]{WuerfelIndizierung}
-	\caption{Indizierung eines Würfels \cite{SeibtBak}.}
+	\caption{Indizierung eines Würfels \citep{SeibtBak}.}
 	\label{fig:WuerfelIndizierung}
 \end{figure}
 
@@ -62,14 +62,14 @@ Jede Ecke des Würfels kann aufgrund seines Dichtewertes als Solide bzw. Transpa
 Die zu dieser Arbeit herangezogenen Dateiformate sind einerseits die von dem Softwarepaket Analyze\footnote{https://rportal.mayo.edu/bir/} verwendeten Image und Header Files sowie die sogenannte STereoLithography-Schnittstelle. 
 
 \subsection{Image File (.img)}
-Diese Datei ist vergleichsweise einfach aufgebaut und enthält ein Objekt bestehend aus (normalerweise) unkomprimierten Pixel Daten (vgl. \cite{AnalyzeFormat}). Jedes Pixel repräsentiert eine Voxel mit dem dazugehörigen Dichtewert. Das gesamte Objekt kann somit in eine 3x3 Matrix eingelesen und verarbeitet werde.
+Diese Datei ist vergleichsweise einfach aufgebaut und enthält ein Objekt bestehend aus (normalerweise) unkomprimierten Pixel Daten (vgl. \citep{AnalyzeFormat}). Jedes Pixel repräsentiert eine Voxel mit dem dazugehörigen Dichtewert. Das gesamte Objekt kann somit in eine 3x3 Matrix eingelesen und verarbeitet werde.
 
 \subsection{Header File (.hdr)}
-Diese Datei beschreibt die Ausmaße der Pixel-Datei sowie ihre Historie. (vgl. \cite{AnalyzeFormat}). \\\\
-Die genaue Struktur nach \cite{AnalyzeFormat} ist in drei Teilbereiche aufgeteilt. Der erste Teil ist der sogenannte ''header key'' und beinhaltet allgemeine Informationen bezüglich der Datei (s. \ref{prog:headerKey}). Der zweite Teil beinhaltet Informationen bezüglich der Dimension der Image-Datei(s. \ref{prog:imageDim}. Der dritte und letzte Abschnitt hält Informationen bezüglich der Historie (s. \ref{prog:dataHist}).
+Diese Datei beschreibt die Ausmaße der Pixel-Datei sowie ihre Historie. (vgl. \citep{AnalyzeFormat}). \\\\
+Die genaue Struktur nach \citep{AnalyzeFormat} ist in drei Teilbereiche aufgeteilt. Der erste Teil ist der sogenannte ''header key'' und beinhaltet allgemeine Informationen bezüglich der Datei (s. \ref{prog:headerKey}). Der zweite Teil beinhaltet Informationen bezüglich der Dimension der Image-Datei(s. \ref{prog:imageDim}. Der dritte und letzte Abschnitt hält Informationen bezüglich der Historie (s. \ref{prog:dataHist}).
 
 \begin{program}
-	\caption{Header key als C-Struktur \cite{AnalyzeFormat}}
+	\caption{Header key als C-Struktur \citep{AnalyzeFormat}}
 	\label{prog:headerKey}
 	\begin{CCode}
 struct header_key /* header key */
@@ -86,7 +86,7 @@ struct header_key /* header key */
 \end{program}
 
 \begin{program}
-	\caption{Data history als C-Struktur \cite{AnalyzeFormat}}
+	\caption{Data history als C-Struktur \citep{AnalyzeFormat}}
 	\label{prog:dataHist}
 	\begin{CCode}
 struct data_history
@@ -112,7 +112,7 @@ struct data_history
 \end{program}
 
 \begin{program}
-	\caption{Image Dimension als C-Struktur \cite{AnalyzeFormat}}
+	\caption{Image Dimension als C-Struktur \citep{AnalyzeFormat}}
 	\label{prog:imageDim}
 	\begin{CCode}
 struct image_dimension
@@ -151,7 +151,7 @@ struct image_dimension
 
 \subsection{STereoLithography (.stl)}
 \begin{quote}
-	''The STL (STereoLithography) file format, as developed by 3D Systems, has been widely used by most Rapid Prototyping (RP) systems and is supported by all major computer-aided design (CAD) systems.'' - \cite{STereoLithography}
+	''The STL (STereoLithography) file format, as developed by 3D Systems, has been widely used by most Rapid Prototyping (RP) systems and is supported by all major computer-aided design (CAD) systems.'' - \citep{STereoLithography}
 \end{quote}
 Eine STL-Datei besteht im Prinzip aus einer liste von Dreiecken. Jedes Dreieck wird durch seine drei Eckpunkte im Raum (jeweils x, y und z Position) sowie durch seinen Normalvektor beschrieben. Dies führt folglich zu einer Summe von 12 Werten pro Dreieck.\\
 \\
@@ -160,24 +160,24 @@ Zum besseren Verständnis kann in Abbildung \ref{fig:ASCIISTL} der Aufbau einer 
 \begin{figure}
 	\centering
 	\includegraphics[width=.65\textwidth]{StL-ASCII}
-	\caption{ASCII Darstellung des STL-Format \cite{STLFormat}.}
+	\caption{ASCII Darstellung des STL-Format \citep{STLFormat}.}
 	\label{fig:ASCIISTL}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=.65\textwidth]{StL-binary}
-	\caption{Binäre Darstellung des STL-Format \cite{STLFormat}.}
+	\caption{Binäre Darstellung des STL-Format \citep{STLFormat}.}
 	\label{fig:BINARYSTL}
 \end{figure}
 
 \section{Computergrafik}
-Computergrafik beschreibt das computergestützte Erstellen und Verarbeiten von Grafiken (vgl. \cite{ComputerGraphics}). In dieser Arbeit wird auf die Verarbeitung und insbesondere auf die Darstellung von dreidimensionalen Objekten als Polygon-Menge zurückgegriffen. Zu diesem Zweck bieten sich diverse Programmierschnittstellen wie OpenGL\footnote{https://www.opengl.org/}, Direct3D\footnote{https://msdn.microsoft.com/en-us/library/windows/desktop/bb153256(v=vs.85).aspx} oder AMD Mantle\footnote{http://www.amd.com/de-de/innovations/software-technologies/technologies-gaming/mantle} an, welche für Grafikausgaben genutzt werden können. Aufgrund der Aufgabenstellung wird in dieser Arbeit OpenGL verwendet.
+Computergrafik beschreibt das computergestützte Erstellen und Verarbeiten von Grafiken (vgl. \citep{ComputerGraphics}). In dieser Arbeit wird auf die Verarbeitung und insbesondere auf die Darstellung von dreidimensionalen Objekten als Polygon-Menge zurückgegriffen. Zu diesem Zweck bieten sich diverse Programmierschnittstellen wie OpenGL\footnote{https://www.opengl.org/}, Direct3D\footnote{https://msdn.microsoft.com/en-us/library/windows/desktop/bb153256(v=vs.85).aspx} oder AMD Mantle\footnote{http://www.amd.com/de-de/innovations/software-technologies/technologies-gaming/mantle} an, welche für Grafikausgaben genutzt werden können. Aufgrund der Aufgabenstellung wird in dieser Arbeit OpenGL verwendet.
 \subsection{OpenGL}
 \begin{quote}
 	''OpenGL (for “Open Graphics Library”) is a software interface to graphics hardware.
 	The interface consists of a set of several hundred procedures and functions
 	that allow a programmer to specify the objects and operations involved in producing
 	high-quality graphical images, specifically color images of three-dimensional
-	objects.'' - \cite{OpenGLDoku}
+	objects.'' - \citep{OpenGLDoku}
 \end{quote}

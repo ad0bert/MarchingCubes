@@ -58,9 +58,9 @@ void marchingCubes::generateSlice(int offset, int slice){
 			grid.p[7].y = (float)j + offset;
 			grid.p[7].z = (float)k + offset;
 			grid.val[7] = (float)mData[i][j + offset][k + offset];
-			PolygoniseCube(grid, triangles);
+			polygoniseCube(grid, triangles);
 			for (int l = 0; l < triangles.size(); l++){
-				CalcNormal(triangles[l]);
+				calcNormal(triangles[l]);
 				mResult.push_back(triangles[l]);
 			}
 		}
@@ -109,7 +109,7 @@ bool marchingCubes::generateStlFile(std::string path){
 	return true;
 }
 
-void marchingCubes::PolygoniseCube(GRIDCELL grid, std::vector<TRIANGLE> &triangles){
+void marchingCubes::polygoniseCube(GRIDCELL grid, std::vector<TRIANGLE> &triangles){
 	triangles.clear();
 	int cubeindex = 0;
 	static XYZ zero = { 0, 0, 0 };
@@ -135,40 +135,40 @@ void marchingCubes::PolygoniseCube(GRIDCELL grid, std::vector<TRIANGLE> &triangl
 
 	/* Find the vertices where the surface intersects the cube */
 	if (edgeTable[cubeindex] & 1) {
-		vertlist[0] = VertexInterp(grid.p[0], grid.p[1], grid.val[0], grid.val[1]);
+		vertlist[0] = vertexInterp(grid.p[0], grid.p[1], grid.val[0], grid.val[1]);
 	}
 	if (edgeTable[cubeindex] & 2) {
-		vertlist[1] = VertexInterp(grid.p[1], grid.p[2], grid.val[1], grid.val[2]);
+		vertlist[1] = vertexInterp(grid.p[1], grid.p[2], grid.val[1], grid.val[2]);
 	}
 	if (edgeTable[cubeindex] & 4) {
-		vertlist[2] = VertexInterp(grid.p[2], grid.p[3], grid.val[2], grid.val[3]);
+		vertlist[2] = vertexInterp(grid.p[2], grid.p[3], grid.val[2], grid.val[3]);
 	}
 	if (edgeTable[cubeindex] & 8) {
-		vertlist[3] = VertexInterp(grid.p[3], grid.p[0], grid.val[3], grid.val[0]);
+		vertlist[3] = vertexInterp(grid.p[3], grid.p[0], grid.val[3], grid.val[0]);
 	}
 	if (edgeTable[cubeindex] & 16) {
-		vertlist[4] = VertexInterp(grid.p[4], grid.p[5], grid.val[4], grid.val[5]);
+		vertlist[4] = vertexInterp(grid.p[4], grid.p[5], grid.val[4], grid.val[5]);
 	}
 	if (edgeTable[cubeindex] & 32) {
-		vertlist[5] = VertexInterp(grid.p[5], grid.p[6], grid.val[5], grid.val[6]);
+		vertlist[5] = vertexInterp(grid.p[5], grid.p[6], grid.val[5], grid.val[6]);
 	}
 	if (edgeTable[cubeindex] & 64) {
-		vertlist[6] = VertexInterp(grid.p[6], grid.p[7], grid.val[6], grid.val[7]);
+		vertlist[6] = vertexInterp(grid.p[6], grid.p[7], grid.val[6], grid.val[7]);
 	}
 	if (edgeTable[cubeindex] & 128) {
-		vertlist[7] = VertexInterp(grid.p[7], grid.p[4], grid.val[7], grid.val[4]);
+		vertlist[7] = vertexInterp(grid.p[7], grid.p[4], grid.val[7], grid.val[4]);
 	}
 	if (edgeTable[cubeindex] & 256) {
-		vertlist[8] = VertexInterp(grid.p[0], grid.p[4], grid.val[0], grid.val[4]);
+		vertlist[8] = vertexInterp(grid.p[0], grid.p[4], grid.val[0], grid.val[4]);
 	}
 	if (edgeTable[cubeindex] & 512) {
-		vertlist[9] = VertexInterp(grid.p[1], grid.p[5], grid.val[1], grid.val[5]);
+		vertlist[9] = vertexInterp(grid.p[1], grid.p[5], grid.val[1], grid.val[5]);
 	}
 	if (edgeTable[cubeindex] & 1024) {
-		vertlist[10] = VertexInterp(grid.p[2], grid.p[6], grid.val[2], grid.val[6]);
+		vertlist[10] = vertexInterp(grid.p[2], grid.p[6], grid.val[2], grid.val[6]);
 	}
 	if (edgeTable[cubeindex] & 2048) {
-		vertlist[11] = VertexInterp(grid.p[3], grid.p[7], grid.val[3], grid.val[7]);
+		vertlist[11] = vertexInterp(grid.p[3], grid.p[7], grid.val[3], grid.val[7]);
 	}
 
 	/* Create the triangles */
@@ -181,7 +181,7 @@ void marchingCubes::PolygoniseCube(GRIDCELL grid, std::vector<TRIANGLE> &triangl
 	}
 }
 
-void marchingCubes::CalcNormal(TRIANGLE &tri){
+void marchingCubes::calcNormal(TRIANGLE &tri){
 	static XYZ U;
 	static XYZ V;
 	U.x = tri.p[1].x - tri.p[0].x;
@@ -198,7 +198,7 @@ void marchingCubes::CalcNormal(TRIANGLE &tri){
 
 }
 
-XYZ marchingCubes::VertexInterp(XYZ p1, XYZ p2, float valp1, float valp2){
+XYZ marchingCubes::vertexInterp(XYZ p1, XYZ p2, float valp1, float valp2){
 	float mu;
 	static XYZ p;
 
