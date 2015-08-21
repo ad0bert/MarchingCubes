@@ -7,9 +7,7 @@
 \graphicspath{{images/}}    % name of directory containing the images
 \logofile{FHOOeIntl2014}			% name of PDF, remove or use \logofile{} for no logo
 \usepackage{float}
-\usepackage[square, authoryear, comma]{natbib}
-\bibliographystyle{natdin}
-\usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage{pdfpages}
 %%%----------------------------------------------------------
 \begin{document}
 
@@ -33,7 +31,9 @@
 
 %%%----------------------------------------------------------
 \frontmatter
-\maketitle
+\includepdf[pages={-}]{Titelblatt_Gesamtarbeit.pdf}
+\includepdf{Titelblatt_Teil1.pdf}
+%\maketitle
 \tableofcontents
 %%%----------------------------------------------------------
 \include{kurzfassung}		

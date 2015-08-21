@@ -1,11 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdftex 2015.8.8)  16 AUG 2015 09:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdftex 2015.8.8)  19 AUG 2015 04:40
 entering extended mode
 **C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/hgbbib.sty
-(C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/hgbbib.sty)
-*
+(C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/hgbbib.sty
+! Undefined control sequence.
+l.1 \usepackage
+               [square, authoryear, comma]{natbib}
+? 
 ! Emergency stop.
-<*> ...MarchingCubes/MarchingCubesLaTeX/hgbbib.sty
-                                                  
+l.1 \usepackage
+               [square, authoryear, comma]{natbib}
 End of file on the terminal!
 
 !  ==> Fatal error occurred, no output PDF file produced!

@@ -71,8 +71,6 @@ void fileHandler::readHdr(FILE *fp){
 	fread(&mHdr, 1, sizeof(struct dsr), fp);
 	if (mHdr.dime.dim[0] < 0 || mHdr.dime.dim[0] > 15)
 		swapHdr();
-
-    //showHdr();
 }
 
 d3Buffer fileHandler::getData(){

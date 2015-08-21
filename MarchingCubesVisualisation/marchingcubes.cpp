@@ -5,13 +5,11 @@
 #include "marchingcubes.h"
 #include "tabels.h"
 
-void marchingCubes::setAllData(d3Buffer data, short int isolevel, int NX, int NY, int NZ){
+void marchingCubes::setAllData(d3Buffer data, short int isolevel){
 	this->mData = data;
 	this->mIsolevel = isolevel;
-	this->mDimension.x = (float)NX;
-	this->mDimension.y = (float)NY;
-	this->mDimension.z = (float)NZ;
 }
+
 std::vector<TRIANGLE> marchingCubes::getResult(){
 	return mResult;
 }
@@ -24,8 +22,8 @@ void marchingCubes::generateSlice(int offset, int slice){
 	int k = slice;
 	static GRIDCELL grid;
 	static std::vector<TRIANGLE> triangles;
-	for (int j = 0; j < mDimension.y - offset; j += offset) {
-		for (int i = 0; i < mDimension.x - offset; i += offset) {
+	for (int j = 0; j < mData[0].size() - offset; j += offset) {
+		for (int i = 0; i < mData.size() - offset; i += offset) {
 			grid.p[0].x = (float)i;
 			grid.p[0].y = (float)j;
 			grid.p[0].z = (float)k;
@@ -73,13 +71,13 @@ void marchingCubes::perform(int offset, int slice){
 	fprintf(stderr, "Polygonising data ...\n");
 
 	if (slice != -1){
-		for (int num = 0; num < offset && slice + num < mDimension.z - 1; ++num)
+		for (int num = 0; num < offset && slice + num < mData[0][0].size() - 1; ++num)
 			generateSlice(1, slice + num);
 	}
 	else{
-		for (int i = 0; i < mDimension.z - offset; i += offset) {
-			if (i % ((int)mDimension.z / 10) == 0)
-				fprintf(stderr, "   Slice %d of %d\n", i, mDimension.z);
+		for (int i = 0; i < mData[0][0].size() - offset; i += offset) {
+			if (i % (mData[0][0].size() / 10) == 0)
+				fprintf(stderr, "   Slice %d of %d\n", i, mData[0][0].size());
 			generateSlice(offset, i);
 		}
 	}

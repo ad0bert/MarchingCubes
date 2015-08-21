@@ -45,11 +45,8 @@ void MainWindow::on_generateObjectBtn_clicked()
     if (ui->headerPath->text() != "" && ui->imagePath->text() != ""){
         readFiles();
         mc->setAllData(imgFile->getData(),
-                       ui->isolevelSlider->value(),
-                       hdrFile->getHdr().dime.dim[1],
-                       hdrFile->getHdr().dime.dim[2],
-                       hdrFile->getHdr().dime.dim[3]
-                       );
+                       ui->isolevelSlider->value());
+
 		ui->slicerSlider->setRange(0, hdrFile->getHdr().dime.dim[3] - 2);
 
 		if (ui->enableSlicing->isChecked()){

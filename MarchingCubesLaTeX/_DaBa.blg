@@ -10,7 +10,9 @@ A level-1 auxiliary file: anhang_a.aux
 A level-1 auxiliary file: messbox.aux
 Database file #1: literatur.bib
 Warning--entry type for "SeibtBak" isn't style-file defined
---line 65 of file literatur.bib
+--line 74 of file literatur.bib
+Warning--entry type for "WollmannBak" isn't style-file defined
+--line 86 of file literatur.bib
 Too many commas in name 2 of "Chua, Chee, Kai and Gan, G., K., Jacob and Tong, Mei" for entry STereoLithography
 while executing---line 2138 of file natdin.bst
 Too many commas in name 2 of "Chua, Chee, Kai and Gan, G., K., Jacob and Tong, Mei" for entry STereoLithography

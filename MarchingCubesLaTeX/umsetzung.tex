@@ -11,7 +11,17 @@ Die Implementierung ist eine angepasst Version der von [ref] bereitgestellten Um
 	\caption{UML-Diagramm der marchingCubes Klasse}
 	\label{fig:marchingCubes}
 \end{figure}
-\subsection{Auszüge Implementierung}
+
+\subsubsection{Datentypen}
+Neben den üblichen Datentypen wurden zur Vereinfachung komplexere Strukturen verwendet.\\
+\begin{itemize}
+	\item \textbf{XYZ} beschreibt einen Punkt im dreidimensionalen Raum.
+	\item \textbf{GRIDCELL} ist die Repräsentation eines Voxel-Würfels. 
+	\item \textbf{TRIANGLE} Repräsentiert ein Dreieck mithilfe seiner drei Eckpunkte und seiner Normalen.
+	\item \textbf{3dBuffer} bildet ein Voxelgitter als dreidimensionalen Vektor im Speicher ab.
+\end{itemize}
+\subsection{Verwendung}
+
 
 \section{File Formate}
 
@@ -60,7 +70,6 @@ Die Implementierung ist eine angepasst Version der von [ref] bereitgestellten Um
 \section{OpenGL}
 \subsection{Allgmein}
 \subsection{Schnittstelle (Klasse)}
-\subsection{Klasse}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.70\textwidth]{visualisation}
@@ -92,3 +101,23 @@ Die Implementierung ist eine angepasst Version der von [ref] bereitgestellten Um
 \end{program}
 
 \section{Benutzeroberfläche}
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\textwidth]{UI1}
+	\caption{Übersicht der Benutzeroberfläche}
+	\label{fig:UI1}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\textwidth]{UISlicing}
+	\caption{Programm Slicing aktiviert}
+	\label{fig:UISlicing}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\textwidth]{UIWiring}
+	\caption{Programm Wiring aktiviert}
+	\label{fig:UIWiring}
+\end{figure}

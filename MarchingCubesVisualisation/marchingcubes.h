@@ -22,12 +22,11 @@ typedef struct {
 class marchingCubes{
 
 public:
-    void setAllData(d3Buffer data, short int isolevel, int x, int y, int z);
+    void setAllData(d3Buffer data, short int isolevel);
     void perform(int offset, int slice = -1);
     std::vector<TRIANGLE> getResult();
     bool generateStlFile(std::string path);
     void setIsolevel(short int isolevel);
-    void setSlice(int sliceNumber);
     void setSlicing(bool enable);
 private:
 	// performing the mc for one slice of the input
@@ -39,7 +38,6 @@ private:
 	XYZ vertexInterp(XYZ p1, XYZ p2, float valp1, float valp2);
 	void calcNormal(TRIANGLE &tri);
 
-	XYZ mDimension;					// Dimension of the input data
     d3Buffer mData;					// RAW input data
     short int mIsolevel;			// Treshhold value
     
