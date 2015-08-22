@@ -27,7 +27,6 @@ public:
     std::vector<TRIANGLE> getResult();
     bool generateStlFile(std::string path);
     void setIsolevel(short int isolevel);
-    void setSlicing(bool enable);
 private:
 	// performing the mc for one slice of the input
 	void generateSlice(int offset, int slice);

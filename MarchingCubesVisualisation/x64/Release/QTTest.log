@@ -1,4 +1,4 @@
-﻿Build started 19.08.2015 07:23:52.
+﻿Build started 22.08.2015 08:22:32.
      1>Project "C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesVisualisation\QTTest.vcxproj" on node 2 (Build target(s)).
      1>CustomBuild:
          Moc'ing mainwindow.h...
@@ -33,4 +33,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:07.99
+Time Elapsed 00:00:08.18

@@ -4,7 +4,7 @@ Im Rahmen dieser Arbeit entstand ein in C++ geschriebenes Programm welches den M
 Der Marching Cubes Algorithmus ist das Herzstück der entstandenen Applikation er ermöglicht die Umrechnung der gegebenen Voxel Datenmenge in eine polygonale Darstellung welche sich im später vergleichsweise einfach darstellen lässt.
 \subsection{Allgemein}
 Die Implementierung ist eine angepasst Version der von [ref] bereitgestellten Umsetzung. Die wesentlichen Änderungen sind die Auslagerung der Funktionen in eine eigenen Klasse und das verwenden anderer Datenstrukturen. Durch die Umstellung auf STL-Behälter und der daraus folgende Verzicht auf C-Strukturen welche zur Laufzeit immer neuen Speicher anfordern konnte die Geschwindigkeit enorm erhöht werde.
-\subsection{Klasse}
+\subsection{Schnittstelle (Klasse)}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.90\textwidth]{marchingCubes}
@@ -20,19 +20,47 @@ Neben den üblichen Datentypen wurden zur Vereinfachung komplexere Strukturen ve
 	\item \textbf{TRIANGLE} Repräsentiert ein Dreieck mithilfe seiner drei Eckpunkte und seiner Normalen.
 	\item \textbf{3dBuffer} bildet ein Voxelgitter als dreidimensionalen Vektor im Speicher ab.
 \end{itemize}
+
+\subsubsection{Funktionen}
+Um ein grundlegendes Verständnis zu bieten werden hier die öffentlichen Methoden der Klasse kurz beschrieben. 
+\begin{itemize}
+	\item \textbf{setAllData:} Da während der Laufzeit des Programmes nur eine Instanz der marchingCubes-Klasse instanziiert wird, ist es notwendig diese, wenn nötig, mit neuen Werten zu initialisieren. Es wird das gesamte Voxelgitter (data) sowie der zu verwendende Schwellwert (isolevel) für die Berechnung mitgegeben.
+	\item \textbf{perform:} Diese Funktion führt den Marching Cubes Algorithmus auf dem zuvor via setAllData gesetzten Voxelgitter aus. Es bestehen zwei Möglichkeiten des Aufrufs. Zum Einen mit beiden Parameter und zum Anderen mit nur dem ersten (offset) Parameter. Bei der ersten Variante wird nur eine Scheibe des Voxelgitters betrachtet, wobei der erste Parameter die Dicke der Scheibe und der zweite die Position der Scheibe im Gitter kennzeichnet. Bei der zweiten Variante wird der gesamte Input betrachtet wobei Parameter ''offset'' die Schrittweite pro Würfel angibt. 
+	\item \textbf{getResult:} Hier kann nach dem durchlaufen von perform das Ergebnis des Algorithmus abgegriffen werden. 
+	\item \textbf{setIsolevel:} Hier kann der Schwellwert der Voxeln für den Algorithmus nachträglich verändert werden.
+	\item \textbf{generateStl:} Das ausführen dieser Funktion persistiert das Ergebnis des Marching Cubes Algorithmus als .stl Datei.
+\end{itemize}
 \subsection{Verwendung}
-
-
+Im Programm \ref{prog:MCVerw} ist die Verwendung der Klasse exemplarisch dargestellt.
+\begin{program}[H]
+	\caption{Verwendung der marchingCubes Klasse}
+	\label{prog:MCVerw}
+	\begin{CCode}
+		int main(){
+			marchingCubes *mc = new marchingCubes();
+			// set the voxelgrid and the treshold
+			mc->setAllData(getRawData(), getIsolevel()); 
+			// performs the marching cubes algorithmus on the entire voxelgrid
+			mc->perform(getOffset()); 		
+			// performs the algorithmus on just a slice of the voxelgrid 
+			mc->perform(getOffset(), getSlice()); 
+			showPolygons(mc->getResult()); 
+			delete(mc);
+			return 0;	
+		}
+	\end{CCode}
+\end{program}
 \section{File Formate}
-
+Wie bereits im Kapitel \ref{sec:DateiEinf} erwähnt wurden für die Umsetzung die Dateiformate von Analyze 7.5 (.img und .hdr) sowie das STereoLithography (.stl) Format verwendet.
 \subsection{Allgemein}
+Um eine unnötige Komplexität zu vermeiden wurden für die Analyze-Formate nur lesender und für das STereoLithography Format nur schreibende Zugriff implementiert. Hier bieten sich für spätere Erweiterungen viele Möglichkeiten bezüglich Import/Export (auch für weitere Formate). 
 \subsection{Image File (.img)}
 
 \subsection{Header File (.hdr)}
 
 \subsection{STereoLithography (.stl)}
 \ref{prog:generateSTL}
-\subsection{Klasse}
+\subsection{Schnittstelle (Klasse)}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.60\textwidth]{fileHandler}

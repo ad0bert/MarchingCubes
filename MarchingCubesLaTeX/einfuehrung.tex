@@ -57,17 +57,28 @@ Wie bereits erwähnt wird der Algorithmus für jeden einzelnen Würfel der gesam
 	\label{fig:WuerfelIndizierung}
 \end{figure}
 
-\noindent Jede Ecke des Würfels kann aufgrund seines Isowertes als Solide bzw. Transparent klassifiziert werden. Folglich sind aufgrund der Zwei möglichen Werte jeder Ecke $2^{8} = 256$ unterschiedliche Konfigurationen der Eingabemenge möglich. Jede dieser Konfigurationen kann als ein 8 Bit Muster dargestellt werden wobei gilt, dass jedes Bit \textit{i} bei welchem der Isowert \textit{$d_{i}$} des dazugehörigen Voxel einen gewissen Schwellwert \textit{c} überschreitet als binäre 0 interpretiert wird. Für die Werte kleiner gleich des Schwellwertes wird eine Binäre 1 angenommen.\\\\ Betrachtet man nun dieses Bitmuster als natürliche Zahl erhält man einen sogenannten Würfelindex zwischen 0  und 255 welcher für die weitere Verarbeitung essentiell ist.
-
-\subsubsection{Verarbeitung}
+\noindent Jede Ecke des Würfels kann aufgrund seines Isowertes als Solide bzw. Transparent klassifiziert werden. Folglich sind aufgrund der Zwei möglichen Werte jeder Ecke $2^{8} = 256$ unterschiedliche Konfigurationen der Eingabemenge möglich. Jede dieser Konfigurationen kann als ein 8 Bit Muster dargestellt werden wobei gilt, dass jedes Bit \textit{i} bei welchem der Isowert \textit{$d_{i}$} des dazugehörigen Voxel einen gewissen Schwellwert \textit{c} überschreitet als binäre 0 interpretiert wird. Für die Werte kleiner gleich des Schwellwertes wird eine Binäre 1 angenommen.\\\\ Betrachtet man nun dieses Bitmuster als natürliche Zahl erhält man einen sogenannten Würfelindex welcher einen Wert zwischen 0  und 255 aufweist dieser ist für die weitere Verarbeitung essentiell.\\
+\\
 Aufgrund der Symmetrie eines Würfels können durch Rotation bzw. Spiegelung die Anzahl der 255 möglichen Anordnungen der Voxeln auf 15 unterschiedliche Konfigurationen reduziert werden. Diese 15 Konfigurationen sind in Abbildung \ref{fig:MCPos} zu sehen.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.70\textwidth]{MCPos}
 	\caption{Marching Cubes Grundkonigurationen \citep{MCAlgo}.}
 	\label{fig:MCPos}
 \end{figure}
+
+\subsubsection{Verarbeitung}
+In diesem Abschnitt wird nun auf die zu durchlaufenden Schritte eines jeden Würfels aus dem Voxelgitter eingegangen. Für jeden Kubus werden zwischen null und fünf Dreiecke erzeugt.
+
+
+
+\subsubsection{Probleme}
+Die Grundform des Marching Cubes Algorithmus hat einige Schwachpunkte. Im laufe der Zeit wurden daher Methoden geschaffen diese Schwachstellen auszumerzen. In diesem Abschnitt werden einige Probleme aufgezählt und auf Lösungen für diese verwiesen.\\
+\\
+
 \section{Dateiformate}
+\label{sec:DateiEinf}
 Die zu dieser Arbeit herangezogenen Dateiformate sind einerseits die von dem Softwarepaket Analyze\footnote{https://rportal.mayo.edu/bir/} verwendeten Image und Header Files sowie die sogenannte STereoLithography-Schnittstelle. 
 
 \subsection{Image File (.img)}
