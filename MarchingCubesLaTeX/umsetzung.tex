@@ -1,6 +1,7 @@
 \chapter{Umsetzung}
 Im Rahmen dieser Arbeit entstand ein in C++ geschriebenes Programm welches den Marching Cubes Algorithmus auf eine Voxelmenge anwendet und das Resultat via OpgenGL visualisiert. Des Weiteren ist es möglich das verarbeitete Model als STereoLithography (.stl) Datei zu exportieren.
 \section{Marching Cubes}
+\label{sec:mcUms}
 Der Marching Cubes Algorithmus ist das Herzstück der entstandenen Applikation er ermöglicht die Umrechnung der gegebenen Voxel Datenmenge in eine polygonale Darstellung welche sich im später vergleichsweise einfach darstellen lässt.
 \subsection{Allgemein}
 Die Implementierung ist eine angepasst Version der von [ref] bereitgestellten Umsetzung. Die wesentlichen Änderungen sind die Auslagerung der Funktionen in eine eigenen Klasse und das verwenden anderer Datenstrukturen. Durch die Umstellung auf STL-Behälter und der daraus folgende Verzicht auf C-Strukturen welche zur Laufzeit immer neuen Speicher anfordern konnte die Geschwindigkeit enorm erhöht werde.
@@ -96,7 +97,12 @@ In Abbildung \ref{fig:BINARYSTL} ist bereits der binäre Aufbau einer STL-Datei 
 	\caption{UML-Diagramm der fileHandler Klasse}
 	\label{fig:fileHandler}
 \end{figure}
-
+\subsubsection{Datentypen}
+\begin{itemize}
+	\item \textbf{fileType} repräsentiert den zu verarbeitenden Dateityp als Enumeration (img bzw. hdr) 
+	\item \textbf{dsr} ist die in Kapitel \ref{sec:DateiHead} beschriebene Repräsentation des Header-Formates als C-Struktur.
+	\item \textbf{d3Buffer} wurde bereits im vorhergegangenen Abschnitt (\ref{sec:mcUms}) beschrieben.
+\end{itemize}
 
 \section{OpenGL}
 \subsection{Allgmein}

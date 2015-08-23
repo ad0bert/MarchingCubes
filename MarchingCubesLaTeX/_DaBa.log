@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.6)  23 AUG 2015 09:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.6)  23 AUG 2015 15:38
 entering extended mode
 **_DaBa.tex
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.tex
@@ -1278,7 +1278,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 5.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 38.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 39.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1470,20 +1470,20 @@ Kapitel 3.
 File: images/marchingCubes.png Graphic file (type png)
 
 <use images/marchingCubes.png>
-Package pdftex.def Info: images/marchingCubes.png used on input line 10.
+Package pdftex.def Info: images/marchingCubes.png used on input line 11.
 (pdftex.def)             Requested size: 323.9978pt x 195.62294pt.
  [13
 
 
 
 ]
-Overfull \hbox (4.39125pt too wide) in paragraph at lines 16--18
+Overfull \hbox (4.39125pt too wide) in paragraph at lines 17--19
 \T1/lmr/m/n/10.95 Neben den üb-li-chen Da-ten-ty-pen wur-den zur Ver-ein-fa-chu
 ng kom-ple-xe-re Struk-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
@@ -1492,7 +1492,7 @@ ubes.png (PNG copy)>]
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-Overfull \hbox (3.4479pt too wide) in paragraph at lines 56--57
+Overfull \hbox (3.4479pt too wide) in paragraph at lines 57--58
 \T1/lmr/m/n/10.95 Um ei-ne un-nö-ti-ge Kom-ple-xi-tät zu ver-mei-den wur-den fü
 r die Analyze-Formate
  []
@@ -1504,38 +1504,43 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 File: images/fileHandler.png Graphic file (type png)
 
 <use images/fileHandler.png>
-Package pdftex.def Info: images/fileHandler.png used on input line 95.
+Package pdftex.def Info: images/fileHandler.png used on input line 96.
 (pdftex.def)             Requested size: 216.0022pt x 311.0582pt.
  [17]
-<images/visualisation.png, id=611, 381.425pt x 511.9125pt>
+Overfull \hbox (2.08723pt too wide) in paragraph at lines 104--105
+[]\T1/lmr/bx/n/10.95 d3Buffer \T1/lmr/m/n/10.95 wur-de be-reits im vor-her-ge-g
+an-ge-nen Ab-schnitt ([]3.1[]) be-schrie-
+ []
+
+<images/visualisation.png, id=613, 381.425pt x 511.9125pt>
 File: images/visualisation.png Graphic file (type png)
 
 <use images/visualisation.png>
-Package pdftex.def Info: images/visualisation.png used on input line 106.
+Package pdftex.def Info: images/visualisation.png used on input line 112.
 (pdftex.def)             Requested size: 251.9989pt x 338.20699pt.
  [18 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/fileHand
 ler.png (PNG copy)>]
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-<images/UI1.png, id=617, 892.83563pt x 480.29437pt>
+<images/UI1.png, id=620, 892.83563pt x 480.29437pt>
 File: images/UI1.png Graphic file (type png)
  <use images/UI1.png>
-Package pdftex.def Info: images/UI1.png used on input line 137.
+Package pdftex.def Info: images/UI1.png used on input line 143.
 (pdftex.def)             Requested size: 360.0pt x 193.66069pt.
 
-<images/UISlicing.png, id=618, 892.83563pt x 480.29437pt>
+<images/UISlicing.png, id=621, 892.83563pt x 480.29437pt>
 File: images/UISlicing.png Graphic file (type png)
 
 <use images/UISlicing.png>
-Package pdftex.def Info: images/UISlicing.png used on input line 144.
+Package pdftex.def Info: images/UISlicing.png used on input line 150.
 (pdftex.def)             Requested size: 360.0pt x 193.66069pt.
 
-<images/UIWiring.png, id=619, 892.83563pt x 480.29437pt>
+<images/UIWiring.png, id=622, 892.83563pt x 480.29437pt>
 File: images/UIWiring.png Graphic file (type png)
 
 <use images/UIWiring.png>
-Package pdftex.def Info: images/UIWiring.png used on input line 151.
+Package pdftex.def Info: images/UIWiring.png used on input line 157.
 (pdftex.def)             Requested size: 360.0pt x 193.66069pt.
 ) [19 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/visuali
 sation.png (PNG copy)>] [20 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCub
@@ -1586,13 +1591,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
 Package rerunfilecheck Info: File `_DaBa.out' has not changed.
-(rerunfilecheck)             Checksum: 98601FFFAC44DBD616EAAC01189108D4;5613.
+(rerunfilecheck)             Checksum: 028C54BE2BF8F48A7043696E6BE06AFA;5613.
  ) 
 Here is how much of TeX's memory you used:
- 18469 strings out of 493921
- 268703 string characters out of 3144871
- 526999 words of memory out of 3000000
- 21017 multiletter control sequences out of 15000+200000
+ 18471 strings out of 493921
+ 268725 string characters out of 3144871
+ 527041 words of memory out of 3000000
+ 21018 multiletter control sequences out of 15000+200000
  86360 words of font info for 69 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  67i,18n,96p,1024b,1799s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1615,9 +1620,9 @@ fonts/type1/public/lm/lmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 lmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 >
-Output written on _DaBa.pdf (33 pages, 1669732 bytes).
+Output written on _DaBa.pdf (33 pages, 1670764 bytes).
 PDF statistics:
- 828 PDF objects out of 1000 (max. 8388607)
- 244 named destinations out of 1000 (max. 500000)
+ 831 PDF objects out of 1000 (max. 8388607)
+ 245 named destinations out of 1000 (max. 500000)
  467 words of extra memory for PDF output out of 10000 (max. 10000000)
 
