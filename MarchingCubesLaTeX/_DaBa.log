@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.6)  22 AUG 2015 08:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.6)  23 AUG 2015 09:25
 entering extended mode
 **_DaBa.tex
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.tex
@@ -1406,19 +1406,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
 [7 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/MCPos.png>
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
 Package hyperref Info: bookmark level for unknown program defaults to 0 on inpu
-t line 92.
+t line 93.
 (C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 94.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 95.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1432,7 +1432,7 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [9]
-Underfull \hbox (badness 10000) in paragraph at lines 176--179
+Underfull \hbox (badness 10000) in paragraph at lines 177--180
 
  []
 
@@ -1440,23 +1440,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--179
 File: images/StL-ASCII.jpg Graphic file (type jpg)
 
 <use images/StL-ASCII.jpg>
-Package pdftex.def Info: images/StL-ASCII.jpg used on input line 182.
+Package pdftex.def Info: images/StL-ASCII.jpg used on input line 183.
 (pdftex.def)             Requested size: 233.9978pt x 177.58133pt.
  [10]
 <images/StL-binary.jpg, id=507, 374.14781pt x 330.48468pt>
 File: images/StL-binary.jpg Graphic file (type jpg)
 
 <use images/StL-binary.jpg>
-Package pdftex.def Info: images/StL-binary.jpg used on input line 189.
+Package pdftex.def Info: images/StL-binary.jpg used on input line 190.
 (pdftex.def)             Requested size: 233.9978pt x 206.6936pt.
 
-Overfull \hbox (4.7758pt too wide) in paragraph at lines 195--195
+Overfull \hbox (4.7758pt too wide) in paragraph at lines 196--196
 [][][]\T1/lmr/m/n/9 https://msdn.microsoft.com/en-us/library/windows/desktop/bb
 153256(v=vs.85).aspx| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
 [][][]\T1/lmr/m/n/9 http://www.amd.com/de-de/innovations/software-technologies/
 technologies-
  []
@@ -1466,12 +1466,12 @@ technologies-
 ary.jpg>]) [12]
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.tex
 Kapitel 3.
-<images/marchingCubes.png, id=535, 622.325pt x 632.3625pt>
+<images/marchingCubes.png, id=535, 531.9875pt x 321.2pt>
 File: images/marchingCubes.png Graphic file (type png)
 
 <use images/marchingCubes.png>
 Package pdftex.def Info: images/marchingCubes.png used on input line 10.
-(pdftex.def)             Requested size: 323.9978pt x 329.22601pt.
+(pdftex.def)             Requested size: 323.9978pt x 195.62294pt.
  [13
 
 
@@ -1491,51 +1491,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 ubes.png (PNG copy)>]
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [15]
+)
 Overfull \hbox (3.4479pt too wide) in paragraph at lines 56--57
 \T1/lmr/m/n/10.95 Um ei-ne un-nö-ti-ge Kom-ple-xi-tät zu ver-mei-den wur-den fü
 r die Analyze-Formate
  []
 
-<images/fileHandler.png, id=569, 250.9375pt x 471.7625pt>
+[15] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) [16]
+<images/fileHandler.png, id=580, 250.9375pt x 361.35pt>
 File: images/fileHandler.png Graphic file (type png)
 
 <use images/fileHandler.png>
-Package pdftex.def Info: images/fileHandler.png used on input line 66.
-(pdftex.def)             Requested size: 216.0022pt x 406.10374pt.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [16]
-<images/visualisation.png, id=575, 381.425pt x 511.9125pt>
+Package pdftex.def Info: images/fileHandler.png used on input line 95.
+(pdftex.def)             Requested size: 216.0022pt x 311.0582pt.
+ [17]
+<images/visualisation.png, id=611, 381.425pt x 511.9125pt>
 File: images/visualisation.png Graphic file (type png)
 
 <use images/visualisation.png>
-Package pdftex.def Info: images/visualisation.png used on input line 103.
+Package pdftex.def Info: images/visualisation.png used on input line 106.
 (pdftex.def)             Requested size: 251.9989pt x 338.20699pt.
- [17 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/fileHand
-ler.png (PNG copy)>] [18]
+ [18 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/fileHand
+ler.png (PNG copy)>]
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-<images/UI1.png, id=609, 892.83563pt x 480.29437pt>
+<images/UI1.png, id=617, 892.83563pt x 480.29437pt>
 File: images/UI1.png Graphic file (type png)
  <use images/UI1.png>
-Package pdftex.def Info: images/UI1.png used on input line 134.
+Package pdftex.def Info: images/UI1.png used on input line 137.
 (pdftex.def)             Requested size: 360.0pt x 193.66069pt.
 
-<images/UISlicing.png, id=610, 892.83563pt x 480.29437pt>
+<images/UISlicing.png, id=618, 892.83563pt x 480.29437pt>
 File: images/UISlicing.png Graphic file (type png)
 
 <use images/UISlicing.png>
-Package pdftex.def Info: images/UISlicing.png used on input line 141.
+Package pdftex.def Info: images/UISlicing.png used on input line 144.
 (pdftex.def)             Requested size: 360.0pt x 193.66069pt.
 
-<images/UIWiring.png, id=611, 892.83563pt x 480.29437pt>
+<images/UIWiring.png, id=619, 892.83563pt x 480.29437pt>
 File: images/UIWiring.png Graphic file (type png)
 
 <use images/UIWiring.png>
-Package pdftex.def Info: images/UIWiring.png used on input line 148.
+Package pdftex.def Info: images/UIWiring.png used on input line 151.
 (pdftex.def)             Requested size: 360.0pt x 193.66069pt.
 ) [19 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/visuali
 sation.png (PNG copy)>] [20 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCub
@@ -1589,10 +1589,10 @@ Package rerunfilecheck Info: File `_DaBa.out' has not changed.
 (rerunfilecheck)             Checksum: 98601FFFAC44DBD616EAAC01189108D4;5613.
  ) 
 Here is how much of TeX's memory you used:
- 18460 strings out of 493921
- 268584 string characters out of 3144871
- 526870 words of memory out of 3000000
- 21010 multiletter control sequences out of 15000+200000
+ 18469 strings out of 493921
+ 268703 string characters out of 3144871
+ 526999 words of memory out of 3000000
+ 21017 multiletter control sequences out of 15000+200000
  86360 words of font info for 69 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  67i,18n,96p,1024b,1799s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1615,9 +1615,9 @@ fonts/type1/public/lm/lmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 lmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 >
-Output written on _DaBa.pdf (33 pages, 1681195 bytes).
+Output written on _DaBa.pdf (33 pages, 1669732 bytes).
 PDF statistics:
- 820 PDF objects out of 1000 (max. 8388607)
- 242 named destinations out of 1000 (max. 500000)
+ 828 PDF objects out of 1000 (max. 8388607)
+ 244 named destinations out of 1000 (max. 500000)
  467 words of extra memory for PDF output out of 10000 (max. 10000000)
 

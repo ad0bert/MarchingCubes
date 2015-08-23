@@ -25,8 +25,7 @@ marchingCubes
 + perform(offset : int, slice = -1: int) : void
 + getResult() : vector&lt;TRIANGLE&gt;
 + generateStlFile(path : string) : bool
-+ setIsolevel(isolevel : short int) : void
-+ setSlicing(enable : bool) : void</panel_attributes>
++ setIsolevel(isolevel : short int) : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

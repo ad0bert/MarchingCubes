@@ -28,7 +28,7 @@ fileHandler
 + setHdr(hdr : dsr) : void
 + getHdr() : dsr
 + readFile() : bool
-+ createStl() : bool
++ createStl(path : string) : bool
 + getData() : d3Buffer</panel_attributes>
     <additional_attributes/>
   </element>

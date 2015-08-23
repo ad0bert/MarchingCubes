@@ -85,6 +85,7 @@ Die zu dieser Arbeit herangezogenen Dateiformate sind einerseits die von dem Sof
 Diese Datei ist vergleichsweise einfach aufgebaut und enthält ein Objekt bestehend aus (normalerweise) unkomprimierten Pixel Daten (vgl. \citep{AnalyzeFormat}). Jedes Pixel repräsentiert eine Voxel mit dem dazugehörigen Isowert. Das gesamte Objekt kann somit in eine 3x3 Matrix eingelesen und verarbeitet werde.
 
 \subsection{Header File (.hdr)}
+\label{sec:DateiHead}
 Diese Datei beschreibt die Ausmaße der Pixel-Datei sowie ihre Historie. (vgl. \citep{AnalyzeFormat}). \\\\
 Die genaue Struktur nach \citep{AnalyzeFormat} ist in drei Teilbereiche aufgeteilt. Der erste Teil ist der sogenannte ''header key'' und beinhaltet allgemeine Informationen bezüglich der Datei (s. \ref{prog:headerKey}). Der zweite Teil beinhaltet Informationen bezüglich der Dimension der Image-Datei(s. \ref{prog:imageDim}. Der dritte und letzte Abschnitt hält Informationen bezüglich der Historie (s. \ref{prog:dataHist}).
 

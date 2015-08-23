@@ -55,11 +55,40 @@ Wie bereits im Kapitel \ref{sec:DateiEinf} erwähnt wurden für die Umsetzung di
 \subsection{Allgemein}
 Um eine unnötige Komplexität zu vermeiden wurden für die Analyze-Formate nur lesender und für das STereoLithography Format nur schreibende Zugriff implementiert. Hier bieten sich für spätere Erweiterungen viele Möglichkeiten bezüglich Import/Export (auch für weitere Formate). 
 \subsection{Image File (.img)}
-
+Um das Image File auszulesen müssen vorher die Dimensionen des Voxelgitters bekannt sein.  Diese Information erhält man aus dem Header File. Sind die Dimensionen bekannt können mithilfe einer dreifach geschachtelten for-Schleife die einzelnen Voxel-Werte in eine entsprechende Datenstruktur (z.B. dreidimensionales Array) ausgelesen werden. In \citep{AnalyzeFormat} ist eine beispielhafte Implementierung gegeben. Diese wurde für den Prototyp angepasst und integriert.
 \subsection{Header File (.hdr)}
-
+Diese Datei ist wie bereits in Kapitel \ref{sec:DateiHead} beschrieben aufgebaut. Auch hier ist in \citep{AnalyzeFormat} eine beispielhafte Implementierung gegeben welche für die Verwendung angepasst und erweitert wurde.
 \subsection{STereoLithography (.stl)}
-\ref{prog:generateSTL}
+In Abbildung \ref{fig:BINARYSTL} ist bereits der binäre Aufbau einer STL-Datei abgebildet. Die Implementierung (Programm \ref{prog:generateSTL}) richtet sich daher genau an diesen formalen Aufbau.
+\begin{program}[H]
+	\caption{Generierung einer STL-Datei}
+	\label{prog:generateSTL}
+	\begin{CCode}
+		bool fileHandler::CreateStl(std::string path){
+			FILE *fptr = NULL;
+	
+			int sizeResult = mResult.size();
+			fprintf(stderr, "Writing triangles ...\n");
+			if ((fptr = fopen(path.c_str(), "a+b")) == NULL) {
+				fprintf(stderr, "Failed to open output file\n");
+				return false;
+			}
+			char fileHeader[81] = "solid Test Head";
+			char bytes[3] = { 0x00, 0x00 };
+			fwrite(&fileHeader, sizeof(fileHeader)-1, 1, fptr);
+			fwrite(&sizeResult, sizeof(int), 1, fptr);
+			for (int i = 0; i < mResult.size(); i++) {
+				fwrite(&mResult[i].n, sizeof(float), 3, fptr);
+				for (int k = 0; k < 3; k++)  {
+					fwrite(&mResult[i].p[k], sizeof(float), 3, fptr);
+				}
+				fwrite(bytes, 2, 1, fptr);
+			}
+			fclose(fptr);
+			return true;
+		}
+	\end{CCode}
+\end{program}
 \subsection{Schnittstelle (Klasse)}
 \begin{figure}[H]
 	\centering
@@ -67,33 +96,7 @@ Um eine unnötige Komplexität zu vermeiden wurden für die Analyze-Formate nur 
 	\caption{UML-Diagramm der fileHandler Klasse}
 	\label{fig:fileHandler}
 \end{figure}
-\begin{program}
-	\caption{Generierung einer STL-Datei}
-	\label{prog:generateSTL}
-	\begin{CCode}
-	bool marchingCubes::GenerateStlFile(std::string path){
-		FILE *fptr = NULL;
-		fprintf(stderr, "Writing triangles ...\n");
-		if ((fptr = fopen(path.c_str(), "a+b")) == NULL) {
-			fprintf(stderr, "Failed to open output file\n");
-			return false;
-		}
-		char fileHeader[81] = "solid Test Head";
-		char bytes[3] = { 0x00, 0x00 };
-		fwrite(&fileHeader, sizeof(fileHeader)-1, 1, fptr);
-		fwrite(&ntri, sizeof(int), 1, fptr);
-		for (int i = 0; i < ntri; i++) {
-			fwrite(&tri[i].n[0], sizeof(float), 3, fptr);
-			for (int k = 0; k < 3; k++)  {
-				fwrite(&tri[i].p[k], sizeof(float), 3, fptr);
-			}
-			fwrite(bytes, 2, 1, fptr);
-		}
-		fclose(fptr);
-		return true;
-	}
-	\end{CCode}
-\end{program}
+
 
 \section{OpenGL}
 \subsection{Allgmein}
