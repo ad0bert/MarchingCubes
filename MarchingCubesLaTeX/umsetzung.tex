@@ -31,7 +31,7 @@ Um ein grundlegendes Verständnis zu bieten werden hier die öffentlichen Method
 	\item \textbf{setIsolevel:} Hier kann der Schwellwert der Voxeln für den Algorithmus nachträglich verändert werden.
 	\item \textbf{generateStl:} Das ausführen dieser Funktion persistiert das Ergebnis des Marching Cubes Algorithmus als .stl Datei.
 \end{itemize}
-\subsection{Verwendung}
+\subsubsection{Verwendung}
 Im Programm \ref{prog:MCVerw} ist die Verwendung der Klasse exemplarisch dargestellt.
 \begin{program}[H]
 	\caption{Verwendung der marchingCubes Klasse}
@@ -103,9 +103,56 @@ In Abbildung \ref{fig:BINARYSTL} ist bereits der binäre Aufbau einer STL-Datei 
 	\item \textbf{dsr} ist die in Kapitel \ref{sec:DateiHead} beschriebene Repräsentation des Header-Formates als C-Struktur.
 	\item \textbf{d3Buffer} wurde bereits im vorhergegangenen Abschnitt (\ref{sec:mcUms}) beschrieben.
 \end{itemize}
-
+\subsubsection{Funktionen}
+Es folgt ein Überblick der öffentlichen Methoden dieser Klasse.
+\begin{itemize}
+	\item \textbf{fileHandler} der Konstruktor der Klasse initialisiert die Datenkomponenten für die spätere Verwendung.
+	\item \textbf{setPath} setzt den Pfad zur verwendeten Datei.
+	\item \textbf{setType} spezifiziert welche Dateityp von der Instanz dieser Klasse verwaltet werden soll.
+	\item \textbf{setHdr:} Handelt es sich um eine Image-Datei sind dieser die Informationen aus der dazugehörigen Header-Datei mitzuteilen. 
+	\item \textbf{getHdr:} Hier können nach dem Auslesen eines Header-File die erhaltenen Informationen abgegriffen werden. 
+	\item \textbf{readFile:} Nach dem setzen von des Pfades und des Dateityps kann hier die entsprechende Datei ausgelesen werden.
+	\item \textbf{createStl:} Ermöglicht das Erstellen einer .stl Datei aus den vom Marching Cubes Algorithmus gewonnen Dreiecken. 
+	\item \textbf{getData:} Nach dem Auslesen einer Image-Datei können hier die erhaltenen Daten abgegriffen werden.
+\end{itemize}
+\subsubsection{Verwendung}
+In Programm \ref{prog:fileClass} ist die beispielhafte Verwendung der fileHandler-Klasse skizziert.
+\begin{program}[H]
+	\caption{Verwendung der fileHandler-Klasse}
+	\label{prog:fileClass}
+	\begin{CCode}
+		int main(){
+			fileHandler *hdrFile = new fileHandler();
+			fileHandler *imgFile = new fileHandler();
+			
+			// set the filetype
+			hdrFile->setType(hdr);
+			imgFile->setType(img);
+			
+			// set the file path
+			hdrFile->setPath(ui->headerPath->text().toStdString());
+			imgFile->setPath(ui->imagePath->text().toStdString());
+			
+			// read the header file
+			hdrFile->readFile();
+			// set the header for the image file
+			imgFile->setHdr(hdrFile->getHdr());
+			// read the image file
+			imgFile->readFile();
+			
+			// get the image data and pass it to the marching cubes algorithm
+			marchingCubes->setData(imgFile->getData());
+			
+			delete(hdrFile);
+			delete(imgFile);
+			return 0;	
+		}
+	\end{CCode}
+\end{program}
 \section{OpenGL}
+Für die grafische Aufbereitung des generierten polygonalen Objektes wird wie bereits mehrfach erwähnt OpenGL verwendet. Um eine möglichst große Unabhängigkeit bezüglich des gewählten Betriebssystemes zu gewährleisten wurde QT als Schnittstelle zwischen System und OpenGL gewählt.
 \subsection{Allgmein}
+Die Implementierung ermöglicht die Darstellung des generierten Objektes, das bewegen um die Achsen via Maus sowie das Zoomen via Mausrat.
 \subsection{Schnittstelle (Klasse)}
 \begin{figure}[H]
 	\centering
@@ -113,46 +160,60 @@ In Abbildung \ref{fig:BINARYSTL} ist bereits der binäre Aufbau einer STL-Datei 
 	\caption{UML-Diagramm der Visualisation Klasse}
 	\label{fig:visualisation}
 \end{figure}
-
-\subsection{Auszüge Implementierung}
+\subsubsection{Funktionen}
+\begin{itemize}
+	\item \textbf{Visualisation:} Erstellen der Zeichenoberfläche.
+	\item \textbf{setObject:} Setzen des zu zeichnenden Objektes.
+	\item \textbf{setWiring:} Ermöglicht das hin -und herschalten zwischen den beiden Polygonmodi GL\_LINE und GL\_FILL (s. Abbildung \ref{fig:UIWiring}).
+	\item \textbf{updateUI:} Manuelles update der Zeichenfläche z.B. nach setWiring oder setObjekt um die Änderungen für den Benutzer sichtbar zu machen.
+\end{itemize}
+\subsubsection{Verwendung}
+Die Verwendung dieser Klasse ist vergleichsweise einfach. Eine beispielhafte Implementierung ist in Programm \ref{prog:VisVerw} zu finden.
 \begin{program}
-	\caption{Berechnung der Normalen eines Dreiecks}
-	\label{prog:calcNormal}
-\begin{CCode}
-	void marchingCubes::CalcNormal(TRIANGLE &tri){
-		XYZ U;
-		XYZ V;
-		U.x = tri.p[1].x - tri.p[0].x;
-		U.y = tri.p[1].y - tri.p[0].y;
-		U.z = tri.p[1].z - tri.p[0].z;
-		
-		V.x = tri.p[2].x - tri.p[0].x;
-		V.y = tri.p[2].y - tri.p[0].y;
-		V.z = tri.p[2].z - tri.p[0].z;
-		
-		tri.n[0].x = (U.y * V.z) - (U.z * V.y);
-		tri.n[0].y = (U.z * V.x) - (U.x * V.z);
-		tri.n[0].z = (U.x * V.y) - (U.y * V.x);
-	}
-\end{CCode}
+	\caption{Exemplarische Verwendung der Visualisation Klasse}
+	\label{prog:VisVerw}
+	\begin{CCode}
+		int main(){
+			Visualisation vi = new Visualisation();
+			// set the polygon object (result of the marching cubes algorithm)
+			vi->setObject(marchingCubes->getResult());
+			// update ui for the user
+			vi->updateUI;
+			// enable wiring (set polygon mode to GL\_LINE)
+			vi->setWiring(true);
+			// update ui for the user
+			vi->updateUI;
+			delete(vi);
+		} 
+	\end{CCode}
 \end{program}
 
 \section{Benutzeroberfläche}
-\begin{figure}
+In diesem Abschnitt wird auf die Funktionen der Benutzeroberfläche (UI) des entstandenen Prototypen eingegangen. Erstellt wurde diese mithilfe des QT-Designers. Um eine einfache Benutzung zu gewährleisten wurde sie möglichst schlicht gehalten.
+
+\subsection{Allgemeiner Aufbau}
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{UI1}
 	\caption{Übersicht der Benutzeroberfläche}
 	\label{fig:UI1}
 \end{figure}
-
-\begin{figure}
+\subsection{Slicing}
+Die Schaltfläche ''Enable Slicing'' ermöglicht die Darstellung einer einzelnen Scheibe des gesamt Objektes. Durch das Aktivieren der Checkbox wird auch der Regler links Aktiviert. Mithilfe von diesem kann das zu betrachtende Scheibenelement verschoben werden. Des Weiteren ändert sich die Funktionalität des unteren Reglers von der Regulierung der Polygongröße zur Regulierung der Dicke der Scheibe.\\
+\\
+Vorteil dieser Darstellungsform ist das mit aktivem Slicing das Innenleben eines Objektes betrachtet werden kann.\\
+\\
+Das Benutzerinterface mit Aktiviertem Slicing ist in Abbildung \ref{fig:UISlicing} zu sehen.
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{UISlicing}
 	\caption{Programm Slicing aktiviert}
 	\label{fig:UISlicing}
 \end{figure}
-
-\begin{figure}
+\subsection{Wiring}
+Durch Aktivieren der Checkbox ''Enable Wiring'' kann das Drahtgittermodell des Objektes betrachtet werden. Diese Darstellung ermöglicht es die polygonale Struktur des Objektes besser zu erkennen. In Abbildung \ref{fig:UIWiring} ist ein Objekt mit aktiven Wiring zu sehen.
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{UIWiring}
 	\caption{Programm Wiring aktiviert}
