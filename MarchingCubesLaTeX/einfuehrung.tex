@@ -1,21 +1,21 @@
 \chapter{Allgemeine Einführung}
-
+In diesem Kapitel wird auf die grundlegende Theorie bezüglich Bildverarbeitung, Marching Cubes, Dateiformate und OpgenGL eingegangen. Es wird ein grober Überblick über die wichtigsten Begrifflichkeiten der jeweiligen Bereiche geschaffen, um ein grundlegendes Verständnis der Materie zu gewährleisten.
 \section{Bildgebende Verfahren}
 \begin{quote}
-	''Die Medizinische Bildverarbeitung hat das Ziel, medizinische Bilder und Bildfolgen zur Unterstützung der medizinischen Diagnostik und Therapie aufzubereiten, zu analysieren und zu visualisieren.'' - \citep{MedBildVerarbeitung}
+	''Die Medizinische Bildverarbeitung hat das Ziel, medizinische Bilder und Bildfolgen zur Unterstützung der medizinischen Diagnostik und Therapie aufzubereiten, zu analysieren und zu visualisieren.'' \citep{MedBildVerarbeitung}\\
 \end{quote}
-Die verschiedenen medizinischen Verfahren können in die Art der erzeugten Bilddaten eingeteilt werden:
+Die verschiedenen medizinischen Verfahren können grob in die Art der erzeugten Bilddaten eingeteilt werden.
 \begin{itemize}
 	\item \textbf{Schnittbilder} z.B. mittels Computertomografie, Magnetresonanztomografie oder Röntgentomografie.
 	\item \textbf{Projektionsbilder} z.B. durch ''klassisches'' Röntgen.
-	\item \textbf{Oberflächenabbildungen} z.B. durch Rastertunnelmikroskop.
+	\item \textbf{Oberflächenabbildungen} z.B. durch Rastertunnelmikroskop.\\
 \end{itemize}
-Da das Hauptaugenmerk dieser Arbeit liegt auf der aus den tomographischen Verfahren erhaltenden Schnittbildern, welche als sogenannte Voxel-Daten gespeichert werden. Ein vollständiges dreidimensionales Bild besteht aus mehreren solcher übereinandergelegten Schnittbildern.
+Das Hauptaugenmerk dieser Arbeit liegt auf der aus den tomographischen Verfahren erhaltenden Schnittbildern, welche als sogenannte Voxel-Modelle gespeichert werden. Ein vollständiges dreidimensionales Bild besteht aus mehreren solcher übereinandergelegten Schnittbildern.
 
 \section{Volumengrafik}
-Unter Volumengrafik versteht man in der Computergrafik die Darstellung von Objekten durch eine Menge von Voxeln. 
-\\\\
-Ein solches Voxel ist als ein einzelner Punkt in einem dreidimensionalen Objekt zu verstehen, welcher einen gewissen Isowert aufweist. Dieser Wert ist essentiell um z.B. bei den tomographischen Verfahren in der Medizin die festeren von den weicheren teilen eines Körpers zu unterscheiden (z.B. Knochen und Gewebe). In Abbildung \ref{fig:Voxelgitter} ist eine solche Voxel-Menge zusehen die verschiedenen Grauwerte der einzelnen Bildpunkte stellen dabei die unterschiedlichen Isowert dar.
+Unter Volumengrafik versteht man in der Computergrafik die Darstellung von Objekten durch eine Menge von Punkten. Diese Punkte werden auch als Voxeln bezeichnet und repräsentieren einen Punkt im Raum.
+\subsection{Voxel} 
+Ein solches Voxel ist als ein einzelner Punkt in einem dreidimensionalen Objekt zu verstehen, welcher einen gewissen Isowert aufweist. Dieser Wert beschreibt die Eigenschaft des Objektes an diesem Punkt und ist essentiell um z.B. bei den tomographischen Verfahren in der Medizin die festeren von den weicheren teilen eines Körpers zu unterscheiden (z.B. Knochen und Gewebe). In Abbildung \ref{fig:Voxelgitter} ist eine solche Voxel-Menge zusehen die verschiedenen Grauwerte der einzelnen Bildpunkte stellen dabei die unterschiedlichen Isowerte dar.
 
 \begin{figure}
 	\centering
@@ -25,7 +25,7 @@ Ein solches Voxel ist als ein einzelner Punkt in einem dreidimensionalen Objekt 
 \end{figure}
 
 \section{Marching Cubes}
-Da der Marching Cubes Algorithmus das zentrale Element dieser Arbeit bildet wird hier seine Grundform wie sie in \citep{MCAlgo} beschrieben ist nochmals genau erörtert. 
+Da der Marching Cubes Algorithmus das zentrale Element dieser Arbeit bildet, wird hier seine Grundform wie sie in \citep{MCAlgo} beschrieben ist nochmals genau erörtert. 
 \subsection{Formale Definition}
 \begin{quote}
 	''Der Marching Cubes Algorithmus ist ein Algorithmus um eine Isofläche $S_{c}$ eines Objektes, dass in einem Skalarfeld  $\varphi : \mathbb{R}^{n} \rightarrow \mathbb{R }$ beschrieben wird durch Dreiecke zu approximieren. Der Isowert c $\epsilon$ $ \mathbb{ R} $ beschreibt die gemeinsame Eigenschaft des Objektes wie z.B. gleiche Dichte, Temperatur oder emittierter Strahlung.''
@@ -40,7 +40,7 @@ S_{c} := \{ \vartheta \text{ } \epsilon \text{ } \mathbb{R}^{n} \text{ | } \varp
 \end{equation} 
 \subsection{Funktionsweise}
 
-Wie der Name des Algorithmus bereits sagt wird durch die Voxel-Menge ''marschiert''. Die Input-Menge des Algorithmus umfasst 8 aneinander grenzende Punkte der Voxel-Menge welche zusammen einen Würfel bilden sowie eines Schwellwerts für dem Isowert. Nach erfolgreicher Verarbeitung wird zum nächste Würfel gewandert (''marschiert'') bis die gesamte Datenmenge abgearbeitet wurde. 
+Wie der Name des Algorithmus bereits sagt wird durch die Voxel-Menge ''marschiert''. Die Input-Menge des Algorithmus umfasst acht aneinander grenzende Punkte der Voxel-Menge, welche zusammen einen Würfel bilden sowie eines Schwellwerts für dem Isowert. Nach erfolgreicher Verarbeitung wird zum nächste Würfel gewandert (''marschiert'') bis die gesamte Datenmenge abgearbeitet wurde. 
 \subsubsection{Vorbereitung}
 Wie bereits erwähnt wird der Algorithmus für jeden einzelnen Würfel der gesamten Menge angewendet. Für ein besseres Verständnis zeigt Abbildung \ref{fig:Wuerfel} einen solchen Würfel (rot) in einem Voxelgitter.
 \begin{figure}[H]
@@ -57,7 +57,9 @@ Wie bereits erwähnt wird der Algorithmus für jeden einzelnen Würfel der gesam
 	\label{fig:WuerfelIndizierung}
 \end{figure}
 
-\noindent Jede Ecke des Würfels kann aufgrund seines Isowertes als Solide bzw. Transparent klassifiziert werden. Folglich sind aufgrund der Zwei möglichen Werte jeder Ecke $2^{8} = 256$ unterschiedliche Konfigurationen der Eingabemenge möglich. Jede dieser Konfigurationen kann als ein 8 Bit Muster dargestellt werden wobei gilt, dass jedes Bit \textit{i} bei welchem der Isowert \textit{$d_{i}$} des dazugehörigen Voxel einen gewissen Schwellwert \textit{c} überschreitet als binäre 0 interpretiert wird. Für die Werte kleiner gleich des Schwellwertes wird eine Binäre 1 angenommen.\\\\ Betrachtet man nun dieses Bitmuster als natürliche Zahl erhält man einen sogenannten Würfelindex welcher einen Wert zwischen 0  und 255 aufweist dieser ist für die weitere Verarbeitung essentiell.\\
+\noindent Jede Ecke des Würfels kann aufgrund seines Isowertes als Solide bzw. Transparent klassifiziert werden. Folglich sind aufgrund der Zwei möglichen Werte jeder Ecke $2^{8} = 256$ unterschiedliche Konfigurationen der Eingabemenge möglich. Jede dieser Konfigurationen kann als ein 8 Bit Muster dargestellt werden wobei gilt, dass jedes Bit \textit{i} bei welchem der Isowert \textit{$d_{i}$} des dazugehörigen Voxel einen gewissen Schwellwert \textit{c} überschreitet als binäre 0 interpretiert wird. Für die Werte kleiner gleich des Schwellwertes wird eine Binäre 1 angenommen.\\
+\\ 
+Betrachtet man nun dieses Bitmuster als natürliche Zahl erhält man einen sogenannten Würfelindex welcher einen Wert zwischen 0  und 255 aufweist dieser ist für die weitere Verarbeitung essentiell.\\
 \\
 Aufgrund der Symmetrie eines Würfels können durch Rotation bzw. Spiegelung die Anzahl der 255 möglichen Anordnungen der Voxeln auf 15 unterschiedliche Konfigurationen reduziert werden. Diese 15 Konfigurationen sind in Abbildung \ref{fig:MCPos} zu sehen.
 
@@ -69,24 +71,38 @@ Aufgrund der Symmetrie eines Würfels können durch Rotation bzw. Spiegelung die
 \end{figure}
 
 \subsubsection{Verarbeitung}
-In diesem Abschnitt wird nun auf die zu durchlaufenden Schritte eines jeden Würfels aus dem Voxelgitter eingegangen. Für jeden Kubus werden zwischen null und fünf Dreiecke erzeugt.
+In diesem Abschnitt wird nun auf die zu durchlaufenden Schritte eines jeden Würfels aus dem Voxelgitter eingegangen. Der Ablauf lässt sich laut \citep{MCAlgo} in sieben Schritte unterteilen:
+\begin{enumerate}
+	\item Einlesen von vier Scheiben in den Speicher.
+	\item Betrachten von zwei Scheiben und bilden eines Würfels aus vier Nachbarn der ersten und weiteren vier Nachbarn der zweiten Scheibe.
+	\item Berechnen des Index des Würfels durch vergleichen der Isowerte der Punkte mit dem Schwellwert.
+	\item Bestimmung der Liste der Dreiecksvertices anhand des Index (Abgleich mit Lookuptable).
+	\item Interpolation der Positionen der Dreiecksvertices.
+	\item Interpolation der Normalen an den Dreiecksvertices.
+	\item Speichern der resultierenden Dreiecke und Normalen.\\
+\end{enumerate}
 
-
-
-\subsubsection{Probleme}
-Die Grundform des Marching Cubes Algorithmus hat einige Schwachpunkte. Im laufe der Zeit wurden daher Methoden geschaffen diese Schwachstellen auszumerzen. In diesem Abschnitt werden einige Probleme aufgezählt und auf Lösungen für diese verwiesen.\\
+\noindent Die ersten drei Punkte wurden bereits im vorgelagerten Abschnitt ''Vorbereitung'' beschrieben. \\
 \\
+Punkt 4 beschreibt, dass für jede der 256 möglichen Kombinationen des Würfels die dazugehörigen Dreiecksvertices bestimmt werden müssen. Dies erfolgt durch Betrachtung zweier benachbarten Punkte des Würfels und deren Abgleich mit dem gegeben Schwellwert. Da eine erneute Auswertung für jeden Würfel äußerst rechenintensiv wäre, wird hierzu auf einen sogenannten Lookuptabel zurückgegriffen, welcher für jeden der 256 Konfigurationen die vorberechneten Werte beinhaltet. \\
+\\
+Schritt 5 und 6 dienen dazu die Position der Dreiecke im Raum zu bestimmen. Für eine nähere Beschreibung der Berechnung siehe \citep{MCAlgo}.\\
+\\
+Im letzten Schritt können nun die Berechneten Dreiecke weiterverwendet werden. In unserem konkreten Fall heißt das wir können das Objekt via OpenGL visualisieren und oder das Ergebnis als .stl Datei persistieren.
+
+\subsection{Probleme}
+Die Grundform des Marching Cubes Algorithmus hat einige Schwachpunkte. Im laufe der Zeit wurden daher Methoden geschaffen diese Schwachstellen auszumerzen. In diesem Abschnitt werden einige Probleme aufgezählt und auf Lösungen für diese verwiesen.\\
 
 \section{Dateiformate}
 \label{sec:DateiEinf}
 Die zu dieser Arbeit herangezogenen Dateiformate sind einerseits die von dem Softwarepaket Analyze\footnote{https://rportal.mayo.edu/bir/} verwendeten Image und Header Files sowie die sogenannte STereoLithography-Schnittstelle. 
 
 \subsection{Image File (.img)}
-Diese Datei ist vergleichsweise einfach aufgebaut und enthält ein Objekt bestehend aus (normalerweise) unkomprimierten Pixel Daten (vgl. \citep{AnalyzeFormat}). Jedes Pixel repräsentiert eine Voxel mit dem dazugehörigen Isowert. Das gesamte Objekt kann somit in eine 3x3 Matrix eingelesen und verarbeitet werde.
+Diese Datei ist vergleichsweise einfach aufgebaut und enthält ein Objekt bestehend aus (normalerweise) unkomprimierten Pixel Daten (vgl. \citep{AnalyzeFormat}). Jedes Pixel repräsentiert eine Voxel mit dem jeweils dazugehörigen Isowert. Das gesamte Objekt kann somit in eine 3x3 Matrix eingelesen und verarbeitet werde.
 
 \subsection{Header File (.hdr)}
 \label{sec:DateiHead}
-Diese Datei beschreibt die Ausmaße der Pixel-Datei sowie ihre Historie. (vgl. \citep{AnalyzeFormat}). \\\\
+Diese Datei beschreibt die Ausmaße der Pixel-Datei (.img) sowie ihre Historie. (vgl. \citep{AnalyzeFormat}). \\\\
 Die genaue Struktur nach \citep{AnalyzeFormat} ist in drei Teilbereiche aufgeteilt. Der erste Teil ist der sogenannte ''header key'' und beinhaltet allgemeine Informationen bezüglich der Datei (s. \ref{prog:headerKey}). Der zweite Teil beinhaltet Informationen bezüglich der Dimension der Image-Datei(s. \ref{prog:imageDim}. Der dritte und letzte Abschnitt hält Informationen bezüglich der Historie (s. \ref{prog:dataHist}).
 
 \begin{program}[H]
@@ -184,7 +200,7 @@ Zum besseren Verständnis kann in Abbildung \ref{fig:ASCIISTL} der Aufbau einer 
 	\caption{ASCII Darstellung des STL-Format \citep{STLFormat}.}
 	\label{fig:ASCIISTL}
 \end{figure}
-\noindent Für ein besseres Verständnis hinsichtlich der Implementierung ist in Abbildung \ref{fig:BINARYSTL} der Binäre Aufbau des STL-Formates zu dargestellt. 
+\noindent Für ein besseres Verständnis hinsichtlich der Implementierung ist in Abbildung \ref{fig:BINARYSTL} der Binäre Aufbau des STL-Formates dargestellt. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.65\textwidth]{StL-binary}
@@ -193,7 +209,7 @@ Zum besseren Verständnis kann in Abbildung \ref{fig:ASCIISTL} der Aufbau einer 
 \end{figure}
 
 \section{Computergrafik}
-Computergrafik beschreibt das computergestützte Erstellen und Verarbeiten von Grafiken (vgl. \citep{ComputerGraphics}). In dieser Arbeit wird auf die Verarbeitung und insbesondere auf die Darstellung von dreidimensionalen Objekten als Polygon-Menge zurückgegriffen. Zu diesem Zweck bieten sich diverse Programmierschnittstellen wie OpenGL\footnote{https://www.opengl.org/}, Direct3D\footnote{https://msdn.microsoft.com/en-us/library/windows/desktop/bb153256(v=vs.85).aspx} oder AMD Mantle\footnote{http://www.amd.com/de-de/innovations/software-technologies/technologies-gaming/mantle} an, welche für Grafikausgaben genutzt werden können. Aufgrund der Aufgabenstellung wird in dieser Arbeit OpenGL verwendet.
+Computergrafik beschreibt das computergestützte Erstellen und Verarbeiten von Grafiken (vgl. \citep{ComputerGraphics}). In dieser Arbeit wird auf die Verarbeitung und insbesondere auf die Darstellung von dreidimensionalen Objekten als Polygon-Menge zurückgegriffen. Zu diesem Zweck bieten sich diverse Programmierschnittstellen wie OpenGL\footnote{https://www.opengl.org/}, Direct3D\footnote{https://msdn.microsoft.com/en-us/library/windows/desktop/bb153256(v=vs.85).aspx} oder AMD Mantle\footnote{http://www.amd.com/de-de/innovations/software-technologies/technologies-gaming/mantle} an, welche für Grafikausgaben genutzt werden können. Aufgrund der Aufgabenstellung dieser Arbeit findet OpenGL Verwendung.
 \subsection{OpenGL}
 \begin{quote}
 	''OpenGL (for “Open Graphics Library”) is a software interface to graphics hardware.
@@ -202,4 +218,4 @@ Computergrafik beschreibt das computergestützte Erstellen und Verarbeiten von G
 	high-quality graphical images, specifically color images of three-dimensional
 	objects.'' - \citep{OpenGLDoku}
 \end{quote}
-OpenGL ermöglicht eine verhältnismäßig einfache Plattform unabhängige Grafikprogrammierung. Da es sich um eine reine Grafikbibliothek handelt kümmert sich OpenGL nicht um die Verwaltung von Zeichenoberflächen, Renderkontexten oder weitere Puffer. Um OpenGL vernünftig mit einem Betriebssystem zu verwenden existieren daher verschiedene Bibliotheken. Die in dieser Arbeit verwendete Bibliothek ist QT. Die hierfür sind die Unabhängigkeit bezüglich Betriebssystem, die Aktualität der Bibliothek sowie die hohe Verbreitung dieser.
+OpenGL ermöglicht eine verhältnismäßig einfache Plattform unabhängige Grafikprogrammierung. Da es sich um eine reine Grafikbibliothek handelt kümmert sich OpenGL nicht um die Verwaltung von Zeichenoberflächen, Renderkontexten oder weitere Puffer. Um OpenGL im Weiteren vernünftig mit einem Betriebssystem zu verwenden existieren daher verschiedene Bibliotheken. Die in dieser Arbeit verwendete Bibliothek ist QT. Die Gründe für diese Entscheidung sind die Unabhängigkeit bezüglich Betriebssystem, die Aktualität der Bibliothek sowie die hohe Verbreitung dieser.

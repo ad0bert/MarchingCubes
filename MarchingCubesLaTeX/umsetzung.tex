@@ -1,10 +1,10 @@
 \chapter{Umsetzung}
-Im Rahmen dieser Arbeit entstand ein in C++ geschriebenes Programm welches den Marching Cubes Algorithmus auf eine Voxelmenge anwendet und das Resultat via OpgenGL visualisiert. Des Weiteren ist es möglich das verarbeitete Model als STereoLithography (.stl) Datei zu exportieren.
+Im Rahmen dieser Arbeit entstand eine in C++ geschriebenes Applikation welche den Marching Cubes Algorithmus auf eine Voxelmenge anwendet und das Resultat via OpgenGL visualisiert. Des Weiteren ist es möglich, das verarbeitete Model als STereoLithography (.stl) Datei zu exportieren.
 \section{Marching Cubes}
 \label{sec:mcUms}
-Der Marching Cubes Algorithmus ist das Herzstück der entstandenen Applikation er ermöglicht die Umrechnung der gegebenen Voxel Datenmenge in eine polygonale Darstellung welche sich im später vergleichsweise einfach darstellen lässt.
+Der Marching Cubes Algorithmus ist das Herzstück der entstandenen Applikation er ermöglicht die Umrechnung der gegebenen Voxel Datenmenge in eine polygonale Darstellung, welche sich im späteren Verlauf vergleichsweise einfach darstellen lässt.
 \subsection{Allgemein}
-Die Implementierung ist eine angepasst Version der von [ref] bereitgestellten Umsetzung. Die wesentlichen Änderungen sind die Auslagerung der Funktionen in eine eigenen Klasse und das verwenden anderer Datenstrukturen. Durch die Umstellung auf STL-Behälter und der daraus folgende Verzicht auf C-Strukturen welche zur Laufzeit immer neuen Speicher anfordern konnte die Geschwindigkeit enorm erhöht werde.
+Die Implementierung ist eine angepasst Version der von \citep{BourkeMC} bereitgestellten Umsetzung. Die wesentlichen Änderungen sind die Auslagerung der Funktionen in eine eigenen Klasse und das verwenden anderer Datenstrukturen. Durch die Umstellung auf STL-Behälter und der daraus folgende Verzicht auf C-Strukturen welche zur Laufzeit immer neuen Speicher anfordern, konnte die Geschwindigkeit immens gesteigert werde.
 \subsection{Schnittstelle (Klasse)}
 \begin{figure}[H]
 	\centering
@@ -14,11 +14,11 @@ Die Implementierung ist eine angepasst Version der von [ref] bereitgestellten Um
 \end{figure}
 
 \subsubsection{Datentypen}
-Neben den üblichen Datentypen wurden zur Vereinfachung komplexere Strukturen verwendet.\\
+Neben den üblichen Datentypen wurden, zur leichteren Verarbeitung, komplexere Strukturen verwendet.\\
 \begin{itemize}
 	\item \textbf{XYZ} beschreibt einen Punkt im dreidimensionalen Raum.
 	\item \textbf{GRIDCELL} ist die Repräsentation eines Voxel-Würfels. 
-	\item \textbf{TRIANGLE} Repräsentiert ein Dreieck mithilfe seiner drei Eckpunkte und seiner Normalen.
+	\item \textbf{TRIANGLE} repräsentiert ein Dreieck mithilfe seiner drei Eckpunkte im Raum und seiner Normalen.
 	\item \textbf{3dBuffer} bildet ein Voxelgitter als dreidimensionalen Vektor im Speicher ab.
 \end{itemize}
 
@@ -169,7 +169,7 @@ Die Implementierung ermöglicht die Darstellung des generierten Objektes, das be
 \end{itemize}
 \subsubsection{Verwendung}
 Die Verwendung dieser Klasse ist vergleichsweise einfach. Eine beispielhafte Implementierung ist in Programm \ref{prog:VisVerw} zu finden.
-\begin{program}
+\begin{program}[H]
 	\caption{Exemplarische Verwendung der Visualisation Klasse}
 	\label{prog:VisVerw}
 	\begin{CCode}
@@ -192,7 +192,18 @@ Die Verwendung dieser Klasse ist vergleichsweise einfach. Eine beispielhafte Imp
 In diesem Abschnitt wird auf die Funktionen der Benutzeroberfläche (UI) des entstandenen Prototypen eingegangen. Erstellt wurde diese mithilfe des QT-Designers. Um eine einfache Benutzung zu gewährleisten wurde sie möglichst schlicht gehalten.
 
 \subsection{Allgemeiner Aufbau}
-
+In Abbildung \ref{fig:UI1} ist die Benutzeroberfläche dargestellt. Es folgt nun eine kurze Beschreibung der einzelnen Schaltflächen.
+\begin{itemize}
+	\item \textbf{Menu:} In der linken oberen Ecke befindet sich die Menu Schaltfläche welche nur einen Eintrag aufweist. Dieser ermöglicht das Exportieren des generierten Objektes in das .stl Format.
+	\item \textbf{Select Header:} Durch das betätigen des Button ''Select Header'' öffnet sich eine Dialogbox zum Auswählen einer .hdr Datei im Dateisystem. Nach erfolgreichem selektieren einer Datei erscheint der Dateipfad links im Textfeld. Alternativ kann auch der Pfad direkt im Textfeld bearbeitet werden.
+	\item \textbf{Select Image:} Die Funktionalität ist Analog zu ''Select Header'' für .img Dateien.
+	\item \textbf{Generate View:} Durch das betätigen dieser Schaltfläche wird der Marching Cubes Algorithmus auf die ausgewählten Dateien angewandt. Nach erfolgreicher Berechnung wird das Ergebnis rechts in der Zeichenoberfläche dargestellt.
+	\item \textbf{Enable Wiring:} Siehe Abschnitt \ref{sec:slicing}.
+	\item \textbf{Enable Slicing:} Siehe Abschnitt \ref{sec:wiring}.
+	\item \textbf{Zeichenoberfläche:} Die rechte Hälfte der Benutzeroberfläche dient zur dreidimensionalen Darstellung des generierten Objektes. Mithilfe der Maus ist es möglich das angezeigte Objekt zu rotieren. Des Weiteren besteht die Möglichkeit mit dem Mausrat die Größe zu ändern (zoomen).
+	\item \textbf{Isolevel Regler:} Der rechts neben der Zeichenfläche angebrachte Regler dient zur Anpassung des Isowertes. Bei jeder Änderung wird das anzuzeigende Objekt mit dem neuen Wert berechnet und angezeigt.
+	\item \textbf{Polygon Regler:} Dieser Regler ist unterhalb der Zeichenoberfläche zu finden und hat zwei Funktionen. Die erste Funktionalität ist das anpassen der Schrittweite für den Marching Cubes Algorithmus. Eine höhere Schrittweite führt zu einer gröberen polygonalen Struktur. Die zweite Funktion ist das anpassen der Dicke der Scheibe bei aktiviertem ''Slicing''
+\end{itemize}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{UI1}
@@ -200,6 +211,7 @@ In diesem Abschnitt wird auf die Funktionen der Benutzeroberfläche (UI) des ent
 	\label{fig:UI1}
 \end{figure}
 \subsection{Slicing}
+\label{sec:slicing}
 Die Schaltfläche ''Enable Slicing'' ermöglicht die Darstellung einer einzelnen Scheibe des gesamt Objektes. Durch das Aktivieren der Checkbox wird auch der Regler links Aktiviert. Mithilfe von diesem kann das zu betrachtende Scheibenelement verschoben werden. Des Weiteren ändert sich die Funktionalität des unteren Reglers von der Regulierung der Polygongröße zur Regulierung der Dicke der Scheibe.\\
 \\
 Vorteil dieser Darstellungsform ist das mit aktivem Slicing das Innenleben eines Objektes betrachtet werden kann.\\
@@ -212,6 +224,7 @@ Das Benutzerinterface mit Aktiviertem Slicing ist in Abbildung \ref{fig:UISlicin
 	\label{fig:UISlicing}
 \end{figure}
 \subsection{Wiring}
+\label{sec:wiring}
 Durch Aktivieren der Checkbox ''Enable Wiring'' kann das Drahtgittermodell des Objektes betrachtet werden. Diese Darstellung ermöglicht es die polygonale Struktur des Objektes besser zu erkennen. In Abbildung \ref{fig:UIWiring} ist ein Objekt mit aktiven Wiring zu sehen.
 \begin{figure}[H]
 	\centering
