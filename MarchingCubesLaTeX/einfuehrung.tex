@@ -1,10 +1,10 @@
 \chapter{Allgemeine Einführung}
-In diesem Kapitel wird auf die grundlegende Theorie bezüglich Bildverarbeitung, Marching Cubes, Dateiformate und OpgenGL eingegangen. Es wird ein grober Überblick über die wichtigsten Begrifflichkeiten der jeweiligen Bereiche geschaffen, um ein grundlegendes Verständnis der Materie zu gewährleisten.
+In diesem Kapitel wird auf die zugrunde liegende Theorie bezüglich Bildverarbeitung, Marching Cubes, verwendete Dateiformate und OpgenGL eingegangen. Es wird ein grober Überblick über die wichtigsten Begrifflichkeiten der jeweiligen Bereiche geschaffen, um ein grundlegendes Verständnis der Materie zu gewährleisten. Da es sich jeweils um sehr große Bereiche handelt wurde darauf geachtet nur das wesentliche welches für das Verständnis dieser Arbeit notwendig ist zu erfassen.
 \section{Bildgebende Verfahren}
 \begin{quote}
 	''Die Medizinische Bildverarbeitung hat das Ziel, medizinische Bilder und Bildfolgen zur Unterstützung der medizinischen Diagnostik und Therapie aufzubereiten, zu analysieren und zu visualisieren.'' \citep{MedBildVerarbeitung}\\
 \end{quote}
-Die verschiedenen medizinischen Verfahren können grob in die Art der erzeugten Bilddaten eingeteilt werden.
+Die verschiedenen medizinischen Verfahren können grob in die Art der erzeugten Bilddaten eingeteilt werden.\\
 \begin{itemize}
 	\item \textbf{Schnittbilder} z.B. mittels Computertomografie, Magnetresonanztomografie oder Röntgentomografie.
 	\item \textbf{Projektionsbilder} z.B. durch ''klassisches'' Röntgen.
@@ -25,7 +25,7 @@ Ein solches Voxel ist als ein einzelner Punkt in einem dreidimensionalen Objekt 
 \end{figure}
 
 \section{Marching Cubes}
-Da der Marching Cubes Algorithmus das zentrale Element dieser Arbeit bildet, wird hier seine Grundform wie sie in \citep{MCAlgo} beschrieben ist nochmals genau erörtert. 
+Da der Marching Cubes Algorithmus das zentrale Element dieser Arbeit bildet, wird hier seine Grundform wie sie in \citep{MCAlgo} beschrieben ist nochmals genau erörtert. Für weiterführende Betrachtungen und Verbesserungen wird am Ende im Abschnitt ''Schwachpunkte'' auf entsprechende Literatur verwiesen.
 \subsection{Formale Definition}
 \begin{quote}
 	''Der Marching Cubes Algorithmus ist ein Algorithmus um eine Isofläche $S_{c}$ eines Objektes, dass in einem Skalarfeld  $\varphi : \mathbb{R}^{n} \rightarrow \mathbb{R }$ beschrieben wird durch Dreiecke zu approximieren. Der Isowert c $\epsilon$ $ \mathbb{ R} $ beschreibt die gemeinsame Eigenschaft des Objektes wie z.B. gleiche Dichte, Temperatur oder emittierter Strahlung.''
@@ -40,9 +40,9 @@ S_{c} := \{ \vartheta \text{ } \epsilon \text{ } \mathbb{R}^{n} \text{ | } \varp
 \end{equation} 
 \subsection{Funktionsweise}
 
-Wie der Name des Algorithmus bereits sagt wird durch die Voxel-Menge ''marschiert''. Die Input-Menge des Algorithmus umfasst acht aneinander grenzende Punkte der Voxel-Menge, welche zusammen einen Würfel bilden sowie eines Schwellwerts für dem Isowert. Nach erfolgreicher Verarbeitung wird zum nächste Würfel gewandert (''marschiert'') bis die gesamte Datenmenge abgearbeitet wurde. 
+Wie der Name des Algorithmus bereits sagt wird durch die Voxel-Menge ''marschiert''. Darunter ist das betrachten eines Teilausschnitts des Voxelgitters nach dem nächsten zu verstehen. Die Input-Menge des Algorithmus umfasst acht aneinander grenzende Punkte der Voxel-Menge, welche zusammen einen Würfel bilden sowie eines Schwellwerts für die Dichte. Nach erfolgreicher Verarbeitung wird zum nächste Würfel gewandert (''marschiert'') bis die gesamte Datenmenge abgearbeitet wurde.
 \subsubsection{Vorbereitung}
-Wie bereits erwähnt wird der Algorithmus für jeden einzelnen Würfel der gesamten Menge angewendet. Für ein besseres Verständnis zeigt Abbildung \ref{fig:Wuerfel} einen solchen Würfel (rot) in einem Voxelgitter.
+Wie bereits erwähnt wird der Algorithmus auf jeden einzelnen Würfel der gesamten Menge angewendet. Für ein besseres Verständnis zeigt Abbildung \ref{fig:Wuerfel} einen solchen Würfel (rot) in einem Voxelgitter.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.50\textwidth]{Wuerfel}
@@ -66,12 +66,12 @@ Aufgrund der Symmetrie eines Würfels können durch Rotation bzw. Spiegelung die
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.70\textwidth]{MCPos}
-	\caption{Marching Cubes Grundkonigurationen \citep{MCAlgo}.}
+	\caption{Marching Cubes Grundkonfigurationen \citep{MCAlgo}.}
 	\label{fig:MCPos}
 \end{figure}
 
 \subsubsection{Verarbeitung}
-In diesem Abschnitt wird nun auf die zu durchlaufenden Schritte eines jeden Würfels aus dem Voxelgitter eingegangen. Der Ablauf lässt sich laut \citep{MCAlgo} in sieben Schritte unterteilen:
+In diesem Abschnitt wird nun auf die zu durchlaufenden Schritte eines jeden Würfels aus dem Voxelgitter eingegangen. Der Ablauf lässt sich laut \citep{MCAlgo} in sieben Schritte unterteilen:\\
 \begin{enumerate}
 	\item Einlesen von vier Scheiben in den Speicher.
 	\item Betrachten von zwei Scheiben und bilden eines Würfels aus vier Nachbarn der ersten und weiteren vier Nachbarn der zweiten Scheibe.
@@ -82,16 +82,27 @@ In diesem Abschnitt wird nun auf die zu durchlaufenden Schritte eines jeden Wür
 	\item Speichern der resultierenden Dreiecke und Normalen.\\
 \end{enumerate}
 
-\noindent Die ersten drei Punkte wurden bereits im vorgelagerten Abschnitt ''Vorbereitung'' beschrieben. \\
+\noindent Wie bereits im Abschnitt ''Vorbereitung'' erklärt wird in den ersten drei Punkten ein Würfel aus dem Voxelgitter extrahiert. Im Anschluss wird dieser Indexiert und jede Ecke mit einem Iso-Schwellwert abgeglichen. Der dadurch erhaltene Index wird nun in Punkt 4 für die weitere Verarbeitung benötigt. \\
 \\
 Punkt 4 beschreibt, dass für jede der 256 möglichen Kombinationen des Würfels die dazugehörigen Dreiecksvertices bestimmt werden müssen. Dies erfolgt durch Betrachtung zweier benachbarten Punkte des Würfels und deren Abgleich mit dem gegeben Schwellwert. Da eine erneute Auswertung für jeden Würfel äußerst rechenintensiv wäre, wird hierzu auf einen sogenannten Lookuptabel zurückgegriffen, welcher für jeden der 256 Konfigurationen die vorberechneten Werte beinhaltet. \\
 \\
-Schritt 5 und 6 dienen dazu die Position der Dreiecke im Raum zu bestimmen. Für eine nähere Beschreibung der Berechnung siehe \citep{MCAlgo}.\\
+In Schritt 5 wird durch die Interpolation der Dreiecksverices eine Glättung der Oberfläche erreicht.\\
+\\
+Punkt 6 dient dazu die Position der Dreiecke im Raum zu bestimmen. Für eine nähere Beschreibung der Berechnung siehe \citep{MCAlgo}.\\
 \\
 Im letzten Schritt können nun die Berechneten Dreiecke weiterverwendet werden. In unserem konkreten Fall heißt das wir können das Objekt via OpenGL visualisieren und oder das Ergebnis als .stl Datei persistieren.
 
-\subsection{Probleme}
-Die Grundform des Marching Cubes Algorithmus hat einige Schwachpunkte. Im laufe der Zeit wurden daher Methoden geschaffen diese Schwachstellen auszumerzen. In diesem Abschnitt werden einige Probleme aufgezählt und auf Lösungen für diese verwiesen.\\
+\subsection{Schwachpunkte}
+Die Grundform des Marching Cubes Algorithmus hat einige Schwachpunkte. Im laufe der Zeit wurden daher Methoden geschaffen diese Schwachstellen auszumerzen. In diesem Abschnitt werden einige Probleme aufgezählt und auf Lösungen für diese verwiesen.
+
+\subsubsection{Uneindeutigkeit}
+Die Einteilung in die 15 Grundkonfigurationen (s. Abbildung \ref{fig:MCPos}) kann zu Uneindeutigkeiten bezüglich der Repräsentation führen. Bei nicht Behandlung dieser kann es zu ''Löchern'' in der Oberfläche des resultierenden Objektes kommen. Zur Behebung dieses Problems stützen sich moderne Implementierungen des Marching Cubes Algorithmus wird daher auf Arbeiten wie \citep{Leak1} oder \citep{Leak2} zurückgegriffen welche diesbezüglich Lösungen anbieten.
+\subsubsection{Dreiecksdezimierung}
+Der Marching Cubes Algorithmus erzeugt von Natur aus eine sehr hohe Anzahl an Dreiecken. Dies wirkt sich negativ auf die Performanz des Algorithmus aus. Daher wurden Methoden entwickelt die es ermöglichen die Anzahl der zu verarbeitenden Dreiecke zu minimieren. Ein mögliches Verfahren zur Dezimierung ist das in \citep{DecTri} beschriebene.
+\subsubsection{Glättung Dreiecksnetz}
+Der Punkt der Verarbeitung ''Interpolation der Positionen der Dreiecksvertices'' welcher im Kapitel zuvor erwähnt wurde, dient bereits der Glättung des Dreiecksnetzes, da der Marching Cubes Algorithmus ohne diesen Schritt eine sehr kantige Oberfläche erzeugen würde. Um eine weitere Verfeinerung zu erreichen bietet sich hier der häufig verwendete Humphrey’s Classes Algorithmus \citep{Verf} an.
+\subsubsection{Alternative Datenstruktur}
+Da ein Volumen Datensatz verhältnismäßig große Ausmaße annehmen kann, bietet sich ein sogenannter Octree für eine vereinfachte Datenhaltung an. In \citep{Octree} ist die Verwendung einer solchen Struktur zur Generierung von Isoflächen dargestellt.
 
 \section{Dateiformate}
 \label{sec:DateiEinf}
@@ -122,7 +133,7 @@ struct header_key /* header key */
 	\end{CCode}
 \end{program}
 
-\begin{program}[H]
+\begin{program}
 	\caption{Data history als C-Struktur \citep{AnalyzeFormat}}
 	\label{prog:dataHist}
 	\begin{CCode}
@@ -201,7 +212,7 @@ Zum besseren Verständnis kann in Abbildung \ref{fig:ASCIISTL} der Aufbau einer 
 	\label{fig:ASCIISTL}
 \end{figure}
 \noindent Für ein besseres Verständnis hinsichtlich der Implementierung ist in Abbildung \ref{fig:BINARYSTL} der Binäre Aufbau des STL-Formates dargestellt. 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=.65\textwidth]{StL-binary}
 	\caption{Binäre Darstellung des STL-Format \citep{STLFormat}.}

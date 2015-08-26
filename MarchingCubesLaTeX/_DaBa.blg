@@ -13,6 +13,11 @@ Warning--entry type for "SeibtBak" isn't style-file defined
 --line 74 of file literatur.bib
 Warning--entry type for "WollmannBak" isn't style-file defined
 --line 86 of file literatur.bib
+I was expecting a `,' or a `}'---line 149 of file literatur.bib
+ :  
+ :  hyphenation={english}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Too many commas in name 2 of "Chua, Chee, Kai and Gan, G., K., Jacob and Tong, Mei" for entry STereoLithography
 while executing---line 2138 of file natdin.bst
 Too many commas in name 2 of "Chua, Chee, Kai and Gan, G., K., Jacob and Tong, Mei" for entry STereoLithography
@@ -23,4 +28,4 @@ Too many commas in name 2 of "Chua, Chee, Kai and Gan, G., K., Jacob and Tong, M
 while executing---line 2227 of file natdin.bst
 Too many commas in name 2 of "Chua, Chee, Kai and Gan, G., K., Jacob and Tong, Mei" for entry STereoLithography
 while executing---line 2227 of file natdin.bst
-(There were 5 error messages)
+(There were 6 error messages)
