@@ -53,17 +53,20 @@
 \contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{26}{chapter.4}
 \contentsline {section}{\numberline {4.1}Ergebnisse}{26}{section.4.1}
 \contentsline {section}{\numberline {4.2}Erweiterungen}{26}{section.4.2}
-\contentsline {chapter}{Literaturverzeichnis}{27}{chapter*.30}
-\contentsline {chapter}{\numberline {A}Inhalt der CD-ROM}{29}{appendix.A}
-\contentsline {paragraph}{Format:}{29}{section*.31}
-\contentsline {section}{\numberline {A.1}PDF-Dateien}{29}{section.A.1}
-\contentsline {paragraph}{Pfad:}{29}{section*.32}
-\contentsline {section}{\numberline {A.2}La\discretionary {-}{}{}TeX\xspace -Dateien}{29}{section.A.2}
-\contentsline {paragraph}{Pfad:}{29}{section*.33}
-\contentsline {section}{\numberline {A.3}Style/Class-Dateien}{29}{section.A.3}
-\contentsline {paragraph}{Pfad:}{29}{section*.34}
-\contentsline {section}{\numberline {A.4}Implementierung}{30}{section.A.4}
-\contentsline {paragraph}{Pfad:}{30}{section*.35}
-\contentsline {section}{\numberline {A.5}Sonstiges}{30}{section.A.5}
-\contentsline {paragraph}{Pfad:}{30}{section*.36}
-\contentsline {paragraph}{Pfad:}{30}{section*.37}
+\contentsline {subsection}{\numberline {4.2.1}Parallelisieren}{26}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Alternative Algorithmen}{27}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Algorithmen zur Verbesserung}{27}{subsection.4.2.3}
+\contentsline {chapter}{Literaturverzeichnis}{28}{chapter*.30}
+\contentsline {chapter}{\numberline {A}Inhalt der CD-ROM}{30}{appendix.A}
+\contentsline {paragraph}{Format:}{30}{section*.31}
+\contentsline {section}{\numberline {A.1}PDF-Dateien}{30}{section.A.1}
+\contentsline {paragraph}{Pfad:}{30}{section*.32}
+\contentsline {section}{\numberline {A.2}La\discretionary {-}{}{}TeX\xspace -Dateien}{30}{section.A.2}
+\contentsline {paragraph}{Pfad:}{30}{section*.33}
+\contentsline {section}{\numberline {A.3}Style/Class-Dateien}{30}{section.A.3}
+\contentsline {paragraph}{Pfad:}{30}{section*.34}
+\contentsline {section}{\numberline {A.4}Implementierung}{31}{section.A.4}
+\contentsline {paragraph}{Pfad:}{31}{section*.35}
+\contentsline {section}{\numberline {A.5}Sonstiges}{31}{section.A.5}
+\contentsline {paragraph}{Pfad:}{31}{section*.36}
+\contentsline {paragraph}{Pfad:}{31}{section*.37}
