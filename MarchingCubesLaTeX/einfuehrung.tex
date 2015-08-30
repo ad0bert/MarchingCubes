@@ -1,5 +1,5 @@
 \chapter{Allgemeine Einführung}
-In diesem Kapitel wird auf die zugrunde liegende Theorie bezüglich Bildverarbeitung, Marching Cubes, verwendete Dateiformate und OpgenGL eingegangen. Es wird ein grober Überblick über die wichtigsten Begrifflichkeiten der jeweiligen Bereiche geschaffen, um ein grundlegendes Verständnis der Materie zu gewährleisten. Da es sich jeweils um sehr große Bereiche handelt wurde darauf geachtet nur das wesentliche welches für das Verständnis dieser Arbeit notwendig ist zu erfassen.
+In diesem Kapitel wird auf die zugrunde liegende Theorie bezüglich Bildverarbeitung, Marching Cubes, verwendete Dateiformate und OpgenGL eingegangen. Es wird ein grober Überblick über die wichtigsten Begrifflichkeiten der jeweiligen Bereiche geschaffen, um ein grundlegendes Verständnis der Materie zu gewährleisten. Da es sich jeweils um sehr große Bereiche handelt wurde darauf geachtet, nur das Wesentliche welches für das Verständnis dieser Arbeit notwendig ist zu erfassen.
 \section{Bildgebende Verfahren}
 \begin{quote}
 	''Die Medizinische Bildverarbeitung hat das Ziel, medizinische Bilder und Bildfolgen zur Unterstützung der medizinischen Diagnostik und Therapie aufzubereiten, zu analysieren und zu visualisieren.'' \citep{MedBildVerarbeitung}\\
@@ -15,7 +15,7 @@ Das Hauptaugenmerk dieser Arbeit liegt auf der aus den tomographischen Verfahren
 \section{Volumengrafik}
 Unter Volumengrafik versteht man in der Computergrafik die Darstellung von Objekten durch eine Menge von Punkten. Diese Punkte werden auch als Voxeln bezeichnet und repräsentieren einen Punkt im Raum.
 \subsection{Voxel} 
-Ein solches Voxel ist als ein einzelner Punkt in einem dreidimensionalen Objekt zu verstehen, welcher einen gewissen Isowert aufweist. Dieser Wert beschreibt die Eigenschaft des Objektes an diesem Punkt und ist essentiell um z.B. bei den tomographischen Verfahren in der Medizin die festeren von den weicheren teilen eines Körpers zu unterscheiden (z.B. Knochen und Gewebe). In Abbildung \ref{fig:Voxelgitter} ist eine solche Voxel-Menge zusehen die verschiedenen Grauwerte der einzelnen Bildpunkte stellen dabei die unterschiedlichen Isowerte dar.
+Ein solches Voxel ist als ein einzelner Punkt in einem dreidimensionalen Objekt zu verstehen, welcher einen gewissen Isowert aufweist. Dieser Wert beschreibt die Eigenschaft des Objektes an diesem Punkt und ist essentiell um z.B. bei den tomographischen Verfahren in der Medizin die festeren von den weicheren Teilen eines Körpers zu unterscheiden (z.B. Knochen und Gewebe). In Abbildung \ref{fig:Voxelgitter} ist eine solche Voxel-Menge zu sehen. Die verschiedenen Grauwerte der einzelnen Bildpunkte stellen dabei die unterschiedlichen Isowerte dar.
 
 \begin{figure}
 	\centering
@@ -28,7 +28,7 @@ Ein solches Voxel ist als ein einzelner Punkt in einem dreidimensionalen Objekt 
 Da der Marching Cubes Algorithmus das zentrale Element dieser Arbeit bildet, wird hier seine Grundform wie sie in \citep{MCAlgo} beschrieben ist nochmals genau erörtert. Für weiterführende Betrachtungen und Verbesserungen wird am Ende im Abschnitt ''Schwachpunkte'' auf entsprechende Literatur verwiesen.
 \subsection{Formale Definition}
 \begin{quote}
-	''Der Marching Cubes Algorithmus ist ein Algorithmus um eine Isofläche $S_{c}$ eines Objektes, dass in einem Skalarfeld  $\varphi : \mathbb{R}^{n} \rightarrow \mathbb{R }$ beschrieben wird durch Dreiecke zu approximieren. Der Isowert c $\epsilon$ $ \mathbb{ R} $ beschreibt die gemeinsame Eigenschaft des Objektes wie z.B. gleiche Dichte, Temperatur oder emittierter Strahlung.''
+	''Der Marching Cubes Algorithmus ist ein Algorithmus um eine Isofläche $S_{c}$ eines Objektes, das in einem Skalarfeld  $\varphi : \mathbb{R}^{n} \rightarrow \mathbb{R }$ beschrieben wird durch Dreiecke zu approximieren. Der Isowert c $\epsilon$ $ \mathbb{ R} $ beschreibt die gemeinsame Eigenschaft des Objektes wie z.B. gleiche Dichte, Temperatur oder emittierter Strahlung.''
 \end{quote} \citep{WollmannBak}\\
 
 \noindent Durch den Marching Cubes Algorithmus wird für eine Isofläche $S_{c}$ (s. \ref{mat:isoDef})
@@ -57,9 +57,9 @@ Wie bereits erwähnt wird der Algorithmus auf jeden einzelnen Würfel der gesamt
 	\label{fig:WuerfelIndizierung}
 \end{figure}
 
-\noindent Jede Ecke des Würfels kann aufgrund seines Isowertes als Solide bzw. Transparent klassifiziert werden. Folglich sind aufgrund der Zwei möglichen Werte jeder Ecke $2^{8} = 256$ unterschiedliche Konfigurationen der Eingabemenge möglich. Jede dieser Konfigurationen kann als ein 8 Bit Muster dargestellt werden wobei gilt, dass jedes Bit \textit{i} bei welchem der Isowert \textit{$d_{i}$} des dazugehörigen Voxel einen gewissen Schwellwert \textit{c} überschreitet als binäre 0 interpretiert wird. Für die Werte kleiner gleich des Schwellwertes wird eine Binäre 1 angenommen.\\
+\noindent Jede Ecke des Würfels kann aufgrund seines Isowertes als Solide bzw. Transparent klassifiziert werden. Folglich sind aufgrund der zwei möglichen Werte jeder Ecke $2^{8} = 256$ unterschiedliche Konfigurationen der Eingabemenge möglich. Jede dieser Konfigurationen kann als ein 8 Bit Muster dargestellt werden, wobei gilt, dass jedes Bit \textit{i} bei welchem der Isowert \textit{$d_{i}$} des dazugehörigen Voxel einen gewissen Schwellwert \textit{c} überschreitet als binäre 0 interpretiert wird. Für die Werte kleiner gleich des Schwellwertes wird eine Binäre 1 angenommen.\\
 \\ 
-Betrachtet man nun dieses Bitmuster als natürliche Zahl erhält man einen sogenannten Würfelindex welcher einen Wert zwischen 0  und 255 aufweist dieser ist für die weitere Verarbeitung essentiell.\\
+Betrachtet man nun dieses Bitmuster als natürliche Zahl erhält man einen sogenannten Würfelindex, welcher einen Wert zwischen 0  und 255 aufweist. Dieser ist für die weitere Verarbeitung essentiell.\\
 \\
 Aufgrund der Symmetrie eines Würfels können durch Rotation bzw. Spiegelung die Anzahl der 255 möglichen Anordnungen der Voxeln auf 15 unterschiedliche Konfigurationen reduziert werden. Diese 15 Konfigurationen sind in Abbildung \ref{fig:MCPos} zu sehen.
 
@@ -74,17 +74,17 @@ Aufgrund der Symmetrie eines Würfels können durch Rotation bzw. Spiegelung die
 In diesem Abschnitt wird nun auf die zu durchlaufenden Schritte eines jeden Würfels aus dem Voxelgitter eingegangen. Der Ablauf lässt sich laut \citep{MCAlgo} in sieben Schritte unterteilen:\\
 \begin{enumerate}
 	\item Einlesen von vier Scheiben in den Speicher.
-	\item Betrachten von zwei Scheiben und bilden eines Würfels aus vier Nachbarn der ersten und weiteren vier Nachbarn der zweiten Scheibe.
-	\item Berechnen des Index des Würfels durch vergleichen der Isowerte der Punkte mit dem Schwellwert.
+	\item Betrachten von zwei Scheiben und Bilden eines Würfels aus vier Nachbarn der ersten und weiteren vier Nachbarn der zweiten Scheibe.
+	\item Berechnen des Index des Würfels durch Vergleichen der Isowerte der Punkte mit dem Schwellwert.
 	\item Bestimmung der Liste der Dreiecksvertices anhand des Index (Abgleich mit Lookuptable).
 	\item Interpolation der Positionen der Dreiecksvertices.
 	\item Interpolation der Normalen an den Dreiecksvertices.
 	\item Speichern der resultierenden Dreiecke und Normalen.\\
 \end{enumerate}
 
-\noindent Wie bereits im Abschnitt ''Vorbereitung'' erklärt wird in den ersten drei Punkten ein Würfel aus dem Voxelgitter extrahiert. Im Anschluss wird dieser Indexiert und jede Ecke mit einem Iso-Schwellwert abgeglichen. Der dadurch erhaltene Index wird nun in Punkt 4 für die weitere Verarbeitung benötigt. \\
+\noindent Wie bereits im Abschnitt ''Vorbereitung'' erklärt, wird in den ersten drei Punkten ein Würfel aus dem Voxelgitter extrahiert. Im Anschluss wird dieser Indexiert und jede Ecke mit einem Iso-Schwellwert abgeglichen. Der dadurch erhaltene Index wird nun in Punkt 4 für die weitere Verarbeitung benötigt. \\
 \\
-Punkt 4 beschreibt, dass für jede der 256 möglichen Kombinationen des Würfels die dazugehörigen Dreiecksvertices bestimmt werden müssen. Dies erfolgt durch Betrachtung zweier benachbarten Punkte des Würfels und deren Abgleich mit dem gegeben Schwellwert. Da eine erneute Auswertung für jeden Würfel äußerst rechenintensiv wäre, wird hierzu auf einen sogenannten Lookuptabel zurückgegriffen, welcher für jeden der 256 Konfigurationen die vorberechneten Werte beinhaltet. \\
+Punkt 4 beschreibt, dass für jede der 256 möglichen Kombinationen des Würfels die dazugehörigen Dreiecksvertices bestimmt werden müssen. Dies erfolgt durch Betrachtung zweier benachbarter Punkte des Würfels und deren Abgleich mit dem gegeben Schwellwert. Da eine erneute Auswertung für jeden Würfel äußerst rechenintensiv wäre, wird hierzu auf einen sogenannten Lookuptabel zurückgegriffen, welcher für jeden der 256 Konfigurationen die vorberechneten Werte beinhaltet. \\
 \\
 In Schritt 5 wird durch die Interpolation der Dreiecksverices eine Glättung der Oberfläche erreicht.\\
 \\
@@ -94,10 +94,10 @@ Im letzten Schritt können nun die Berechneten Dreiecke weiterverwendet werden. 
 
 \subsection{Schwachpunkte}
 \label{sec:schwach}
-Die Grundform des Marching Cubes Algorithmus hat einige Schwachpunkte. Im laufe der Zeit wurden daher Methoden geschaffen diese Schwachstellen auszumerzen. In diesem Abschnitt werden einige Probleme aufgezählt und auf Lösungen für diese verwiesen.
+Die Grundform des Marching Cubes Algorithmus hat einige Schwachpunkte. Im Laufe der Zeit wurden daher Methoden geschaffen diese Schwachstellen auszumerzen. In diesem Abschnitt werden einige Probleme aufgezählt und auf Lösungen für diese verwiesen.
 
 \subsubsection{Uneindeutigkeit}
-Die Einteilung in die 15 Grundkonfigurationen (s. Abbildung \ref{fig:MCPos}) kann zu Uneindeutigkeiten bezüglich der Repräsentation führen. Bei nicht Behandlung dieser kann es zu ''Löchern'' in der Oberfläche des resultierenden Objektes kommen. Zur Behebung dieses Problems stützen sich moderne Implementierungen des Marching Cubes Algorithmus wird daher auf Arbeiten wie \citep{Leak1} oder \citep{Leak2} zurückgegriffen welche diesbezüglich Lösungen anbieten.
+Die Einteilung in die 15 Grundkonfigurationen (s. Abbildung \ref{fig:MCPos}) kann zu Uneindeutigkeiten bezüglich der Repräsentation führen. Bei nicht Behandlung dieser kann es zu ''Löchern'' in der Oberfläche des resultierenden Objektes kommen. Zur Behebung dieses Problems stützen sich moderne Implementierungen des Marching Cubes Algorithmus auf Arbeiten wie \citep{Leak1} oder \citep{Leak2} welche diesbezüglich Lösungen anbieten.
 \subsubsection{Dreiecksdezimierung}
 Der Marching Cubes Algorithmus erzeugt von Natur aus eine sehr hohe Anzahl an Dreiecken. Dies wirkt sich negativ auf die Performanz des Algorithmus aus. Daher wurden Methoden entwickelt die es ermöglichen die Anzahl der zu verarbeitenden Dreiecke zu minimieren. Ein mögliches Verfahren zur Dezimierung ist das in \citep{DecTri} beschriebene.
 \subsubsection{Glättung Dreiecksnetz}
@@ -115,7 +115,7 @@ Diese Datei ist vergleichsweise einfach aufgebaut und enthält ein Objekt besteh
 \subsection{Header File (.hdr)}
 \label{sec:DateiHead}
 Diese Datei beschreibt die Ausmaße der Pixel-Datei (.img) sowie ihre Historie. (vgl. \citep{AnalyzeFormat}). \\\\
-Die genaue Struktur nach \citep{AnalyzeFormat} ist in drei Teilbereiche aufgeteilt. Der erste Teil ist der sogenannte ''header key'' und beinhaltet allgemeine Informationen bezüglich der Datei (s. \ref{prog:headerKey}). Der zweite Teil beinhaltet Informationen bezüglich der Dimension der Image-Datei(s. \ref{prog:imageDim}. Der dritte und letzte Abschnitt hält Informationen bezüglich der Historie (s. \ref{prog:dataHist}).
+Die genaue Struktur nach \citep{AnalyzeFormat} ist in drei Teilbereiche aufgeteilt. Der erste Teil ist der sogenannte ''header key'' und beinhaltet allgemeine Informationen bezüglich der Datei (s. Abbildung \ref{prog:headerKey}). Der zweite Teil beinhaltet Informationen bezüglich der Dimension der Image-Datei (s. Abbildung \ref{prog:imageDim}). Der dritte und letzte Abschnitt hält Informationen bezüglich der Historie (s. \ref{prog:dataHist}).
 
 \begin{program}[H]
 	\caption{Header key als C-Struktur \citep{AnalyzeFormat}}
@@ -202,7 +202,7 @@ struct image_dimension
 \begin{quote}
 	''The STL (STereoLithography) file format, as developed by 3D Systems, has been widely used by most Rapid Prototyping (RP) systems and is supported by all major computer-aided design (CAD) systems.'' - \citep{STereoLithography}
 \end{quote}
-Eine STL-Datei besteht im Prinzip aus einer liste von Dreiecken. Jedes Dreieck wird durch seine drei Eckpunkte im Raum (jeweils x, y und z Position) sowie durch seinen Normalvektor beschrieben. Dies führt folglich zu einer Summe von 12 Werten pro Dreieck.\\
+Eine STL-Datei besteht im Prinzip aus einer Liste von Dreiecken. Jedes Dreieck wird durch seine drei Eckpunkte im Raum (jeweils x, y und z Position) sowie durch seinen Normalvektor beschrieben. Dies führt folglich zu einer Summe von 12 Werten pro Dreieck.\\
 \\
 Zum besseren Verständnis kann in Abbildung \ref{fig:ASCIISTL} der Aufbau einer solchen Datei als ASCII Darstellung betrachtet werden. 
 
@@ -212,7 +212,7 @@ Zum besseren Verständnis kann in Abbildung \ref{fig:ASCIISTL} der Aufbau einer 
 	\caption{ASCII Darstellung des STL-Format \citep{STLFormat}.}
 	\label{fig:ASCIISTL}
 \end{figure}
-\noindent Für ein besseres Verständnis hinsichtlich der Implementierung ist in Abbildung \ref{fig:BINARYSTL} der Binäre Aufbau des STL-Formates dargestellt. 
+\noindent Für ein besseres Verständnis hinsichtlich der Implementierung ist in Abbildung \ref{fig:BINARYSTL} der binäre Aufbau des STL-Formates dargestellt. 
 \begin{figure}
 	\centering
 	\includegraphics[width=.65\textwidth]{StL-binary}

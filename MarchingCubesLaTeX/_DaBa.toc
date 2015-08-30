@@ -19,7 +19,7 @@
 \contentsline {subsubsection}{Dreiecksdezimierung}{9}{section*.11}
 \contentsline {subsubsection}{Gl\IeC {\"a}ttung Dreiecksnetz}{9}{section*.12}
 \contentsline {subsubsection}{Alternative Datenstruktur}{9}{section*.13}
-\contentsline {section}{\numberline {2.4}Dateiformate}{10}{section.2.4}
+\contentsline {section}{\numberline {2.4}Dateiformate}{9}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Image File (.img)}{10}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Header File (.hdr)}{10}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}STereoLithography (.stl)}{12}{subsection.2.4.3}
@@ -42,7 +42,7 @@
 \contentsline {subsubsection}{Funktionen}{18}{section*.22}
 \contentsline {subsubsection}{Verwendung}{19}{section*.23}
 \contentsline {section}{\numberline {3.3}OpenGL}{20}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Allgmein}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Allgemein}{20}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Schnittstelle (Klasse)}{21}{subsection.3.3.2}
 \contentsline {subsubsection}{Funktionen}{21}{section*.25}
 \contentsline {subsubsection}{Verwendung}{22}{section*.26}

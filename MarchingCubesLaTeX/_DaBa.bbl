@@ -109,8 +109,8 @@
 
 \bibitem[Wollmann(2013)]{WollmannBak}
 \dinatlabel{Wollmann 2013} \textsc{Wollmann}, Thomas~S.:
-\newblock \emph{Entwicklung und Implementierung eiens Marching Cube basierten
-  Algorithmus zur punkterhaltender Triangulation von Konturen mit
+\newblock \emph{Entwicklung und Implementierung eienes Marching Cube basierten
+  Algorithmus zur punkterhaltenden Triangulation von Konturen mit
   Subpixel-Auflösung}.
 \newblock Heilbronn, 08 2013
 

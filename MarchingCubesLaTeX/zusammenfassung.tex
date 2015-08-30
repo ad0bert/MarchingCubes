@@ -1,17 +1,17 @@
 \chapter{Zusammenfassung und Ausblick}
-Das Ziel dieser Arbeit war die Implementierung des von \citep{MCAlgo} vorgestellten Marching Cubes Algorithmus sowie die Darstellung des generierten polygonalen Modelles via OpenGL. Des Weiteren sollte es möglich sein die generierten Objekte als STereoLithography Datei zu exportieren da dies ein weit verbreitetes Format darstellt und von vielen Programmen unterstützt wird.\\
+Das Ziel dieser Arbeit war die Implementierung des von \citep{MCAlgo} vorgestellten Marching Cubes Algorithmus sowie die Darstellung des generierten polygonalen Modelles via OpenGL. Des Weiteren sollte es möglich sein, die generierten Objekte als STereoLithography Datei zu exportieren, da dies ein weit verbreitetes Format darstellt und von vielen Programmen unterstützt wird.\\
 \\
-In diesem Teil der Arbeit werden nun die Ergebnisse der Entwicklung dieser Applikation diskutiert. Außerdem wird kurz auf mögliche Erweiterungen und Verbesserungen welche nicht in die Umsetzung eingeflossen sind eingegangen.
+In diesem Teil der Arbeit werden nun die Ergebnisse der Entwicklung dieser Applikation diskutiert. Außerdem wird kurz auf mögliche Erweiterungen und Verbesserungen, welche nicht in die Umsetzung eingeflossen sind, eingegangen.
 
 \section{Ergebnisse}
 
 \section{Erweiterungen}
-Aufgrund des eng geschnürten Zeitplans konnten leider nicht alle Ideen und Ansätze bezüglich der Implementierung umgesetzt werden. Des Weiteren kamen während der Umsetzung Ideen für eine bessere Implementierung auf welche bei einer Überarbeitung bzw. Erweiterung gut untergebracht wären.
+Aufgrund des eng geschnürten Zeitplans konnten leider nicht alle Ideen und Ansätze bezüglich der Implementierung umgesetzt werden. Des Weiteren kamen während der Umsetzung Ideen für eine bessere Implementierung auf, welche bei einer Überarbeitung bzw. Erweiterung gut untergebracht wären.
 \subsection{Parallelisieren}
-Geschuldet der Tatsache, dass das Voxelgitter in einzelne Würfel unterteilt wird und auf jeden dieser der Marching Cubes Algorithmus angewandt wird bietet sich hier die Möglichkeit für einen parallelen Ansatz in der Implementierung.\\
+Geschuldet der Tatsache, dass das Voxelgitter in einzelne Würfel unterteilt wird und auf jeden dieser der Marching Cubes Algorithmus angewandt wird, bietet sich hier die Möglichkeit für einen parallelen Ansatz in der Implementierung.\\
 \\
-Ebenso wäre es aufgrund der längeren Berechnungszeit des Algorithmus wünschenswert diese nach der Betätigung des ''Generate'' Buttons im Hintergrund laufen zu lassen um zu verhindern, dass die Benutzeroberfläche nicht einfriert.
+Ebenso wäre es aufgrund der längeren Berechnungszeit des Algorithmus wünschenswert, diese nach der Betätigung des ''Generate'' Buttons im Hintergrund laufen zu lassen, um zu verhindern, dass die Benutzeroberfläche nicht einfriert.
 \subsection{Alternative Algorithmen}
-Der Marching Cubes Algorithmus wurde zwar bereits im Jahre 1987 vorgestellt allerdings konnte dieser aufgrund Patentrechtlicher Probleme nicht einfach verwendet werden. Daher wurden im Laufe der Zeit ähnliche dem Marching Cubes Algorithmus nachempfundene Ansätze entwickelt wie z.B. Marching Squares oder Marching Thtetrahedrons. Um einen direkten Vergleich zwischen allen Ansätzen zu beobachten könnten diese als mögliche Erweiterung ebenso im Programm eingebaut werden.
+Der Marching Cubes Algorithmus wurde zwar bereits im Jahre 1987 vorgestellt, allerdings konnte dieser aufgrund patentrechtlicher Probleme nicht einfach verwendet werden. Daher wurden im Laufe der Zeit ähnliche, dem Marching Cubes Algorithmus nachempfundene Ansätze entwickelt, wie z.B. Marching Squares oder Marching Thetrahedrons. Um einen direkten Vergleich zwischen allen Ansätzen zu beobachten, könnten diese als mögliche Erweiterung ebenso im Programm eingebaut werden.
 \subsection{Algorithmen zur Verbesserung} 
-Wie bereits in Kapitel \ref{sec:schwach} beschrieben gibt es einige Schwachpunkte bezüglich des normalen Marching Cubes. Um diese Schwächen auszumerzen gibt es einige interessante Algorithmen welche ebenfalls im Kapitel \ref{sec:schwach} kurz beschrieben sind. 
+Wie bereits in Kapitel \ref{sec:schwach} beschrieben, gibt es einige Schwachpunkte bezüglich des normalen Marching Cubes. Um diese Schwächen auszumerzen, gibt es einige interessante Algorithmen, welche ebenfalls im Kapitel \ref{sec:schwach} kurz beschrieben sind. 
