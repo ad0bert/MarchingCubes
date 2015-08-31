@@ -5,7 +5,7 @@
 CD-ROM, Single Layer, ISO9660-Format%
 
 \section{PDF-Dateien}
-\begin{FileList}{/}
+\begin{FileList}{BA1/}
 	%\fitem{_DaBa.dvi} Gesamtdokument (DVI-File, ohne Grafiken)
 	\fitem{_DaBa.pdf} Bachelorarbeit mit Instruktionen (Gesamtdokument)%
 \end{FileList}
@@ -13,7 +13,7 @@ CD-ROM, Single Layer, ISO9660-Format%
 
 \section{\latex-Dateien}
 
-\begin{FileList}{/}
+\begin{FileList}{BA1/MarchingCubesLaTeX/}
 	\fitem{_DaBa.tex} Diplom-/Bachelorarbeit (Hauptdokument) %
 	\fitem{kurzfassung.tex} Kurzfassung %
 	\fitem{abstract.tex} Abstract %
@@ -27,7 +27,7 @@ CD-ROM, Single Layer, ISO9660-Format%
 
 \section{Style/Class-Dateien}
 
-\begin{FileList}{/}
+\begin{FileList}{BA1/MarchingCubesLaTeX/}
 	\fitem{hgbthesis.cls} LaTeX Class-Datei für Master- und Bachelorarbeiten
 	\fitem{hgb.sty} LaTeX Style-Datei für alle Hagenberg-Dokumente
 \end{FileList}
@@ -35,30 +35,30 @@ CD-ROM, Single Layer, ISO9660-Format%
 
 \section{Implementierung}
 
-\begin{FileList}{/MarchingCubesVisualisation}
+\begin{FileList}{BA1/MarchingCubesVisualisation}
 	\fitem{/Release} Beispielprogramm und benötigte .dll Dateien
-	\fitem{marchingCubes.h}
-	\fitem{marchingCubes.cpp}
-	\fitem{fileHandler.h}
-	\fitem{fileHandler.cpp}
-	\fitem{visualisation.h}
-	\fitem{visualisation.cpp}
-	\fitem{mainwindow.h}
-	\fitem{mainwindow.cpp}
-	\fitem{mainwindow.ui}
-	\fitem{main.cpp}
-	\fitem{dbh.h}
-	\fitem{tabels.h}
+	\fitem{marchingCubes.h} Klassendefinition für die Marching Cubes Klasse
+	\fitem{marchingCubes.cpp} Implementierung des Marching Cubes Algorithmus
+	\fitem{fileHandler.h} Klassendefinition für die Dateibearbeitung
+	\fitem{fileHandler.cpp} Implementierung für die Dateibearbeitung
+	\fitem{visualisation.h} Klassendefinition für die OpgenGL Komponente
+	\fitem{visualisation.cpp} OpenGL Komponente
+	\fitem{mainwindow.h}  Header File für die Verwaltung der Benutzeroberfläche
+	\fitem{mainwindow.cpp} Kopplung von Benutzeroberfläche und Implementierung 
+	\fitem{mainwindow.ui} Benutzeroberfläche (QT-Designer)
+	\fitem{main.cpp} main Funktion der Applikation
+	\fitem{dbh.h} C-Struktur für das .hdr Format
+	\fitem{tabels.h} Lookuptabels für den Marching Cubes Algorithmus
 	\fitem{MCV.pro} QT5 Projekt
 	
 \end{FileList}
 
 \section{Sonstiges}
 
-\begin{FileList}{/images}
+\begin{FileList}{BA1/MarchingCubesLaTeX/images}
 	\fitem{*.jpg, *.png} Original Rasterbilder %
 \end{FileList}
 
-\begin{FileList}{/umlDiagrams}
+\begin{FileList}{BA1/MarchingCubesLaTeX/umlDiagrams}
 	\fitem{*.uxf} Original UML-Diagramme
 \end{FileList}

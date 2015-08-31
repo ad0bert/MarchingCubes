@@ -51,11 +51,12 @@
 \contentsline {subsection}{\numberline {3.4.2}Slicing}{23}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Wiring}{24}{subsection.3.4.3}
 \contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{26}{chapter.4}
-\contentsline {section}{\numberline {4.1}Ergebnisse}{26}{section.4.1}
-\contentsline {section}{\numberline {4.2}Erweiterungen}{26}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Parallelisieren}{26}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Alternative Algorithmen}{27}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Algorithmen zur Verbesserung}{27}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.1}Erweiterungen}{26}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Parallelisieren}{26}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Alternative Algorithmen}{26}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Algorithmen zur Verbesserung}{27}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Alternative Dateiformate}{27}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Zusammenfassung}{27}{section.4.2}
 \contentsline {chapter}{Literaturverzeichnis}{28}{chapter*.30}
 \contentsline {chapter}{\numberline {A}Inhalt der CD-ROM}{30}{appendix.A}
 \contentsline {paragraph}{Format:}{30}{section*.31}

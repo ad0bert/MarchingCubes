@@ -100,6 +100,8 @@ In Abbildung \ref{fig:BINARYSTL} ist bereits der binäre Aufbau einer STL-Datei 
 	\label{fig:fileHandler}
 \end{figure}
 \subsubsection{Datentypen}
+Neben den bereits zuvor beschriebenen Datentypen weist die fileHandler-Klasse noch weitere spezielle Typen zur Verarbeitung auf.\\
+\\
 \begin{itemize}
 	\item \textbf{fileType} repräsentiert den zu verarbeitenden Dateityp als Enumeration (img bzw. hdr) 
 	\item \textbf{dsr} ist die in Kapitel \ref{sec:DateiHead} beschriebene Repräsentation des Header-Formates als C-Struktur.
@@ -163,6 +165,8 @@ Die Implementierung ermöglicht die Darstellung des generierten Objektes, das be
 	\label{fig:visualisation}
 \end{figure}
 \subsubsection{Funktionen}
+Es folgt eine kurzer Überblick über die öffentlichen Funktionen der Visualisation-Klasse.\\
+\\
 \begin{itemize}
 	\item \textbf{Visualisation:} Erstellen der Zeichenoberfläche.
 	\item \textbf{setObject:} Setzen des zu zeichnenden Objektes.
@@ -194,7 +198,8 @@ Die Verwendung dieser Klasse ist vergleichsweise einfach. Eine beispielhafte Imp
 In diesem Abschnitt wird auf die Funktionen der Benutzeroberfläche (UI) des entstandenen Prototypen eingegangen. Erstellt wurde diese mithilfe des QT-Designers. Um eine einfache Benutzung zu gewährleisten wurde sie möglichst schlicht gehalten.
 
 \subsection{Allgemeiner Aufbau}
-In Abbildung \ref{fig:UI1} ist die Benutzeroberfläche dargestellt. Es folgt nun eine kurze Beschreibung der einzelnen Schaltflächen.
+In Abbildung \ref{fig:UI1} ist die Benutzeroberfläche dargestellt. Es folgt nun eine kurze Beschreibung der einzelnen Schaltflächen.\\
+\\
 \begin{itemize}
 	\item \textbf{Menu:} In der linken oberen Ecke befindet sich die Menu Schaltfläche welche nur einen Eintrag aufweist. Dieser ermöglicht das Exportieren des generierten Objektes in das .stl Format.
 	\item \textbf{Select Header:} Durch das Betätigen des Button ''Select Header'' öffnet sich eine Dialogbox zum Auswählen einer .hdr Datei im Dateisystem. Nach erfolgreichem Selektieren einer Datei erscheint der Dateipfad links im Textfeld. Alternativ kann auch der Pfad direkt im Textfeld bearbeitet werden.
