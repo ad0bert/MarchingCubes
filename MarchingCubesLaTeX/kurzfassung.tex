@@ -1,12 +1,14 @@
 
 \chapter{Kurzfassung}
 
-In der computergestützten Bildverarbeitung gibt es diverse Möglichkeiten für die Darstellung von dreidimensionalen Objekten. Die wohl am weitesten verbreitete Darstellungsform ist die polygonale Darstellung. Diese Form der Aufbereitung zerlegt ein gegebenes Objekte in Dreiecke. 
+In der computergestützten Bildverarbeitung gibt es eine breite Palette von Möglichkeiten für die Darstellung von dreidimensionalen Objekten. Die wohl am weitesten verbreitete Darstellungsform ist die polygonale Darstellung. Diese Form der Aufbereitung zerlegt ein gegebenes Objekte in Dreiecke. 
 \\\\
-Ein weiteres Verfahren ist die Methode der Modellierung via einer so genanten Voxel-Datenmenge. Jedoch birgt diese, im Bezug auf die digitale Verarbeitung, einige Nachteile gegenüber der polygonalen Darstellungsform. Vordergründige Probleme hierbei sind der vergleichsweise hohe Speicherverbrauch der Modelle, die Visualisierung benötigt länger und Objektmanipulationen erweisen sich als schwieriger.
+Ein weiteres Verfahren ist die Methode der Modellierung aus einem Bildvolumen in ein Voxelmodell. Jedoch birgt diese, im Bezug auf die digitale Verarbeitung, einige Nachteile gegenüber der polygonalen Darstellungsform. Vordergründige Probleme hierbei sind der vergleichsweise hohe Speicherverbrauch der Modelle, die Visualisierung benötigt länger und Objektmanipulationen erweisen sich als schwieriger.
 \\\\
 Da in der Medizin im Bereich der bildgebenden Systeme, wie der Computertomografie, von Natur aus solche Voxel-Modelle erzeugt werden, besteht die Anforderung, auch diese nach Möglichkeit schnell und Aussagekräftig darzustellen.
 \\\\
-Um diesen Anforderungen an die Darstellung gerecht zu werden bietet sich der so genannte Marching-Cubes Algorithmus an. Dieser ermöglicht es, eine Voxel-Datenmenge in eine polygonale Darstellung zu überführen. 
+In dieser Arbeit wurde, im Bezug auf die oben erläuterte Problematik, der Marching Cubes Algorithmus betrachtet. Dieser Algorithmus ermöglicht es ein Voxelmodell in eine polygonale Darstellung zu überführen. 
+\\\\\
+Diese Arbeit umfasst eine allgemeine Einführung in die Problematik, sowie eine Implementierung des Marching Cubes Algorithmus. Des Weiteren wird auf eine Möglichkeit zur Visualisierung via OpgenGL eingegangen.
 \\\\
-Diese Arbeitet bietet einen Einblick in den Marching Cubes Algorithmus und versucht diesen, möglichst einfach, erklären und anhand einer C/C++ Implementierung umzusetzen. Des Weiteren wird auf die Möglichkeit der Darstellung via OpenGL eingegangen sowie auf das Exportieren einer polygonalen Darstellung in das .stl Format.
+Anhand der einfachen aber dennoch effizienten Implementierung des Algorithmus, lässt sich seine Funktionsweise gut verfolgen. Des Weiteren kann gut erkannt werden, dass die gezeigte einfachste Form ein großes Potential für Verbesserungen aufweist. Unter Anbetracht, dass bereits viele Erweiterungen der Grundform entwickelt wurden, ist die weite Verbreitung dieses Algorithmus nicht verwunderlich.

@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.17)  31 AUG 2015 11:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.6)  4 SEP 2015 08:11
 entering extended mode
 **_DaBa.tex
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.tex
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\hgbthesis.cls
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\hgbthesis.cls
 Document Class: hgbthesis 2014/11/05 LaTeX-Vorlage fuer Diplomarbeiten, Mastera
 rbeiten, Bachelorarbeiten etc.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
@@ -37,10 +37,10 @@ File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\hgb.sty
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\hgb.sty
 Package: hgb 2014/11/05
 
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\cmap\cmap.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\cmap\cmap.sty
 Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
@@ -311,10 +311,9 @@ Package: babel 2008/07/08 v3.8m The Babel package
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-german\germanb.ldf
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-german\germanb.ldf
 Language: germanb 2014/10/10 v2.7b German support for babel (traditional orthog
 raphy)
-
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count88
@@ -323,20 +322,23 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \l@austrian = a dialect from \language\l@german 
 Package babel Info: Making " an active character on input line 110.
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-english\english.ldf
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-english\english.ld
+f
 Language: english 2012/08/20 v3.3p English support from the babel system
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-) (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-german\ngermanb.ld
+)
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-german\ngermanb.ld
 f
 Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
 \l@naustrian = a dialect from \language\l@ngerman 
 \l@nswissgerman = a dialect from \language\l@ngerman 
-)) (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\datetime.sty
+))
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
 Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\misc\etex.sty"
@@ -345,7 +347,7 @@ Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 )
 \etb@tempcnta=\count90
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fmtcount.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fmtcount.sty
 Package: fmtcount 2015/05/05 v3.01
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
@@ -358,10 +360,10 @@ Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
 File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\keyval.tex")))
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcprefix.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcprefix.sty
 Package: fcprefix 2012/09/28
 
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcnumparser.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcnumparser.sty
 Package: fcnumparser 2012/09/28
 \fc@digit@counter=\count92
 )) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
@@ -375,19 +377,17 @@ File: amsgen.sty 1999/11/30 v2.0
 \c@padzeroesN=\count93
 \fc@tmpcatcode=\count94
 
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-english.def
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-english.def
 File: fc-english.def 2013/08/17
-)
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-germanb.def
+) (C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-germanb.de
+f
 File: fc-germanb.def 2013/08/17
-
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-german.def
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-german.def
 File: fc-german.def 2014/06/09
 ))
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-ngermanb.def
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-ngermanb.def
 File: fc-ngermanb.def 2013/08/17
-
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-ngerman.def
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-ngerman.def
 File: fc-ngerman.def 2012/06/18
 ))
 \@DT@modctr=\count95
@@ -398,8 +398,8 @@ File: fc-ngerman.def 2012/06/18
 \@DT@loopN=\count100
 \@DT@X=\count101
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\datetime-defaults
-.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\datetime-defaul
+ts.sty
 Package: datetime-defaults 2013/09/10
 )
 \@day=\count102
@@ -417,7 +417,7 @@ Package: datetime-defaults 2013/09/10
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
 
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\dt-german.def
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\dt-german.def
 File: dt-german.def 2010/09/10
 LaTeX Info: Redefining \dategerman on input line 86.
 )
@@ -426,14 +426,16 @@ LaTeX Info: Redefining \dategerman on input line 86.
 \dayofweek=\count116
 LaTeX Info: Redefining \today on input line 736.
 
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\dt-austrian.def
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\dt-austrian.def
 File: dt-austrian.def 2013/09/10
 LaTeX Info: Redefining \dateaustrian on input line 64.
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\dt-naustrian.def
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\dt-naustrian.de
+f
 File: dt-naustrian.def 2013/09/10
 LaTeX Info: Redefining \datenaustrian on input line 64.
-) (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\dt-ngerman.def
+)
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\dt-ngerman.def
 File: dt-ngerman.def 2013/09/10
 LaTeX Info: Redefining \datengerman on input line 86.
 )
@@ -471,7 +473,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen105
 \Gin@req@width=\dimen106
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -481,7 +483,7 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks22
 \verbatim@in@stream=\read1
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\moreverb\moreverb.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\moreverb\moreverb.sty
 Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 \tab@position=\count118
 \tab@size=\count119
@@ -495,10 +497,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks24
 \@floatcapt=\box28
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen107
@@ -521,7 +523,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 52.
 \big@size=\dimen114
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\upquote\upquote.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\upquote\upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 
@@ -746,14 +748,14 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 \@float@every@algorithm=\toks29
 \c@algorithm=\count135
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algorithmicx.
-sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algorithmic
+x.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -768,15 +770,15 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@tmpcounter=\count142
 \ALG@tmplength=\skip48
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algpseudocode
-.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algpseudoco
+de.sty
 Package: algpseudocode 
 
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
 \@float@every@program=\toks30
 \c@program=\count143
- (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+ (C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
@@ -796,7 +798,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\listingsutf8.sty"
 Package: listingsutf8 2011/11/10 v1.2 Allow UTF-8 in listings input (HO)
 
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
 \lst@mode=\count144
 \lst@gtempboxa=\box31
 \lst@token=\toks31
@@ -810,13 +812,13 @@ Package: listingsutf8 2011/11/10 v1.2 Allow UTF-8 in listings input (HO)
 \lst@lineno=\count149
 \lst@maxwidth=\dimen126
 
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count150
 \lst@skipnumbers=\count151
 \lst@framebox=\box32
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
@@ -974,7 +976,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 ))
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitkv@toks@=\toks32
 \labelindent=\skip50
@@ -987,8 +989,8 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \c@@abgabemonat=\count164
 \c@@abgabejahr=\count165
 
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\hgbheadings.sty
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\hgbheadings.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
 \fancy@headwidth=\skip51
 \f@ncyO@elh=\skip52
 \f@ncyO@erh=\skip53
@@ -999,26 +1001,25 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \f@ncyO@olf=\skip58
 \f@ncyO@orf=\skip59
 ))
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\hgbbib.sty
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\hgbbib.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip60
 \bibsep=\skip61
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count166
 ))
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\tocbibind.sty
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\tocbibind.sty
 Package: tocbibind 1999/09/12 v1.3a extra ToC listings
 
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\stdclsdv\stdclsdv.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\stdclsdv\stdclsdv.sty
 Package: stdclsdv 2009/09/04 v1.1a Sectional divisions
 )
 
 Package tocbibind Note: Using chapter style headings.
 
-)) (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
+)) (C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
 Package: pdfpages 2015/08/16 v0.5c Insert pages of external PDF documents (AM)
-
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count167
@@ -1032,13 +1033,13 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count169
 \calc@Cskip=\skip64
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 )
 \AM@pagewidth=\dimen134
 \AM@pageheight=\dimen135
 
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pppdftex.def
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pppdftex.def
 File: pppdftex.def 2015/08/16 v0.5c Pdfpages driver for pdfTeX (AM)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
@@ -1054,55 +1055,73 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 \c@AM@survey=\count170
 \AM@templatesizebox=\box35
 )
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.aux
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\kurzfassung.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\abstract.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\einleitung.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\einfuehrung.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\anhang_a.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 12.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty"
+Package: mathtools 2015/06/17 v1.17 mathematical typesetting tools
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty"
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count171
+\l_MT_multwidth_dim=\dimen136
+\origjot=\skip65
+\l_MT_shortvdotswithinadjustabove_dim=\dimen137
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen138
+\l_MT_above_intertext_sep=\dimen139
+\l_MT_below_intertext_sep=\dimen140
+\l_MT_above_shortintertext_sep=\dimen141
+\l_MT_below_shortintertext_sep=\dimen142
+)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.aux
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\kurzfassung.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\abstract.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\einleitung.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\einfuehrung.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\anhang_a.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 12.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 18.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count171
-\scratchdimen=\dimen136
+\scratchcounter=\count172
+\scratchdimen=\dimen143
 \scratchbox=\box36
-\nofMPsegments=\count172
-\nofMParguments=\count173
+\nofMPsegments=\count173
+\nofMParguments=\count174
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count174
-\MPscratchDim=\dimen137
-\MPnumerator=\count175
-\makeMPintoPDFobject=\count176
+\MPscratchCnt=\count175
+\MPscratchDim=\dimen144
+\MPnumerator=\count176
+\makeMPintoPDFobject=\count177
 \everyMPtoPDFconversion=\toks36
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -1110,34 +1129,34 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: hypcap package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count177
+\c@lstlisting=\count178
 \AtBeginShipoutBox=\box37
-Package hyperref Info: Link coloring OFF on input line 12.
+Package hyperref Info: Link coloring OFF on input line 18.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count178
+\c@section@level=\count179
 )
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
-LaTeX Info: Redefining \nameref on input line 12.
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+LaTeX Info: Redefining \nameref on input line 18.
 
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.out)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.out)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.out)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.out)
 \@outlinefile=\write3
 
 <Titelblatt_Gesamtarbeit.pdf, id=208, 597.55246pt x 845.07718pt>
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf>
-Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf used on input line 34.
+Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf used on input line 40.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
  <use Titelblatt_Gesamtarbeit.pdf>
-Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf used on input line 34.
+Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf used on input line 40.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <Titelblatt_Gesamtarbeit.pdf, id=211, page=1, 597.55246pt x 845.07718pt>
@@ -1145,117 +1164,117 @@ File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 1>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page1 used on input line 
-34.
+40.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 1>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page1 used on input line 
-34.
+40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 1>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page1 used on input line 
-34.
+40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 1>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page1 used on input line 
-34.
+40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 1>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page1 used on input line 
-34.
+40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [1
 
 
- <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/Titelblatt_Gesamtarbe
-it.pdf>]
+ <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/Titelblatt_Gesamtar
+beit.pdf>]
 <Titelblatt_Gesamtarbeit.pdf, id=233, page=2, 597.55246pt x 845.07718pt>
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 2>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page2 used on input line 
-34.
+40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 2>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page2 used on input line 
-34.
+40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 2>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page2 used on input line 
-34.
+40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [2 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/Titelblatt_Gesamta
-rbeit.pdf>]
+ [2 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/Titelblatt_Gesam
+tarbeit.pdf>]
 <Titelblatt_Gesamtarbeit.pdf, id=239, page=3, 597.55246pt x 845.07718pt>
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 3>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page3 used on input line 
-34.
+40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 3>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page3 used on input line 
-34.
+40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 3>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page3 used on input line 
-34.
+40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [3 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/Titelblatt_Gesamta
-rbeit.pdf>]
+ [3 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/Titelblatt_Gesam
+tarbeit.pdf>]
 <Titelblatt_Teil1.pdf, id=245, 597.55246pt x 845.07718pt>
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
 
 <use Titelblatt_Teil1.pdf>
-Package pdftex.def Info: Titelblatt_Teil1.pdf used on input line 35.
+Package pdftex.def Info: Titelblatt_Teil1.pdf used on input line 41.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
  <use Titelblatt_Teil1.pdf>
-Package pdftex.def Info: Titelblatt_Teil1.pdf used on input line 35.
+Package pdftex.def Info: Titelblatt_Teil1.pdf used on input line 41.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <Titelblatt_Teil1.pdf, id=248, page=1, 597.55246pt x 845.07718pt>
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
 
 <use Titelblatt_Teil1.pdf, page 1>
-Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 35.
+Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 41.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
  <use Titelblatt_Teil1.pdf, page 1>
-Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 35.
+Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 41.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
 
 <use Titelblatt_Teil1.pdf, page 1>
-Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 35.
+Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 41.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
  <use Titelblatt_Teil1.pdf, page 1>
-Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 35.
+Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 41.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
 
 <use Titelblatt_Teil1.pdf, page 1>
-Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 35.
+Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 41.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [4 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/Titelblatt_Teil1.p
-df>]
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.toc
+ [4 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/Titelblatt_Teil1
+.pdf>]
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.toc
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 5.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
@@ -1286,49 +1305,59 @@ LaTeX Font Info:    Try loading font information for T1+lmss on input line 45.
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [5
 
-{C:/Users/Peter/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
+{C:/Users/Adobert/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
 \tf@toc=\write4
  [6]
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\kurzfassung.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 4--39
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\kurzfassung.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 4--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--39
+Underfull \hbox (badness 10000) in paragraph at lines 4--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--39
+Underfull \hbox (badness 10000) in paragraph at lines 4--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--39
+Underfull \hbox (badness 10000) in paragraph at lines 4--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--45
 
  []
 
 [7
 
 
-] (C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\abstract.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 3--40
+] (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\abstract.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--40
+Underfull \hbox (badness 10000) in paragraph at lines 2--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--40
+Underfull \hbox (badness 10000) in paragraph at lines 2--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--40
+Underfull \hbox (badness 10000) in paragraph at lines 2--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--46
 
  []
 
@@ -1336,7 +1365,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--40
 
 
 
-] (C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\einleitung.tex
+] (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\einleitung.tex
 Kapitel 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
@@ -1349,7 +1378,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
 
 ] [2]
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\einfuehrung.tex
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\einfuehrung.tex
 Kapitel 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
@@ -1365,6 +1394,12 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 9.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+Overfull \hbox (9.48297pt too wide) in paragraph at lines 11--12
+[]\T1/lmr/bx/n/10.95 Oberflächenabbildungen: \T1/lmr/m/n/10.95 Die-se Bil-der e
+nt-ste-hen un-ter Andrem durch
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
@@ -1379,87 +1414,93 @@ File: images/Voxelgitter.png Graphic file (type png)
 <use images/Voxelgitter.png>
 Package pdftex.def Info: images/Voxelgitter.png used on input line 22.
 (pdftex.def)             Requested size: 306.0022pt x 306.01495pt.
- [4 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/images/Voxelgitter
-.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+ [4 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/Voxelgitt
+er.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-<images/Wuerfel.png, id=386, 298.86656pt x 298.86656pt>
+<images/Wuerfel.png, id=387, 298.86656pt x 298.86656pt>
 File: images/Wuerfel.png Graphic file (type png)
 
 <use images/Wuerfel.png>
-Package pdftex.def Info: images/Wuerfel.png used on input line 48.
+Package pdftex.def Info: images/Wuerfel.png used on input line 49.
 (pdftex.def)             Requested size: 180.0pt x 180.0008pt.
  [5]
-<images/WuerfelIndizierung.png, id=408, 286.06876pt x 286.06876pt>
+<images/WuerfelIndizierung.png, id=410, 286.06876pt x 286.06876pt>
 File: images/WuerfelIndizierung.png Graphic file (type png)
 
 <use images/WuerfelIndizierung.png>
-Package pdftex.def Info: images/WuerfelIndizierung.png used on input line 55.
+Package pdftex.def Info: images/WuerfelIndizierung.png used on input line 56.
 (pdftex.def)             Requested size: 180.0pt x 180.00165pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
+Underfull \hbox (badness 10000) in paragraph at lines 61--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
+Underfull \hbox (badness 10000) in paragraph at lines 61--66
 
  []
 
-[6 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/images/Wuerfel.png>
- <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/images/WuerfelIndizie
-rung.png>] <images/MCPos.png, id=421, 396.7322pt x 563.10374pt>
+[6 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/Wuerfel.pn
+g> <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/WuerfelInd
+izierung.png>] <images/MCPos.png, id=423, 396.7322pt x 563.10374pt>
 File: images/MCPos.png Graphic file (type png)
 
 <use images/MCPos.png>
-Package pdftex.def Info: images/MCPos.png used on input line 68.
+Package pdftex.def Info: images/MCPos.png used on input line 69.
 (pdftex.def)             Requested size: 251.9989pt x 357.6786pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--76
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
 
-[7 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/images/MCPos.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--94
+[7 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/MCPos.png>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--94
+Underfull \hbox (badness 10000) in paragraph at lines 86--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--94
+Underfull \hbox (badness 10000) in paragraph at lines 86--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--94
+Underfull \hbox (badness 10000) in paragraph at lines 86--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--95
 
  []
 
 [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
 
 Package hyperref Info: bookmark level for unknown program defaults to 0 on inpu
-t line 121.
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+t line 124.
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+(C:\Users\Adobert\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 123.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 126.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
@@ -1478,193 +1519,165 @@ Overfull \vbox (90.19974pt too high) has occurred while \output is active []
 
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 205--208
+Underfull \hbox (badness 10000) in paragraph at lines 209--212
 
  []
 
-<images/StL-ASCII.jpg, id=583, 212.29312pt x 161.10187pt>
-File: images/StL-ASCII.jpg Graphic file (type jpg)
 
-<use images/StL-ASCII.jpg>
-Package pdftex.def Info: images/StL-ASCII.jpg used on input line 211.
-(pdftex.def)             Requested size: 233.9978pt x 177.58133pt.
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
-<images/StL-binary.jpg, id=589, 374.14781pt x 330.48468pt>
-File: images/StL-binary.jpg Graphic file (type jpg)
+ []
 
-<use images/StL-binary.jpg>
-Package pdftex.def Info: images/StL-binary.jpg used on input line 218.
-(pdftex.def)             Requested size: 233.9978pt x 206.6936pt.
 
-Overfull \hbox (4.7758pt too wide) in paragraph at lines 224--224
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+[12]
+Overfull \hbox (4.7758pt too wide) in paragraph at lines 260--260
 [][][]\T1/lmr/m/n/9 https://msdn.microsoft.com/en-us/library/windows/desktop/bb
 153256(v=vs.85).aspx| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--224
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
 [][][]\T1/lmr/m/n/9 http://www.amd.com/de-de/innovations/software-technologies/
 technologies-
  []
 
-[12 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/images/StL-ASCII.j
-pg>]) [13 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/images/StL-b
-inary.jpg>]
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.tex
+) [13] [14]
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.tex
 Kapitel 3.
-<images/marchingCubes.png, id=620, 531.9875pt x 321.2pt>
-File: images/marchingCubes.png Graphic file (type png)
 
-<use images/marchingCubes.png>
-Package pdftex.def Info: images/marchingCubes.png used on input line 11.
-(pdftex.def)             Requested size: 323.9978pt x 195.62294pt.
- [14
+Overfull \hbox (43.85703pt too wide) in paragraph at lines 14--35
+ [][] 
+ []
+
+[15
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 17--19
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
  []
 
-[15 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/images/marchingCub
-es.png (PNG copy)>] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def
-"
+[16] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [16]
-Overfull \hbox (3.4479pt too wide) in paragraph at lines 63--64
-\T1/lmr/m/n/10.95 Um ei-ne un-nö-ti-ge Kom-ple-xi-tät zu ver-mei-den wur-den fü
-r die Analyze-Formate
+) [17]
+Overfull \hbox (6.49077pt too wide) in paragraph at lines 83--84
+\T1/lmr/m/n/10.95 Um ei-ne un-nö-ti-ge Kom-ple-xi-tät zu ver-mei-den, wur-den f
+ür die Analyze-Formate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--88
+
  []
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-)
-<images/fileHandler.png, id=668, 250.9375pt x 361.35pt>
-File: images/fileHandler.png Graphic file (type png)
-
-<use images/fileHandler.png>
-Package pdftex.def Info: images/fileHandler.png used on input line 98.
-(pdftex.def)             Requested size: 216.0022pt x 311.0582pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--106
+) [18]
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--106
-
- []
-
-[17]
-Overfull \hbox (2.08723pt too wide) in paragraph at lines 108--109
+[19]
+Overfull \hbox (2.08723pt too wide) in paragraph at lines 153--154
 []\T1/lmr/bx/n/10.95 d3Buffer \T1/lmr/m/n/10.95 wur-de be-reits im vor-her-ge-g
 an-ge-nen Ab-schnitt ([]3.1[]) be-schrie-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--113
-
- []
-
-[18] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [19 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/images/fileHandl
-er.png (PNG copy)>] <images/visualisation.png, id=712, 381.425pt x 511.9125pt>
-File: images/visualisation.png Graphic file (type png)
-
-<use images/visualisation.png>
-Package pdftex.def Info: images/visualisation.png used on input line 163.
-(pdftex.def)             Requested size: 251.9989pt x 338.20699pt.
- [20]
-Overfull \hbox (17.80542pt too wide) in paragraph at lines 168--171
-\T1/lmr/m/n/10.95 Es folgt ei-ne kur-z-er Über-blick über die öf-fent-li-chen F
-unk-tio-nen der Visualisation-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--171
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--171
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
  []
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [21 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/images/visualisa
-tion.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 201--204
+) [20] [21]
+Overfull \hbox (17.80542pt too wide) in paragraph at lines 259--261
+\T1/lmr/m/n/10.95 Es folgt ei-ne kur-z-er Über-blick über die öf-fent-li-chen F
+unk-tio-nen der Visualisation-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
+
+ []
+
+[22] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) [23]
+Underfull \hbox (badness 10000) in paragraph at lines 300--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--204
+Underfull \hbox (badness 10000) in paragraph at lines 300--303
 
  []
 
 
-Overfull \hbox (2.04845pt too wide) in paragraph at lines 207--208
+Overfull \hbox (2.04845pt too wide) in paragraph at lines 306--307
 \T1/lmr/m/n/10.95 Mar-ching Cu-bes Al-go-rith-mus auf die aus-ge-wähl-ten Da-te
 i-en an-ge-wandt.
  []
 
-[22] <images/UI1.png, id=778, 892.83563pt x 480.29437pt>
+<images/UI1.png, id=794, 892.83563pt x 480.29437pt>
 File: images/UI1.png Graphic file (type png)
  <use images/UI1.png>
-Package pdftex.def Info: images/UI1.png used on input line 216.
+Package pdftex.def Info: images/UI1.png used on input line 315.
 (pdftex.def)             Requested size: 360.0pt x 193.66069pt.
 
-<images/UISlicing.png, id=780, 892.83563pt x 480.29437pt>
+[24] <images/UISlicing.png, id=801, 892.83563pt x 480.29437pt>
 File: images/UISlicing.png Graphic file (type png)
 
 <use images/UISlicing.png>
-Package pdftex.def Info: images/UISlicing.png used on input line 229.
+Package pdftex.def Info: images/UISlicing.png used on input line 328.
 (pdftex.def)             Requested size: 360.0pt x 193.66069pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--232
+Underfull \hbox (badness 10000) in paragraph at lines 321--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--232
+Underfull \hbox (badness 10000) in paragraph at lines 321--331
 
  []
 
-[23 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/images/UI1.png>]
-<images/UIWiring.png, id=787, 892.83563pt x 480.29437pt>
+[25 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/UI1.png>]
+<images/UIWiring.png, id=808, 892.83563pt x 480.29437pt>
 File: images/UIWiring.png Graphic file (type png)
 
 <use images/UIWiring.png>
-Package pdftex.def Info: images/UIWiring.png used on input line 238.
+Package pdftex.def Info: images/UIWiring.png used on input line 337.
 (pdftex.def)             Requested size: 360.0pt x 193.66069pt.
-) [24 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/images/UISlicing
-.png>] [25 <C:/Users/Peter/Desktop/MarchingCubes/MarchingCubesLaTeX/images/UIWi
-ring.png>]
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.tex
+) [26 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/UISlici
+ng.png> <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/UIWir
+ing.png>]
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.tex
 Kapitel 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-[26
+[27
 
 
 
 ])
-Underfull \hbox (badness 10000) in paragraph at lines 20--49
+Underfull \hbox (badness 10000) in paragraph at lines 20--55
 
  []
 
-[27] (C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.bbl
+[28] (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.bbl
 Underfull \hbox (badness 5064) in paragraph at lines 80--84
 []\T1/lmr/m/n/10.95 [Segal u. Ake-ley 2009] \T1/lmr/m/sc/10.95 Se-gal\T1/lmr/m/
 n/10.95 , Mark ; \T1/lmr/m/sc/10.95 Ake-ley\T1/lmr/m/n/10.95 , Kurt:  \T1/lmr/m
@@ -1677,62 +1690,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--84
 .95 .  3.1.  htt-
  []
 
-[28
+[29
 
 
-]) [29]
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\anhang_a.tex
+]) [30]
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\anhang_a.tex
 Anhang A.
-[30
+[31
 
 
-]) [31] (C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
- (C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.aux
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\kurzfassung.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\abstract.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\einleitung.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\einfuehrung.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\anhang_a.aux)
-(C:\Users\Peter\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
+]) [32]
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
+
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.aux
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\kurzfassung.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\abstract.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\einleitung.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\einfuehrung.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\anhang_a.aux)
+(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
 Package rerunfilecheck Info: File `_DaBa.out' has not changed.
-(rerunfilecheck)             Checksum: 25029F9C2CBA9E08CF407D94CC142B26;6921.
+(rerunfilecheck)             Checksum: 4E43BED6D9D281E18A396DFF58E63954;6865.
  ) 
 Here is how much of TeX's memory you used:
- 18602 strings out of 493921
- 270454 string characters out of 3144876
- 563255 words of memory out of 3000000
- 21080 multiletter control sequences out of 15000+200000
- 86360 words of font info for 69 fonts, out of 3000000 for 9000
+ 19061 strings out of 493921
+ 278660 string characters out of 3144871
+ 575152 words of memory out of 3000000
+ 21517 multiletter control sequences out of 15000+200000
+ 92346 words of font info for 71 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  67i,18n,96p,1024b,1799s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/
 MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm
-/lm-mathit.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/lm/lmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/
-lmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb
->
-Output written on _DaBa.pdf (39 pages, 1714540 bytes).
+/lm-mathit.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+lm/lmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/lm/lmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lm
+sy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on _DaBa.pdf (40 pages, 1613896 bytes).
 PDF statistics:
- 1002 PDF objects out of 1200 (max. 8388607)
- 310 named destinations out of 1000 (max. 500000)
- 539 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1022 PDF objects out of 1200 (max. 8388607)
+ 327 named destinations out of 1000 (max. 500000)
+ 514 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,17 +1,38 @@
-\chapter{Umsetzung}
-Im Rahmen dieser Arbeit entstand eine in C++ geschriebenes Applikation welche den Marching Cubes Algorithmus auf eine Voxelmenge anwendet und das Resultat via OpgenGL visualisiert. Des Weiteren ist es möglich, das verarbeitete Model als STereoLithography (.stl) Datei zu exportieren.
+\chapter{Implementierung}
+In dieser Arbeit wurde eine in C++ geschriebenes Applikation entwickelt, welche den Marching Cubes Algorithmus auf eine Voxelimage anwendet und das Resultat via OpgenGL visualisiert. Des Weiteren ist es möglich, das verarbeitete Model als STereoLithography (.stl) Datei zu exportieren.
 \section{Marching Cubes}
 \label{sec:mcUms}
-Der Marching Cubes Algorithmus ist das Herzstück der entstandenen Applikation. Er ermöglicht die Umrechnung der gegebenen Voxel-Datenmenge in eine polygonale Darstellung, welche sich im späteren Verlauf vergleichsweise einfach darstellen lässt.
+Der Marching Cubes Algorithmus ist der Kern der entwickelten Applikation. Er ermöglicht die Umrechnung der gegebenen Voxel-Datenmenge in eine polygonale Darstellung, welche sich im späteren Verlauf vergleichsweise einfach darstellen lässt.
 \subsection{Allgemein}
-Die Implementierung ist eine angepasst Version der von \citep{BourkeMC} bereitgestellten Umsetzung. Die wesentlichen Änderungen sind die Auslagerung der Funktionen in eine eigenen Klasse und das Verwenden anderer Datenstrukturen. Durch die Umstellung auf STL-Behälter und der daraus folgende Verzicht auf C-Strukturen welche zur Laufzeit immer neuen Speicher anfordern, konnte die Geschwindigkeit immens gesteigert werden.
+Die Implementierung ist eine angepasst Version der von Paul Bourke bereitgestellten Umsetzung \citep{BourkeMC}. Die wesentlichen Änderungen sind die Auslagerung der Funktionen in eine eigenen Klasse und das Verwenden anderer Datenstrukturen. Durch die Umstellung auf STL-Behälter und der daraus folgende Verzicht auf C-Strukturen welche zur Laufzeit immer neuen Speicher anfordern, konnte die Geschwindigkeit immens gesteigert werden.
 \subsection{Schnittstelle (Klasse)}
-\begin{figure}[H]
+
+\begin{table}[H]
 	\centering
-	\includegraphics[width=.90\textwidth]{marchingCubes}
 	\caption{UML-Diagramm der marchingCubes Klasse}
 	\label{fig:marchingCubes}
-\end{figure}
+	\begin{tabular}{|l|}
+		\hline
+		\multicolumn{1}{|c|}{<<Class>>} \\
+		\multicolumn{1}{|c|}{marchingCubes} \\
+		\hline
+		- mData : d3Buffer\\
+		- mIsolevel : short int\\
+		- mResult : vector<TRIANGLE>\\
+		\\
+		- generateSlice(offset : int, slice . int) : void\\
+		- polygoniseCube(grid : GRIDCELL, ref triangles : vector <TRIANGLE>) : void\\
+		- vertexInterp(p1 : XYZ, p2 : XYZ, valp1 : float, valp2 : float) : XYZ\\
+		- calcNormal(ref tri : TRIANGLE) : void\\
+		\hline
+		+ setAllData(data : d3Buffer, isolevel : short int) : void\\
+		+ perform(offset : int, slice = -1: int) : void\\
+		+ getResult() : vector<TRIANGLE>\\
+		+ generateStlFile(path : string) : bool\\
+		+ setIsolevel(isolevel : short int) : void\\
+		\hline
+	\end{tabular}
+\end{table}
 
 \subsubsection{Datentypen}
 Neben den üblichen Datentypen wurden zur leichteren Verarbeitung komplexere Strukturen verwendet.\\
@@ -25,85 +46,109 @@ Neben den üblichen Datentypen wurden zur leichteren Verarbeitung komplexere Str
 \subsubsection{Funktionen}
 Um ein grundlegendes Verständnis zu bieten, werden hier die öffentlichen Methoden der Klasse kurz beschrieben. \\
 \begin{itemize}
-	\item \textbf{setAllData:} Da während der Laufzeit des Programmes nur eine Instanz der marchingCubes-Klasse instanziiert wird, ist es notwendig diese, wenn nötig, mit neuen Werten zu initialisieren. Es wird das gesamte Voxelgitter (data) sowie der zu verwendende Schwellwert (isolevel) für die Berechnung mitgegeben.
-	\item \textbf{perform:} Diese Funktion führt den Marching Cubes Algorithmus auf dem zuvor via setAllData gesetzten Voxelgitter aus. Es bestehen zwei Möglichkeiten des Aufrufs. Zum Einen mit beiden Parametern und zum Anderen mit nur dem ersten (offset) Parameter. Bei der ersten Variante wird nur eine Scheibe des Voxelgitters betrachtet, wobei der erste Parameter die Dicke der Scheibe und der zweite die Position der Scheibe im Gitter kennzeichnet. Bei der zweiten Variante wird der gesamte Input betrachtet, wobei Parameter ''offset'' die Schrittweite pro Würfel angibt. 
-	\item \textbf{getResult:} Hier kann nach dem Durchlaufen von perform das Ergebnis des Algorithmus abgegriffen werden. 
+	\item \textbf{setAllData:} Da während der Laufzeit des Programmes nur eine Instanz der \textit{marchingCubes}-Klasse instanziiert wird, ist es notwendig diese, wenn nötig, mit neuen Werten zu initialisieren. Es wird das gesamte Voxelgitter (data) sowie der zu verwendende Schwellwert (isolevel) für die Berechnung mitgegeben.
+	\item \textbf{perform:} Diese Funktion führt den Marching Cubes Algorithmus auf dem zuvor via \textit{setAllData} gesetzten Voxelgitter aus. Es bestehen zwei Möglichkeiten des Aufrufs. Zum Einen mit beiden Parametern und zum Anderen mit nur dem ersten (offset) Parameter. Bei der ersten Variante wird nur eine Scheibe des Voxelgitters betrachtet, wobei der erste Parameter die Dicke der Scheibe und der zweite die Position der Scheibe im Gitter kennzeichnet. Bei der zweiten Variante wird der gesamte Input betrachtet, wobei Parameter ''offset'' die Schrittweite pro Würfel angibt. 
+	\item \textbf{getResult:} Hier kann nach dem Durchlaufen von \textit{perform} das Ergebnis des Algorithmus abgegriffen werden. 
 	\item \textbf{setIsolevel:} Hier kann der Schwellwert der Voxeln für den Algorithmus nachträglich verändert werden.
 	\item \textbf{generateStl:} Das Ausführen dieser Funktion persistiert das Ergebnis des Marching Cubes Algorithmus als .stl Datei.
 \end{itemize}
 \subsubsection{Verwendung}
-Im Programm \ref{prog:MCVerw} ist die Verwendung der Klasse exemplarisch dargestellt. Die Funktionen getRawData, getIsolevel, getOffset und getSlice dienen zur Veranschaulichung und sind nicht im beigelegten Programmcode enthalten. 
+Im Programm \ref{prog:MCVerw} ist die Verwendung der Klasse exemplarisch dargestellt. Die Funktionen \textit{getRawData}, \textit{getIsolevel}, \textit{getOffset} und \textit{getSlice} dienen zur Veranschaulichung und sind nicht im beigelegten Programmcode enthalten. 
 \begin{program}[H]
 	\caption{Verwendung der marchingCubes Klasse}
 	\label{prog:MCVerw}
 	\begin{CCode}
 		int main(){
-			marchingCubes *mc = new marchingCubes();
-			
-			// set the voxelgrid and the treshold
+			marchingCubes *mc = new marchingCubes();		
 			mc->setAllData(getRawData(),   // 3d vector  
 						   getIsolevel()); // int
-			
-			// performs the marching cubes algorithmus on the entire voxelgrid
 			mc->perform(getOffset()); 
-			
-			// performs the algorithmus on just a slice of the voxelgrid 
 			mc->perform(getOffset(), // slice thicknes 
 						getSlice()); // slice number
-			
-			showPolygons(mc->getResult()); 
 			delete(mc);
 			return 0;	
 		}
 	\end{CCode}
 \end{program}
+\begin{enumerate}
+	\item Instanzieren einer \textit{marchingCubes} Instanz.
+	\item Setzen der zu verarbeitenden Voxelmenge sowie den zu verwendenden Schwellwert.
+	\item Anwenden des Algorithmus auf die zuvor gesetzte Voxelmenge. 
+	\item Erneutes Anwenden des Algorithmus allerdings mit den Parametern für das Slicing.
+	\item Freigeben des allokierten Speichers.
+\end{enumerate}
 \section{File Formate}
-Wie bereits im Kapitel \ref{sec:DateiEinf} erwähnt wurden für die Umsetzung die Dateiformate von Analyze 7.5 (.img und .hdr) sowie das STereoLithography (.stl) Format verwendet.
+Wie bereits im Kapitel \ref{sec:DateiEinf} erwähnt wurden für die Umsetzung die Dateiformate von Analyze 7.5\footnote{Image (.img) und Header (.hdr)} sowie das STereoLithography (.stl) Format verwendet.
 \subsection{Allgemein}
-Um eine unnötige Komplexität zu vermeiden wurden für die Analyze-Formate nur lesender und für das STereoLithography Format nur schreibende Zugriff implementiert. Hier bieten sich für spätere Erweiterungen viele Möglichkeiten bezüglich Import/Export (auch für weitere Formate). 
+Um eine unnötige Komplexität zu vermeiden, wurden für die Analyze-Formate nur lesender und für das STereoLithography Format nur schreibende Zugriff implementiert. Hier bieten sich für spätere Erweiterungen viele Möglichkeiten bezüglich Import/Export. Auch die Unterstützung von weiteren Formaten wäre hier eine sinnvolle Erweiterung. 
 \subsection{Image File (.img)}
-Um das Image File auszulesen müssen vorher die Dimensionen des Voxelgitters bekannt sein.  Diese Information erhält man aus dem Header File. Sind die Dimensionen bekannt können mithilfe einer dreifach geschachtelten for-Schleife die einzelnen Voxel-Werte in eine entsprechende Datenstruktur (z.B. dreidimensionales Array) ausgelesen werden. In \citep{AnalyzeFormat} ist eine beispielhafte Implementierung gegeben. Diese wurde für den Prototyp angepasst und integriert.
+Um das Image File auszulesen, müssen vorher die Dimensionen des Voxelgitters bekannt sein.  Diese Information erhält man aus dem Header File. Sind die Dimensionen bekannt können mithilfe einer dreifach geschachtelten for-Schleife die einzelnen Voxel-Werte in eine entsprechende Datenstruktur ausgelesen werden. Hierzu würde sich als Beispiel ein dreidimensionales Array sehr gut eigenen.\\
+\\
+\citep{AnalyzeFormat} bietet eine beispielhafte Implementierung für das Auslesen einer solchen Image Datei. Diese wurde für den Prototyp angepasst und integriert.
 \subsection{Header File (.hdr)}
-Diese Datei ist wie bereits in Kapitel \ref{sec:DateiHead} beschrieben aufgebaut. Auch hier ist in \citep{AnalyzeFormat} eine beispielhafte Implementierung gegeben, welche für die Verwendung angepasst und erweitert wurde.
+Diese Datei ist wie bereits in Kapitel \ref{sec:DateiHead} beschrieben aufgebaut. Auch hier ist bietet \citep{AnalyzeFormat} eine beispielhafte Implementierung an, welche für die Verwendung angepasst und erweitert wurde.
 \subsection{STereoLithography (.stl)}
-In Abbildung \ref{fig:BINARYSTL} ist bereits der binäre Aufbau einer STL-Datei abgebildet. Die Implementierung (Programm \ref{prog:generateSTL}) richtet sich daher genau an diesen formalen Aufbau.
-\begin{program}
+In Kapitel \ref{sec:stl} ist bereits der binäre Aufbau einer STL-Datei abgebildet. Die Implementierung (Programm \ref{prog:generateSTL}) richtet sich daher genau an diesen formalen Aufbau.
+\begin{program}[H]
 	\caption{Generierung einer STL-Datei}
 	\label{prog:generateSTL}
 	\begin{CCode}
-		bool fileHandler::CreateStl(std::string path){
+		void fileHandler::CreateStl(std::string path){
 			FILE *fptr = NULL;	
 			int sizeResult = mResult.size();
-			if ((fptr = fopen(path.c_str(), "a+b")) == NULL)
-				return false;
+			if ((fptr = fopen(path.c_str(), "a+b")) == NULL) return;
+			
 			char fileHeader[81] = "solid Test Head";
 			char bytes[3] = { 0x00, 0x00 };
 			fwrite(&fileHeader, sizeof(fileHeader)-1, 1, fptr);
 			fwrite(&sizeResult, sizeof(int), 1, fptr);
 			for (int i = 0; i < mResult.size(); i++) {
 				fwrite(&mResult[i].n, sizeof(float), 3, fptr);
-				for (int k = 0; k < 3; k++)  {
+				for (int k = 0; k < 3; k++) 
 					fwrite(&mResult[i].p[k], sizeof(float), 3, fptr);
-				}
 				fwrite(bytes, 2, 1, fptr);
 			}
 			fclose(fptr);
-			return true;
 		}
 	\end{CCode}
 \end{program}
 \subsection{Schnittstelle (Klasse)}
-\begin{figure}
+
+\begin{table}[H]
 	\centering
-	\includegraphics[width=.60\textwidth]{fileHandler}
 	\caption{UML-Diagramm der fileHandler Klasse}
 	\label{fig:fileHandler}
-\end{figure}
+	\begin{tabular}{|l|}
+		\hline
+		\multicolumn{1}{|c|}{<<Class>>} \\
+		\multicolumn{1}{|c|}{fileHandler} \\
+		\hline
+		- mPath : string\\
+		- mType : fileType\\
+		- mHdr  : dsr\\
+		- mData : d3Buffer\\
+		\\
+		- readImg(fp : *FILE) : bool\\
+		- readHdr(fb : *FILE) : void\\
+		- swapHdr() : void\\
+		- showHdr() : void\\
+		\hline
+		+ fileHandler()\\
+		+ setpath(path : string) : void\\
+		+ setType(type : fileType) : void\\
+		+ setHdr(hdr : dsr) : void\\
+		+ getHdr() : dsr\\
+		+ readFile() : bool\\
+		+ createStl(path : string) : bool\\
+		+ getData() : d3Buffer\\
+		\hline
+	\end{tabular}
+\end{table}
+
 \subsubsection{Datentypen}
 Neben den bereits zuvor beschriebenen Datentypen weist die fileHandler-Klasse noch weitere spezielle Typen zur Verarbeitung auf.\\
-\\
 \begin{itemize}
-	\item \textbf{fileType} repräsentiert den zu verarbeitenden Dateityp als Enumeration (img bzw. hdr) 
+	\item \textbf{fileType} repräsentiert den zu verarbeitenden Dateityp als Enumeration. Im gegebenen handelt es sich um die Typen Image und Header.
 	\item \textbf{dsr} ist die in Kapitel \ref{sec:DateiHead} beschriebene Repräsentation des Header-Formates als C-Struktur.
 	\item \textbf{d3Buffer} wurde bereits im vorhergegangenen Abschnitt (\ref{sec:mcUms}) beschrieben.
 \end{itemize}
@@ -126,6 +171,7 @@ In Programm \ref{prog:fileClass} ist die beispielhafte Verwendung der fileHandle
 	\label{prog:fileClass}
 	\begin{CCode}
 		int main(){
+			//create the classes
 			fileHandler *hdrFile = new fileHandler();
 			fileHandler *imgFile = new fileHandler();
 			
@@ -147,53 +193,106 @@ In Programm \ref{prog:fileClass} ist die beispielhafte Verwendung der fileHandle
 			// get the image data and pass it to the marching cubes algorithm
 			marchingCubes->setData(imgFile->getData());
 			
+			// free the memory
 			delete(hdrFile);
 			delete(imgFile);
 			return 0;	
 		}
 	\end{CCode}
 \end{program}
+\begin{enumerate}
+	\item Erzeugen zweier Instanzen von \textit{fileHanlder} für die Header- und Imagedatei.
+	\item Setzen der jeweils zu erwartenden Dateitypen für jede Instanz.
+	\item Setzen der Pfade wo die entsprechenden Daten im Filesystem abgelegt sind.
+	\item Einlesen der Header-Datei.
+	\item Setzen der gelesenen Header Informationen in der Image Instanz.
+	\item Einlesen der Image-Datei.
+	\item Übergabe des gelesenen Voxelgitters in die \textit{marchingCubes}-Klasse.
+	\item Freigabe des in Punkt 1 allokierten Speichers.
+\end{enumerate}
 \section{OpenGL}
 Für die grafische Aufbereitung des generierten polygonalen Objektes wird wie bereits mehrfach erwähnt OpenGL verwendet. Um eine möglichst große Unabhängigkeit bezüglich des gewählten Betriebssystemes zu gewährleisten wurde QT als Schnittstelle zwischen System und OpenGL gewählt.
 \subsection{Allgemein}
-Die Implementierung ermöglicht die Darstellung des generierten Objektes, das bewegen um die Achsen via Maus sowie das Zoomen via Mausrat.
+Die Implementierung ermöglicht die Darstellung des generierten Objektes, das Bewegen um die Achsen via Maus sowie das Zoomen via Mausrat.
 \subsection{Schnittstelle (Klasse)}
-\begin{figure}[H]
+\begin{table}[H]
 	\centering
-	\includegraphics[width=.70\textwidth]{visualisation}
 	\caption{UML-Diagramm der Visualisation Klasse}
 	\label{fig:visualisation}
-\end{figure}
+	\begin{tabular}{|l|}
+		\hline
+		\multicolumn{1}{|c|}{<<Class>>} \\
+		\multicolumn{1}{|c|}{Visualisation : QGLWidget} \\
+		\hline
+		- rotationX : GLfloat \\
+		- rotationY : GLfloat \\
+		- rotationZ : GLfloat \\
+		- faceColors : QColor[4]\\
+		- lastPos : QPoint\\
+		- mObject : vector<TRIANGLE>\\
+		- mScale : GLfloat\\
+		- draw();\\
+		- qNormalizeAngle(ref angle : int) : void\\
+		- drawSlice() : void\\
+		- drawAll() : void\\
+		- scaleObject() : void\\
+		\hline
+		\# initializeGL() : void\\
+		\# resizeGL(width : int, height : int) : void\\
+		\# paintGL() : void\\
+		\# mousePressEvent(*event : QMouseEvent) : void\\
+		\# mouseMoveEvent(*event : QMouseEvent) : void\\
+		\# wheelEvent(*event : QWheelEvent) : void\\
+		\# setXRotation(angle : int) : void\\
+		\# setYRotation(angle : int) : void\\
+		\# setZRotation(angle : int) : void\\
+		\hline
+		+ Visualisation(*parent = 0 : QWidget) : void\\
+		+ setObject(*object : vector<TRIANGLE> ) : void\\
+		+ setWiring(enable : bool) : void\\
+		+ updateUI() : void\\
+		\hline
+	\end{tabular}
+\end{table}
+
 \subsubsection{Funktionen}
 Es folgt eine kurzer Überblick über die öffentlichen Funktionen der Visualisation-Klasse.\\
-\\
 \begin{itemize}
 	\item \textbf{Visualisation:} Erstellen der Zeichenoberfläche.
 	\item \textbf{setObject:} Setzen des zu zeichnenden Objektes.
-	\item \textbf{setWiring:} Ermöglicht das Hin- und Herschalten zwischen den beiden Polygonmodi GL\_LINE und GL\_FILL (s. Abbildung \ref{fig:UIWiring}).
-	\item \textbf{updateUI:} Manuelles update der Zeichenfläche z.B. nach setWiring oder setObjekt um die Änderungen für den Benutzer sichtbar zu machen.
+	\item \textbf{setWiring:} Ermöglicht das Hin- und Herschalten zwischen den beiden Polygonmodi GL\_LINE und GL\_FILL siehe Abbildung \ref{fig:UIWiring}.
+	\item \textbf{updateUI:} Manuelles update der Zeichenfläche z.B. nach setWiring oder setObjekt, um die Änderungen für den Benutzer sichtbar zu machen.
 \end{itemize}
 \subsubsection{Verwendung}
-Die Verwendung dieser Klasse ist vergleichsweise einfach. Eine beispielhafte Implementierung ist in Programm \ref{prog:VisVerw} zu finden.
+Die Verwendung dieser Klasse ist vergleichsweise einfach. Eine beispielhafte Implementierung ist in Programm \ref{prog:VisVerw} zu finden. 
 \begin{program}[H]
 	\caption{Exemplarische Verwendung der Visualisation Klasse}
 	\label{prog:VisVerw}
 	\begin{CCode}
 		int main(){
-			Visualisation vi = new Visualisation();
+			Visualisation vi = new Visualisation();		
+			
 			// set the polygon object (result of the marching cubes algorithm)
 			vi->setObject(marchingCubes->getResult());
 			// update ui for the user
-			vi->updateUI;
+			vi->updateUI();		
 			// enable wiring (set polygon mode to GL\_LINE)
 			vi->setWiring(true);
 			// update ui for the user
-			vi->updateUI;
+			vi->updateUI();			
+			
 			delete(vi);
 		} 
 	\end{CCode}
 \end{program}
-
+\begin{enumerate}
+	\item Es wird eine neue \textit{Visualisation} Instanz erzeugt.
+	\item Setzen des polygonalen Objektes welches aus dem Marching Cubes Algorithmus hervor geht.
+	\item Darstellen des neu gesetzte Objekt mit der Funktion \textit{updateUI}.
+	\item Aktivieren des Wirings. Hierdurch erhalten wir die in Abbildung \ref{fig:UIWiring} dargestellt Gitterform.
+	\item Erneuter Aufruf von \textit{updateUI}.
+	\item Freigabe der allokierten \textit{Visualisation} Instanz.
+\end{enumerate}
 \section{Benutzeroberfläche}
 In diesem Abschnitt wird auf die Funktionen der Benutzeroberfläche (UI) des entstandenen Prototypen eingegangen. Erstellt wurde diese mithilfe des QT-Designers. Um eine einfache Benutzung zu gewährleisten wurde sie möglichst schlicht gehalten.
 
