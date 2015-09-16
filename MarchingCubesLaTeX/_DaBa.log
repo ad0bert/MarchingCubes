@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.6)  4 SEP 2015 08:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.6)  6 SEP 2015 14:50
 entering extended mode
 **_DaBa.tex
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.tex
@@ -1080,7 +1080,6 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\einfuehrung.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.aux)
-(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\anhang_a.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -1148,129 +1147,130 @@ LaTeX Info: Redefining \nameref on input line 18.
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.out)
 \@outlinefile=\write3
 
-<Titelblatt_Gesamtarbeit.pdf, id=208, 597.55246pt x 845.07718pt>
+<Titelblatt_Gesamtarbeit.pdf, id=184, 597.55246pt x 845.07718pt>
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf>
-Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf used on input line 40.
+Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf used on input line 45.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
  <use Titelblatt_Gesamtarbeit.pdf>
-Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf used on input line 40.
+Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf used on input line 45.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<Titelblatt_Gesamtarbeit.pdf, id=211, page=1, 597.55246pt x 845.07718pt>
+<Titelblatt_Gesamtarbeit.pdf, id=187, page=1, 597.55246pt x 845.07718pt>
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 1>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page1 used on input line 
-40.
+45.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 1>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page1 used on input line 
-40.
+45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 1>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page1 used on input line 
-40.
+45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 1>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page1 used on input line 
-40.
+45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 1>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page1 used on input line 
-40.
+45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [1
 
 
+
  <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/Titelblatt_Gesamtar
 beit.pdf>]
-<Titelblatt_Gesamtarbeit.pdf, id=233, page=2, 597.55246pt x 845.07718pt>
+<Titelblatt_Gesamtarbeit.pdf, id=207, page=2, 597.55246pt x 845.07718pt>
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 2>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page2 used on input line 
-40.
+45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 2>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page2 used on input line 
-40.
+45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 2>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page2 used on input line 
-40.
+45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [2 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/Titelblatt_Gesam
 tarbeit.pdf>]
-<Titelblatt_Gesamtarbeit.pdf, id=239, page=3, 597.55246pt x 845.07718pt>
+<Titelblatt_Gesamtarbeit.pdf, id=213, page=3, 597.55246pt x 845.07718pt>
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 3>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page3 used on input line 
-40.
+45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 3>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page3 used on input line 
-40.
+45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Gesamtarbeit.pdf Graphic file (type pdf)
 
 <use Titelblatt_Gesamtarbeit.pdf, page 3>
 Package pdftex.def Info: Titelblatt_Gesamtarbeit.pdf, page3 used on input line 
-40.
+45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [3 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/Titelblatt_Gesam
 tarbeit.pdf>]
-<Titelblatt_Teil1.pdf, id=245, 597.55246pt x 845.07718pt>
+<Titelblatt_Teil1.pdf, id=219, 597.55246pt x 845.07718pt>
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
 
 <use Titelblatt_Teil1.pdf>
-Package pdftex.def Info: Titelblatt_Teil1.pdf used on input line 41.
+Package pdftex.def Info: Titelblatt_Teil1.pdf used on input line 46.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
  <use Titelblatt_Teil1.pdf>
-Package pdftex.def Info: Titelblatt_Teil1.pdf used on input line 41.
+Package pdftex.def Info: Titelblatt_Teil1.pdf used on input line 46.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<Titelblatt_Teil1.pdf, id=248, page=1, 597.55246pt x 845.07718pt>
+<Titelblatt_Teil1.pdf, id=222, page=1, 597.55246pt x 845.07718pt>
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
 
 <use Titelblatt_Teil1.pdf, page 1>
-Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 41.
+Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 46.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
  <use Titelblatt_Teil1.pdf, page 1>
-Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 41.
+Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 46.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
 
 <use Titelblatt_Teil1.pdf, page 1>
-Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 41.
+Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 46.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
  <use Titelblatt_Teil1.pdf, page 1>
-Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 41.
+Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 46.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Titelblatt_Teil1.pdf Graphic file (type pdf)
 
 <use Titelblatt_Teil1.pdf, page 1>
-Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 41.
+Package pdftex.def Info: Titelblatt_Teil1.pdf, page1 used on input line 46.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [4 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/Titelblatt_Teil1
 .pdf>]
@@ -1309,27 +1309,27 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \tf@toc=\write4
  [6]
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\kurzfassung.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 4--45
+Underfull \hbox (badness 10000) in paragraph at lines 4--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--45
+Underfull \hbox (badness 10000) in paragraph at lines 4--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--45
+Underfull \hbox (badness 10000) in paragraph at lines 4--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--45
+Underfull \hbox (badness 10000) in paragraph at lines 4--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--45
+Underfull \hbox (badness 10000) in paragraph at lines 4--50
 
  []
 
@@ -1337,27 +1337,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--45
 
 
 ] (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\abstract.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--46
+Underfull \hbox (badness 10000) in paragraph at lines 3--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--46
+Underfull \hbox (badness 10000) in paragraph at lines 3--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--46
+Underfull \hbox (badness 10000) in paragraph at lines 3--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--46
+Underfull \hbox (badness 10000) in paragraph at lines 3--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--46
+Underfull \hbox (badness 10000) in paragraph at lines 3--51
 
  []
 
@@ -1372,12 +1372,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
 
-) [1
+) [9
 
 
 
-
-] [2]
+] [10]
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\einfuehrung.tex
 Kapitel 2.
 
@@ -1404,30 +1403,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[3
+[11
 
 
 
-] <images/Voxelgitter.png, id=366, 466.74374pt x 466.74374pt>
+] <images/Voxelgitter.png, id=334, 466.74374pt x 466.74374pt>
 File: images/Voxelgitter.png Graphic file (type png)
 
 <use images/Voxelgitter.png>
 Package pdftex.def Info: images/Voxelgitter.png used on input line 22.
 (pdftex.def)             Requested size: 306.0022pt x 306.01495pt.
- [4 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/Voxelgitt
-er.png>]
+ [12 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/Voxelgit
+ter.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-<images/Wuerfel.png, id=387, 298.86656pt x 298.86656pt>
+<images/Wuerfel.png, id=355, 298.86656pt x 298.86656pt>
 File: images/Wuerfel.png Graphic file (type png)
 
 <use images/Wuerfel.png>
 Package pdftex.def Info: images/Wuerfel.png used on input line 49.
 (pdftex.def)             Requested size: 180.0pt x 180.0008pt.
- [5]
-<images/WuerfelIndizierung.png, id=410, 286.06876pt x 286.06876pt>
+ [13]
+<images/WuerfelIndizierung.png, id=378, 286.06876pt x 286.06876pt>
 File: images/WuerfelIndizierung.png Graphic file (type png)
 
 <use images/WuerfelIndizierung.png>
@@ -1443,9 +1442,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--66
 
  []
 
-[6 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/Wuerfel.pn
-g> <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/WuerfelInd
-izierung.png>] <images/MCPos.png, id=423, 396.7322pt x 563.10374pt>
+[14 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/Wuerfel.p
+ng> <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/WuerfelIn
+dizierung.png>] <images/MCPos.png, id=391, 396.7322pt x 563.10374pt>
 File: images/MCPos.png Graphic file (type png)
 
 <use images/MCPos.png>
@@ -1456,8 +1455,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
 
-[7 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/MCPos.png>
-]
+[15 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/MCPos.png
+>]
 Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
@@ -1482,7 +1481,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--95
 
  []
 
-[8] [9]
+[16] [17]
 Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
@@ -1514,11 +1513,11 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [10]
+) [18]
 Overfull \vbox (90.19974pt too high) has occurred while \output is active []
 
 
-[11]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 209--212
 
  []
@@ -1533,7 +1532,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
-[12]
+[20]
 Overfull \hbox (4.7758pt too wide) in paragraph at lines 260--260
 [][][]\T1/lmr/m/n/9 https://msdn.microsoft.com/en-us/library/windows/desktop/bb
 153256(v=vs.85).aspx| 
@@ -1545,7 +1544,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--260
 technologies-
  []
 
-) [13] [14]
+) [21] [22]
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.tex
 Kapitel 3.
 
@@ -1553,7 +1552,7 @@ Overfull \hbox (43.85703pt too wide) in paragraph at lines 14--35
  [][] 
  []
 
-[15
+[23
 
 
 
@@ -1567,9 +1566,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
  []
 
-[16] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+[24] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [17]
+) [25]
 Overfull \hbox (6.49077pt too wide) in paragraph at lines 83--84
 \T1/lmr/m/n/10.95 Um ei-ne un-nö-ti-ge Kom-ple-xi-tät zu ver-mei-den, wur-den f
 ür die Analyze-Formate
@@ -1582,12 +1581,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--88
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [18]
+) [26]
 Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
-[19]
+[27]
 Overfull \hbox (2.08723pt too wide) in paragraph at lines 153--154
 []\T1/lmr/bx/n/10.95 d3Buffer \T1/lmr/m/n/10.95 wur-de be-reits im vor-her-ge-g
 an-ge-nen Ab-schnitt ([]3.1[]) be-schrie-
@@ -1600,7 +1599,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [20] [21]
+) [28] [29]
 Overfull \hbox (17.80542pt too wide) in paragraph at lines 259--261
 \T1/lmr/m/n/10.95 Es folgt ei-ne kur-z-er Über-blick über die öf-fent-li-chen F
 unk-tio-nen der Visualisation-
@@ -1611,9 +1610,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--261
 
  []
 
-[22] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+[30] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [23]
+) [31]
 Underfull \hbox (badness 10000) in paragraph at lines 300--303
 
  []
@@ -1629,13 +1628,13 @@ Overfull \hbox (2.04845pt too wide) in paragraph at lines 306--307
 i-en an-ge-wandt.
  []
 
-<images/UI1.png, id=794, 892.83563pt x 480.29437pt>
+<images/UI1.png, id=762, 892.83563pt x 480.29437pt>
 File: images/UI1.png Graphic file (type png)
  <use images/UI1.png>
 Package pdftex.def Info: images/UI1.png used on input line 315.
 (pdftex.def)             Requested size: 360.0pt x 193.66069pt.
 
-[24] <images/UISlicing.png, id=801, 892.83563pt x 480.29437pt>
+[32] <images/UISlicing.png, id=769, 892.83563pt x 480.29437pt>
 File: images/UISlicing.png Graphic file (type png)
 
 <use images/UISlicing.png>
@@ -1651,14 +1650,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--331
 
  []
 
-[25 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/UI1.png>]
-<images/UIWiring.png, id=808, 892.83563pt x 480.29437pt>
+[33 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/UI1.png>]
+<images/UIWiring.png, id=776, 892.83563pt x 480.29437pt>
 File: images/UIWiring.png Graphic file (type png)
 
 <use images/UIWiring.png>
 Package pdftex.def Info: images/UIWiring.png used on input line 337.
 (pdftex.def)             Requested size: 360.0pt x 193.66069pt.
-) [26 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/UISlici
+) [34 <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/UISlici
 ng.png> <C:/Users/Adobert/Desktop/MarchingCubes/MarchingCubesLaTeX/images/UIWir
 ing.png>]
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.tex
@@ -1668,7 +1667,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-[27
+[35
 
 
 
@@ -1677,7 +1676,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--55
 
  []
 
-[28] (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.bbl
+[36] (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\_DaBa.bbl
 Underfull \hbox (badness 5064) in paragraph at lines 80--84
 []\T1/lmr/m/n/10.95 [Segal u. Ake-ley 2009] \T1/lmr/m/sc/10.95 Se-gal\T1/lmr/m/
 n/10.95 , Mark ; \T1/lmr/m/sc/10.95 Ake-ley\T1/lmr/m/n/10.95 , Kurt:  \T1/lmr/m
@@ -1690,16 +1689,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--84
 .95 .  3.1.  htt-
  []
 
-[29
+[37
 
 
-]) [30]
-(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\anhang_a.tex
-Anhang A.
-[31
-
-
-]) [32]
+]) [38]
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
@@ -1711,18 +1704,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\einfuehrung.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\umsetzung.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\zusammenfassung.aux)
-(C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\anhang_a.aux)
 (C:\Users\Adobert\Desktop\MarchingCubes\MarchingCubesLaTeX\messbox.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
 Package rerunfilecheck Info: File `_DaBa.out' has not changed.
-(rerunfilecheck)             Checksum: 4E43BED6D9D281E18A396DFF58E63954;6865.
+(rerunfilecheck)             Checksum: 7B122FAEA9A93C61CF8397D6A5BAFEAF;6108.
  ) 
 Here is how much of TeX's memory you used:
- 19061 strings out of 493921
- 278660 string characters out of 3144871
- 575152 words of memory out of 3000000
- 21517 multiletter control sequences out of 15000+200000
+ 19031 strings out of 493921
+ 277975 string characters out of 3144871
+ 574448 words of memory out of 3000000
+ 21509 multiletter control sequences out of 15000+200000
  92346 words of font info for 71 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  67i,18n,96p,1024b,1799s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1745,9 +1737,9 @@ nts/type1/public/lm/lmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lm
 sy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on _DaBa.pdf (40 pages, 1613896 bytes).
+Output written on _DaBa.pdf (38 pages, 1596676 bytes).
 PDF statistics:
- 1022 PDF objects out of 1200 (max. 8388607)
- 327 named destinations out of 1000 (max. 500000)
- 514 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 937 PDF objects out of 1000 (max. 8388607)
+ 312 named destinations out of 1000 (max. 500000)
+ 466 words of extra memory for PDF output out of 10000 (max. 10000000)
 

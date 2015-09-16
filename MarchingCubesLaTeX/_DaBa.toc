@@ -1,73 +1,60 @@
 \select@language {ngerman}
-\contentsline {chapter}{Kurzfassung}{vii}{chapter*.2}
-\contentsline {chapter}{Abstract}{viii}{chapter*.3}
-\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Aufgabenstellung}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Motivation}{1}{section.1.2}
-\contentsline {section}{\numberline {1.3}Zielsetzung}{1}{section.1.3}
-\contentsline {chapter}{\numberline {2}Grundlagen}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Bildgebende Verfahren}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Volumengrafik}{4}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Voxel}{4}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Marching Cubes}{5}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Formale Definition}{5}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Funktionsweise}{5}{subsection.2.3.2}
-\contentsline {subsubsection}{Vorbereitung}{5}{section*.5}
-\contentsline {subsubsection}{Verarbeitung}{8}{section*.9}
-\contentsline {subsection}{\numberline {2.3.3}Probleme}{9}{subsection.2.3.3}
-\contentsline {subsubsection}{Uneindeutigkeit}{9}{section*.10}
-\contentsline {subsubsection}{Dreiecksdezimierung}{9}{section*.11}
-\contentsline {subsubsection}{Gl\IeC {\"a}ttung Dreiecksnetz}{9}{section*.12}
-\contentsline {subsubsection}{Alternative Datenstruktur}{9}{section*.13}
-\contentsline {section}{\numberline {2.4}Dateiformate}{10}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Image File (.img)}{10}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Header File (.hdr)}{10}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}STereoLithography (.stl)}{12}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Computergrafik}{13}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}OpenGL}{13}{subsection.2.5.1}
-\contentsline {chapter}{\numberline {3}Implementierung}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Marching Cubes}{15}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Allgemein}{15}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Schnittstelle (Klasse)}{16}{subsection.3.1.2}
-\contentsline {subsubsection}{Datentypen}{16}{section*.15}
-\contentsline {subsubsection}{Funktionen}{16}{section*.16}
-\contentsline {subsubsection}{Verwendung}{17}{section*.17}
-\contentsline {section}{\numberline {3.2}File Formate}{18}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Allgemein}{18}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Image File (.img)}{18}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Header File (.hdr)}{18}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}STereoLithography (.stl)}{18}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Schnittstelle (Klasse)}{19}{subsection.3.2.5}
-\contentsline {subsubsection}{Datentypen}{20}{section*.19}
-\contentsline {subsubsection}{Funktionen}{20}{section*.20}
-\contentsline {subsubsection}{Verwendung}{20}{section*.21}
-\contentsline {section}{\numberline {3.3}OpenGL}{22}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Allgemein}{22}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Schnittstelle (Klasse)}{22}{subsection.3.3.2}
-\contentsline {subsubsection}{Funktionen}{23}{section*.23}
-\contentsline {subsubsection}{Verwendung}{23}{section*.24}
-\contentsline {section}{\numberline {3.4}Benutzeroberfl\IeC {\"a}che}{24}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Allgemeiner Aufbau}{24}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Slicing}{25}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Wiring}{26}{subsection.3.4.3}
-\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}Erweiterungen}{27}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Parallelisieren}{27}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Alternative Algorithmen}{27}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Algorithmen zur Verbesserung}{28}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Alternative Dateiformate}{28}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}Zusammenfassung}{28}{section.4.2}
-\contentsline {chapter}{Literaturverzeichnis}{29}{chapter*.28}
-\contentsline {chapter}{\numberline {A}Inhalt der CD-ROM}{31}{appendix.A}
-\contentsline {paragraph}{Format:}{31}{section*.29}
-\contentsline {section}{\numberline {A.1}PDF-Dateien}{31}{section.A.1}
-\contentsline {paragraph}{Pfad:}{31}{section*.30}
-\contentsline {section}{\numberline {A.2}La\discretionary {-}{}{}TeX\xspace -Dateien}{31}{section.A.2}
-\contentsline {paragraph}{Pfad:}{31}{section*.31}
-\contentsline {section}{\numberline {A.3}Style/Class-Dateien}{31}{section.A.3}
-\contentsline {paragraph}{Pfad:}{31}{section*.32}
-\contentsline {section}{\numberline {A.4}Implementierung}{32}{section.A.4}
-\contentsline {paragraph}{Pfad:}{32}{section*.33}
-\contentsline {section}{\numberline {A.5}Sonstiges}{32}{section.A.5}
-\contentsline {paragraph}{Pfad:}{32}{section*.34}
-\contentsline {paragraph}{Pfad:}{32}{section*.35}
+\contentsline {chapter}{Kurzfassung}{7}{chapter*.2}
+\contentsline {chapter}{Abstract}{8}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Einleitung}{9}{chapter.1}
+\contentsline {section}{\numberline {1.1}Aufgabenstellung}{9}{section.1.1}
+\contentsline {section}{\numberline {1.2}Motivation}{9}{section.1.2}
+\contentsline {section}{\numberline {1.3}Zielsetzung}{9}{section.1.3}
+\contentsline {chapter}{\numberline {2}Grundlagen}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Bildgebende Verfahren}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Volumengrafik}{12}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Voxel}{12}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Marching Cubes}{13}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Formale Definition}{13}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Funktionsweise}{13}{subsection.2.3.2}
+\contentsline {subsubsection}{Vorbereitung}{13}{section*.5}
+\contentsline {subsubsection}{Verarbeitung}{16}{section*.9}
+\contentsline {subsection}{\numberline {2.3.3}Probleme}{17}{subsection.2.3.3}
+\contentsline {subsubsection}{Uneindeutigkeit}{17}{section*.10}
+\contentsline {subsubsection}{Dreiecksdezimierung}{17}{section*.11}
+\contentsline {subsubsection}{Gl\IeC {\"a}ttung Dreiecksnetz}{17}{section*.12}
+\contentsline {subsubsection}{Alternative Datenstruktur}{17}{section*.13}
+\contentsline {section}{\numberline {2.4}Dateiformate}{18}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Image File (.img)}{18}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Header File (.hdr)}{18}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}STereoLithography (.stl)}{20}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Computergrafik}{21}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}OpenGL}{21}{subsection.2.5.1}
+\contentsline {chapter}{\numberline {3}Implementierung}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Marching Cubes}{23}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Allgemein}{23}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Schnittstelle (Klasse)}{24}{subsection.3.1.2}
+\contentsline {subsubsection}{Datentypen}{24}{section*.15}
+\contentsline {subsubsection}{Funktionen}{24}{section*.16}
+\contentsline {subsubsection}{Verwendung}{25}{section*.17}
+\contentsline {section}{\numberline {3.2}File Formate}{26}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Allgemein}{26}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Image File (.img)}{26}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Header File (.hdr)}{26}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}STereoLithography (.stl)}{26}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Schnittstelle (Klasse)}{27}{subsection.3.2.5}
+\contentsline {subsubsection}{Datentypen}{28}{section*.19}
+\contentsline {subsubsection}{Funktionen}{28}{section*.20}
+\contentsline {subsubsection}{Verwendung}{28}{section*.21}
+\contentsline {section}{\numberline {3.3}OpenGL}{30}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Allgemein}{30}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Schnittstelle (Klasse)}{30}{subsection.3.3.2}
+\contentsline {subsubsection}{Funktionen}{31}{section*.23}
+\contentsline {subsubsection}{Verwendung}{31}{section*.24}
+\contentsline {section}{\numberline {3.4}Benutzeroberfl\IeC {\"a}che}{32}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Allgemeiner Aufbau}{32}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Slicing}{33}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Wiring}{34}{subsection.3.4.3}
+\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Erweiterungen}{35}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Parallelisieren}{35}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Alternative Algorithmen}{35}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Algorithmen zur Verbesserung}{36}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Alternative Dateiformate}{36}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Zusammenfassung}{36}{section.4.2}
+\contentsline {chapter}{Literaturverzeichnis}{37}{chapter*.28}
